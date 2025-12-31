@@ -1,0 +1,8 @@
+{
+  "name": "Socialmediahit",
+  "version": "1.0.0",
+  "url_prefix": "socialMediaHit",
+  "namespace": "socialMediaHit",
+  "type": "ml",
+  "dependencies": []
+}

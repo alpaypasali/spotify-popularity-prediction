@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100vh; overflow: hidden;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Caption/Hashtag Prediction - Social Media Hit</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+</head>
+<body style="margin: 0; padding: 0; background: linear-gradient(to bottom right, #164e63, #134e4a, #14532d); height: 100vh; overflow: hidden;">
+<div style="background: linear-gradient(to bottom right, #164e63, #134e4a, #14532d); height: 100vh; display: flex; flex-direction: column; overflow: hidden;">
+    <!-- Navigation -->
+    <nav style="position: relative; z-index: 10; padding: 1rem 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.3); backdrop-filter: blur(10px);">
+        <div style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <div style="width: 8px; height: 8px; background: #00ff88; border-radius: 50%; box-shadow: 0 0 10px #00ff88;"></div>
+                <a href="/socialMediaHit/" style="font-size: 1.25rem; font-weight: 600; color: #ffffff; letter-spacing: -0.5px; text-decoration: none;">SOCIAL MEDIA HIT</a>
+            </div>
+            <div style="display: flex; gap: 2rem;">
+                <a href="/socialMediaHit/spotify/" style="color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; position: relative;">
+                    SPOTIFY
+                    <span style="position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: #00ff88; transition: width 0.3s;"></span>
+                </a>
+                <a href="/socialMediaHit/instagram-picture/" style="color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; position: relative;">
+                    INSTAGRAM
+                    <span style="position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: #00ff88; transition: width 0.3s;"></span>
+                </a>
+                <a href="/socialMediaHit/final/" style="color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; position: relative;">
+                    FINAL
+                    <span style="position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: #00ff88; transition: width 0.3s;"></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div style="width: 100%; max-width: 100%; margin: 0 auto; padding: 1.25rem 1.5rem; flex: 1; overflow: hidden; display: flex; flex-direction: column;">
+        <!-- Header -->
+        <div style="flex-shrink: 0; margin-bottom: 0.75rem;">
+            <h1 style="font-size: 1.75rem; font-weight: bold; color: white; margin-bottom: 0.375rem;">Instagram Caption/Hashtag Hit Prediction</h1>
+            <p style="color: #d1d5db; font-size: 0.9rem; margin-bottom: 0.5rem;">Optimize your captions and hashtags for maximum engagement</p>
+            <div style="background: rgba(234, 179, 8, 0.2); border: 1px solid rgba(234, 179, 8, 0.5); border-radius: 0.5rem; padding: 0.75rem; margin-bottom: 0.75rem;">
+                <div style="display: flex; align-items: start; gap: 0.5rem;">
+                    <span style="color: #fbbf24; font-size: 1rem;">!</span>
+                    <div>
+                        <div style="color: #fef3c7; font-weight: 600; font-size: 0.875rem; margin-bottom: 0.25rem;">Demo Version</div>
+                        <div style="color: #fde68a; font-size: 0.75rem; line-height: 1.4;">This is a demonstration version. The prediction model is currently under development. Results shown are for illustrative purposes only.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; flex: 1; overflow: hidden; width: 100%; min-height: 0;">
+            <!-- Left Column: Caption & Hashtag Input -->
+            <div style="display: flex; flex-direction: column; gap: 0.75rem; overflow: hidden; max-width: 100%;">
+                <!-- Caption -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex-shrink: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Caption</h2>
+                    <textarea id="caption-input" 
+                              placeholder="Write your Instagram caption here... Try including questions, emojis, or engaging content!"
+                              style="width: 100%; height: 8rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 0.5rem; padding: 0.75rem; color: white; font-size: 0.875rem; resize: none; outline: none; font-family: inherit;"
+                              onfocus="this.style.background='rgba(255, 255, 255, 0.1)'; this.style.borderColor='rgba(6, 182, 212, 0.5)'"
+                              onblur="this.style.background='rgba(255, 255, 255, 0.05)'; this.style.borderColor='rgba(255, 255, 255, 0.2)'"></textarea>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.5rem; font-size: 0.75rem;">
+                        <span style="color: #d1d5db;">
+                            <span id="caption-length">0</span> / 2200 characters
+                        </span>
+                        <button id="clear-caption" style="color: #67e8f9; background: none; border: none; cursor: pointer; font-size: 0.75rem; padding: 0;" onmouseover="this.style.color='#22d3ee'" onmouseout="this.style.color='#67e8f9'">Clear</button>
+                    </div>
+                </div>
+
+                <!-- Hashtags -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex-shrink: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Hashtags</h2>
+                    <textarea id="hashtag-input" 
+                              placeholder="#hashtag1 #hashtag2 #hashtag3... (Use 5-10 hashtags for best results)"
+                              style="width: 100%; height: 6rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 0.5rem; padding: 0.75rem; color: white; font-size: 0.875rem; resize: none; outline: none; font-family: inherit;"
+                              onfocus="this.style.background='rgba(255, 255, 255, 0.1)'; this.style.borderColor='rgba(6, 182, 212, 0.5)'"
+                              onblur="this.style.background='rgba(255, 255, 255, 0.05)'; this.style.borderColor='rgba(255, 255, 255, 0.2)'"></textarea>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.5rem; font-size: 0.75rem;">
+                        <span style="color: #d1d5db;">
+                            <span id="hashtag-count">0</span> hashtags
+                        </span>
+                        <button id="clear-hashtags" style="color: #67e8f9; background: none; border: none; cursor: pointer; font-size: 0.75rem; padding: 0;" onmouseover="this.style.color='#22d3ee'" onmouseout="this.style.color='#67e8f9'">Clear</button>
+                    </div>
+                </div>
+
+                <!-- Text Analysis -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex: 1; overflow-y: auto; min-height: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Text Analysis</h2>
+                    <div id="text-features">
+                        <div style="color: #d1d5db; text-align: center; padding: 0.75rem; font-size: 0.75rem;">Enter caption to see analysis</div>
+                    </div>
+                </div>
+
+                <!-- Sample Captions (Demo) -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex-shrink: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Sample Captions (Demo)</h2>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <button class="sample-caption" data-sample="1" style="width: 100%; background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem; text-align: left; transition: background 0.2s; border: none; cursor: pointer;" onmouseover="this.style.background='rgba(255, 255, 255, 0.1)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.05)'">
+                            <div style="color: white; font-weight: 600; font-size: 0.875rem; margin-bottom: 0.25rem;">Lifestyle Post</div>
+                            <div style="color: #d1d5db; font-size: 0.75rem; line-height: 1.4;">"Living my best life! What's your favorite moment today? #lifestyle #motivation"</div>
+                        </button>
+                        <button class="sample-caption" data-sample="2" style="width: 100%; background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem; text-align: left; transition: background 0.2s; border: none; cursor: pointer;" onmouseover="this.style.background='rgba(255, 255, 255, 0.1)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.05)'">
+                            <div style="color: white; font-weight: 600; font-size: 0.875rem; margin-bottom: 0.25rem;">Photo Post</div>
+                            <div style="color: #d1d5db; font-size: 0.75rem; line-height: 1.4;">"Golden hour vibes. Nature never fails to amaze me. #photography #nature"</div>
+                        </button>
+                        <button class="sample-caption" data-sample="3" style="width: 100%; background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem; text-align: left; transition: background 0.2s; border: none; cursor: pointer;" onmouseover="this.style.background='rgba(255, 255, 255, 0.1)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.05)'">
+                            <div style="color: white; font-weight: 600; font-size: 0.875rem; margin-bottom: 0.25rem;">Fitness Post</div>
+                            <div style="color: #d1d5db; font-size: 0.75rem; line-height: 1.4;">"Progress, not perfection! Who's joining me for a workout? #fitness #motivation"</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Predictions -->
+            <div style="display: flex; flex-direction: column; gap: 0.75rem; overflow: hidden; max-width: 100%;">
+                <!-- Hit Prediction -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex-shrink: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Hit Prediction</h2>
+                    <div id="prediction-results" style="text-align: center; padding: 1rem;">
+                        <div style="color: #d1d5db; font-size: 0.75rem;">Enter caption and hashtags to see predictions</div>
+                    </div>
+                </div>
+
+                <!-- Prediction Insights -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex: 1; overflow-y: auto; min-height: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Prediction Insights</h2>
+                    <div id="insights-results" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <div style="color: #d1d5db; text-align: center; padding: 0.75rem; font-size: 0.75rem;">Waiting for caption analysis...</div>
+                    </div>
+                </div>
+
+                <!-- Recommendations -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex-shrink: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Recommendations</h2>
+                    <div id="recommendations" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <div style="color: #d1d5db; text-align: center; padding: 0.75rem; font-size: 0.75rem;">Waiting for input...</div>
+                    </div>
+                </div>
+
+                <!-- Detailed Analysis -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex-shrink: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Detailed Analysis</h2>
+                    <div id="analysis-results" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <div style="color: #d1d5db; text-align: center; padding: 0.75rem; font-size: 0.75rem;">Waiting for caption input...</div>
+                    </div>
+                </div>
+
+                <!-- Next Step -->
+                <div style="background: linear-gradient(to right, #0891b2, #16a34a); border-radius: 0.75rem; padding: 0.75rem; text-align: center; flex-shrink: 0;">
+                    <a href="/socialMediaHit/final/" 
+                       style="color: white; font-weight: bold; font-size: 0.875rem; text-decoration: none; display: block;">
+                        View Final Prediction →
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Demo Notice Footer -->
+        <div style="margin-top: 0.75rem; flex-shrink: 0;">
+            <div style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(234, 179, 8, 0.3); border-radius: 0.5rem; padding: 0.75rem; text-align: center;">
+                <div style="color: #fbbf24; font-size: 0.75rem;">
+                    <strong>Demo Version:</strong> This Instagram Caption/Hashtag Prediction feature is currently in development. 
+                    Predictions shown are for demonstration purposes only and do not represent actual model performance.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+const captionInput = document.getElementById('caption-input');
+const hashtagInput = document.getElementById('hashtag-input');
+
+// Update character count
+captionInput.addEventListener('input', function() {
+    document.getElementById('caption-length').textContent = this.value.length;
+    analyzeCaption();
+});
+
+// Update hashtag count
+hashtagInput.addEventListener('input', function() {
+    const hashtags = this.value.match(/#\w+/g) || [];
+    document.getElementById('hashtag-count').textContent = hashtags.length;
+    analyzeCaption();
+});
+
+// Clear buttons
+document.addEventListener('DOMContentLoaded', function() {
+    const clearCaptionBtn = document.getElementById('clear-caption');
+    const clearHashtagsBtn = document.getElementById('clear-hashtags');
+    
+    if (clearCaptionBtn) {
+        clearCaptionBtn.addEventListener('click', function() {
+            captionInput.value = '';
+            document.getElementById('caption-length').textContent = '0';
+            analyzeCaption();
+        });
+    }
+    
+    if (clearHashtagsBtn) {
+        clearHashtagsBtn.addEventListener('click', function() {
+            hashtagInput.value = '';
+            document.getElementById('hashtag-count').textContent = '0';
+            analyzeCaption();
+        });
+    }
+    
+    // Sample caption click handlers
+    document.querySelectorAll('.sample-caption').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const sampleNum = this.dataset.sample;
+            const samples = {
+                1: {
+                    caption: "Living my best life! What's your favorite moment today?",
+                    hashtags: "#lifestyle #motivation #inspiration #daily #happiness"
+                },
+                2: {
+                    caption: "Golden hour vibes. Nature never fails to amaze me.",
+                    hashtags: "#photography #nature #sunset #goldenhour #beautiful"
+                },
+                3: {
+                    caption: "Progress, not perfection! Who's joining me for a workout?",
+                    hashtags: "#fitness #motivation #workout #health #gym"
+                }
+            };
+            
+            const sample = samples[sampleNum];
+            if (sample) {
+                captionInput.value = sample.caption;
+                hashtagInput.value = sample.hashtags;
+                document.getElementById('caption-length').textContent = sample.caption.length;
+                const hashtags = sample.hashtags.match(/#\w+/g) || [];
+                document.getElementById('hashtag-count').textContent = hashtags.length;
+                
+                // Simulate API response for demo
+                const mockData = {
+                    hit_probability: 50 + Math.random() * 30,
+                    features: {
+                        sentiment: ['Positive', 'Neutral', 'Positive'][sampleNum - 1]
+                    },
+                    note: 'This is a demo prediction. Model training in progress.'
+                };
+                displayPrediction(mockData);
+            }
+        });
+    });
+});
+
+async function analyzeCaption() {
+    const caption = captionInput.value;
+    const hashtags = hashtagInput.value;
+    
+    if (!caption && !hashtags) {
+        return;
+    }
+    
+    // Show loading
+    document.getElementById('prediction-results').innerHTML = 
+        '<div class="text-gray-300 text-sm">Analyzing...</div>';
+    
+    try {
+        const response = await fetch('/socialMediaHit/api/predict/instagram-caption/', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({caption, hashtags})
+        });
+        const data = await response.json();
+        displayPrediction(data);
+    } catch (error) {
+        console.error('Error analyzing caption:', error);
+    }
+}
+
+function displayPrediction(data) {
+    const container = document.getElementById('prediction-results');
+    const probability = data.hit_probability || 0;
+    
+    container.innerHTML = `
+        <div style="text-align: center;">
+            <div style="font-size: 2.5rem; font-weight: bold; color: white; line-height: 1; margin-bottom: 0.5rem;">${probability.toFixed(1)}</div>
+            <div style="color: #d1d5db; font-size: 0.875rem; margin-bottom: 0.75rem;">Hit Score</div>
+            <div style="background: rgba(255, 255, 255, 0.1); border-radius: 0.5rem; height: 0.5rem; margin-bottom: 0.75rem;">
+                <div style="height: 0.5rem; border-radius: 0.5rem; background: linear-gradient(to right, #06b6d4, #22c55e); width: ${Math.min(100, probability)}%"></div>
+            </div>
+            ${data.note ? `<div style="color: #fbbf24; font-size: 0.75rem; margin-bottom: 0.5rem;">${data.note}</div>` : ''}
+            <div style="color: #9ca3af; font-size: 0.7rem;">Range: 0-100</div>
+        </div>
+    `;
+    
+    // Display text features
+    const featuresContainer = document.getElementById('text-features');
+    const caption = captionInput.value;
+    const hashtags = hashtagInput.value.match(/#\w+/g) || [];
+    const wordCount = caption.split(/\s+/).filter(w => w).length;
+    const emojiCount = (caption.match(/[\u{1F300}-\u{1F9FF}]/gu) || []).length;
+    const charCount = caption.length;
+    const hasQuestion = /[?]/.test(caption);
+    const hasExclamation = /[!]/.test(caption);
+    
+    featuresContainer.innerHTML = `
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.5rem;">
+            <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem;">
+                <div style="color: #d1d5db; font-size: 0.7rem; margin-bottom: 0.25rem;">Word Count</div>
+                <div style="color: white; font-weight: bold; font-size: 1rem;">${wordCount}</div>
+            </div>
+            <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem;">
+                <div style="color: #d1d5db; font-size: 0.7rem; margin-bottom: 0.25rem;">Hashtag Count</div>
+                <div style="color: white; font-weight: bold; font-size: 1rem;">${hashtags.length}</div>
+            </div>
+            <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem;">
+                <div style="color: #d1d5db; font-size: 0.7rem; margin-bottom: 0.25rem;">Emoji Count</div>
+                <div style="color: white; font-weight: bold; font-size: 1rem;">${emojiCount}</div>
+            </div>
+            <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem;">
+                <div style="color: #d1d5db; font-size: 0.7rem; margin-bottom: 0.25rem;">Character Count</div>
+                <div style="color: white; font-weight: bold; font-size: 1rem;">${charCount}</div>
+            </div>
+            <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem;">
+                <div style="color: #d1d5db; font-size: 0.7rem; margin-bottom: 0.25rem;">Sentiment</div>
+                <div style="color: white; font-weight: bold; font-size: 0.875rem;">${data.features?.sentiment || 'Neutral'}</div>
+            </div>
+            <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem;">
+                <div style="color: #d1d5db; font-size: 0.7rem; margin-bottom: 0.25rem;">Engagement</div>
+                <div style="color: white; font-weight: bold; font-size: 0.875rem;">${hasQuestion ? 'Question ✓' : hasExclamation ? 'Exclamation ✓' : 'Standard'}</div>
+            </div>
+        </div>
+    `;
+    
+    // Display insights
+    const insightsContainer = document.getElementById('insights-results');
+    const insights = generateInsights(probability, {wordCount, hashtags: hashtags.length, emojiCount, charCount, hasQuestion});
+    insightsContainer.innerHTML = insights.map(insight => `
+        <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem;">
+            <div style="display: flex; align-items: start; gap: 0.5rem;">
+                <div>
+                    <div style="color: white; font-weight: 600; font-size: 0.875rem; margin-bottom: 0.25rem;">${insight.title}</div>
+                    <div style="color: #d1d5db; font-size: 0.75rem; line-height: 1.4;">${insight.description}</div>
+                </div>
+            </div>
+        </div>
+    `).join('');
+    
+    // Display recommendations
+    const recommendationsContainer = document.getElementById('recommendations');
+    const recommendations = generateRecommendations({wordCount, hashtags: hashtags.length, emojiCount, charCount, hasQuestion});
+    recommendationsContainer.innerHTML = recommendations.map(rec => `
+        <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem;">
+            <div style="display: flex; align-items: start; gap: 0.5rem;">
+                <div>
+                    <div style="color: white; font-weight: 600; font-size: 0.875rem; margin-bottom: 0.25rem;">${rec.title}</div>
+                    <div style="color: #d1d5db; font-size: 0.75rem; line-height: 1.4;">${rec.description}</div>
+                </div>
+            </div>
+        </div>
+    `).join('');
+    
+    // Display analysis
+    const analysisContainer = document.getElementById('analysis-results');
+    analysisContainer.innerHTML = `
+        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem;">
+                <div style="color: #d1d5db; font-size: 0.7rem; margin-bottom: 0.5rem;">Caption Quality Score</div>
+                <div style="background: rgba(255, 255, 255, 0.1); border-radius: 0.25rem; height: 0.25rem; margin-bottom: 0.5rem;">
+                    <div style="height: 0.25rem; border-radius: 0.25rem; background: linear-gradient(to right, #06b6d4, #22c55e); width: ${Math.min(100, calculateQualityScore({wordCount, hashtags: hashtags.length, emojiCount, charCount, hasQuestion}))}%"></div>
+                </div>
+                <div style="color: white; font-size: 0.875rem; font-weight: bold;">${calculateQualityScore({wordCount, hashtags: hashtags.length, emojiCount, charCount, hasQuestion}).toFixed(0)}/100</div>
+            </div>
+            <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem;">
+                <div style="color: #d1d5db; font-size: 0.7rem; margin-bottom: 0.5rem;">Engagement Potential</div>
+                <div style="background: rgba(255, 255, 255, 0.1); border-radius: 0.25rem; height: 0.25rem; margin-bottom: 0.5rem;">
+                    <div style="height: 0.25rem; border-radius: 0.25rem; background: linear-gradient(to right, #06b6d4, #22c55e); width: ${Math.min(100, calculateEngagementScore({wordCount, hashtags: hashtags.length, emojiCount, hasQuestion}))}%"></div>
+                </div>
+                <div style="color: white; font-size: 0.875rem; font-weight: bold;">${calculateEngagementScore({wordCount, hashtags: hashtags.length, emojiCount, hasQuestion}).toFixed(0)}/100</div>
+            </div>
+        </div>
+    `;
+}
+
+function generateInsights(probability, features) {
+    const insights = [];
+    
+    if (probability >= 70) {
+        insights.push({
+            title: 'High Hit Potential',
+            description: 'This caption has strong potential for viral performance on Instagram.'
+        });
+    } else if (probability >= 50) {
+        insights.push({
+            title: 'Good Potential',
+            description: 'This caption shows promise but could benefit from optimization.'
+        });
+    } else {
+        insights.push({
+            title: 'Improvement Needed',
+            description: 'Consider adding more engaging elements like questions, emojis, or hashtags.'
+        });
+    }
+    
+    if (features.hashtags < 5) {
+        insights.push({
+            title: 'More Hashtags',
+            description: 'Consider adding 5-10 hashtags to increase discoverability.'
+        });
+    } else if (features.hashtags > 15) {
+        insights.push({
+            title: 'Too Many Hashtags',
+            description: 'Using too many hashtags can appear spammy. 5-10 is optimal.'
+        });
+    }
+    
+    if (features.emojiCount === 0) {
+        insights.push({
+            title: 'Add Emojis',
+            description: 'Emojis can increase engagement by up to 25%.'
+        });
+    }
+    
+    if (features.hasQuestion) {
+        insights.push({
+            title: 'Question Detected',
+            description: 'Great! Questions encourage comments and engagement.'
+        });
+    }
+    
+    return insights;
+}
+
+function generateRecommendations(features) {
+    const recommendations = [];
+    
+    if (features.wordCount < 50) {
+        recommendations.push({
+            title: 'Longer Caption',
+            description: 'Captions between 125-150 characters tend to perform better.'
+        });
+    } else if (features.wordCount > 200) {
+        recommendations.push({
+            title: 'Shorter Caption',
+            description: 'Very long captions may reduce engagement. Keep it concise.'
+        });
+    }
+    
+    if (features.hashtags < 5) {
+        recommendations.push({
+            title: 'Optimal Hashtag Count',
+            description: 'Use 5-10 hashtags for best results. Mix popular and niche tags.'
+        });
+    }
+    
+    if (features.emojiCount < 2) {
+        recommendations.push({
+            title: 'Emoji Usage',
+            description: 'Add 2-3 relevant emojis to make your caption more engaging.'
+        });
+    }
+    
+    if (!features.hasQuestion) {
+        recommendations.push({
+            title: 'Ask Questions',
+            description: 'Questions encourage comments and boost engagement.'
+        });
+    }
+    
+    return recommendations;
+}
+
+function calculateQualityScore(features) {
+    let score = 50;
+    
+    if (features.wordCount >= 20 && features.wordCount <= 50) score += 15;
+    else if (features.wordCount > 50 && features.wordCount <= 100) score += 10;
+    else if (features.wordCount > 100) score -= 5;
+    
+    if (features.hashtags >= 5 && features.hashtags <= 10) score += 15;
+    else if (features.hashtags > 10 && features.hashtags <= 15) score += 5;
+    else if (features.hashtags > 15) score -= 10;
+    
+    if (features.emojiCount >= 1 && features.emojiCount <= 3) score += 10;
+    else if (features.emojiCount > 3) score += 5;
+    
+    if (features.charCount >= 125 && features.charCount <= 150) score += 10;
+    
+    if (features.hasQuestion) score += 10;
+    
+    return Math.min(100, Math.max(0, score));
+}
+
+function calculateEngagementScore(features) {
+    let score = 40;
+    
+    if (features.hashtags >= 5 && features.hashtags <= 10) score += 20;
+    else if (features.hashtags > 0) score += 10;
+    
+    if (features.emojiCount >= 1) score += 15;
+    if (features.emojiCount >= 2) score += 5;
+    
+    if (features.hasQuestion) score += 20;
+    
+    if (features.wordCount >= 20 && features.wordCount <= 50) score += 10;
+    
+    return Math.min(100, Math.max(0, score));
+}
+</script>
+<style>
+nav a:hover {
+    color: #00ff88 !important;
+}
+nav a:hover span {
+    width: 100% !important;
+}
+</style>
+</body>
+</html>

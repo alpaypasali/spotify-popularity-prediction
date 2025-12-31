@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100vh; overflow: hidden;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Prediction - Social Media Hit</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+</head>
+<body style="margin: 0; padding: 0; background: linear-gradient(to bottom right, #312e81, #581c87, #831843); height: 100vh; overflow: hidden;">
+<div style="background: linear-gradient(to bottom right, #312e81, #581c87, #831843); height: 100vh; display: flex; flex-direction: column; overflow: hidden;">
+    <!-- Navigation -->
+    <nav style="position: relative; z-index: 10; padding: 1rem 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.3); backdrop-filter: blur(10px);">
+        <div style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <div style="width: 8px; height: 8px; background: #00ff88; border-radius: 50%; box-shadow: 0 0 10px #00ff88;"></div>
+                <a href="/socialMediaHit/" style="font-size: 1.25rem; font-weight: 600; color: #ffffff; letter-spacing: -0.5px; text-decoration: none;">SOCIAL MEDIA HIT</a>
+            </div>
+            <div style="display: flex; gap: 2rem;">
+                <a href="/socialMediaHit/spotify/" style="color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; position: relative;">
+                    SPOTIFY
+                    <span style="position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: #00ff88; transition: width 0.3s;"></span>
+                </a>
+                <a href="/socialMediaHit/instagram-picture/" style="color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; position: relative;">
+                    INSTAGRAM
+                    <span style="position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: #00ff88; transition: width 0.3s;"></span>
+                </a>
+                <a href="/socialMediaHit/final/" style="color: #00ff88; text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; position: relative;">
+                    FINAL
+                    <span style="position: absolute; bottom: -4px; left: 0; width: 100%; height: 1px; background: #00ff88;"></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div style="width: 100%; max-width: 100%; margin: 0 auto; padding: 1.25rem 1.5rem; flex: 1; overflow: hidden; display: flex; flex-direction: column;">
+        <!-- Header -->
+        <div style="flex-shrink: 0; margin-bottom: 0.75rem;">
+            <h1 style="font-size: 1.75rem; font-weight: bold; color: white; margin-bottom: 0.375rem;">Final Hit Prediction</h1>
+            <p style="color: #d1d5db; font-size: 0.9rem; margin-bottom: 0.5rem;">Your complete Instagram Reels performance score</p>
+            <div style="background: rgba(234, 179, 8, 0.2); border: 1px solid rgba(234, 179, 8, 0.5); border-radius: 0.5rem; padding: 0.75rem; margin-bottom: 0.75rem;">
+                <div style="display: flex; align-items: start; gap: 0.5rem;">
+                    <span style="color: #fbbf24; font-size: 1rem;">!</span>
+                    <div>
+                        <div style="color: #fef3c7; font-weight: 600; font-size: 0.875rem; margin-bottom: 0.25rem;">Demo Version</div>
+                        <div style="color: #fde68a; font-size: 0.75rem; line-height: 1.4;">This is a demonstration version. The prediction model is currently under development. Results shown are for illustrative purposes only.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; flex: 1; overflow: hidden; width: 100%; min-height: 0;">
+            <!-- Left Column: Spotify Score -->
+            <div style="display: flex; flex-direction: column; gap: 0.75rem; overflow: hidden; max-width: 100%;">
+                <!-- Main Score Card -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex-shrink: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Overall Hit Score</h2>
+                    <div id="final-score-container" style="text-align: center;">
+                        <div style="font-size: 3rem; font-weight: bold; color: white; line-height: 1; margin-bottom: 0.5rem;">0</div>
+                        <div style="color: #d1d5db; font-size: 0.875rem; margin-bottom: 0.75rem;">Hit Score</div>
+                        <div style="background: rgba(255, 255, 255, 0.1); border-radius: 0.5rem; height: 0.5rem; margin-bottom: 0.75rem;">
+                            <div id="final-bar" style="height: 0.5rem; border-radius: 0.5rem; background: linear-gradient(to right, #9333ea, #ec4899); width: 0%"></div>
+                        </div>
+                        <div id="recommendation" style="color: #fbbf24; font-size: 0.75rem; line-height: 1.4;"></div>
+                    </div>
+                </div>
+
+                <!-- Spotify Score -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex-shrink: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Spotify</h2>
+                    <div id="spotify-score" style="font-size: 2rem; font-weight: bold; color: #06b6d4; margin-bottom: 0.5rem;">-</div>
+                    <div style="background: rgba(255, 255, 255, 0.1); border-radius: 0.5rem; height: 0.5rem; margin-bottom: 0.5rem;">
+                        <div id="spotify-bar" style="height: 0.5rem; border-radius: 0.5rem; background: linear-gradient(to right, #06b6d4, #22c55e); width: 0%"></div>
+                    </div>
+                    <div style="color: #d1d5db; font-size: 0.75rem;">Music Performance</div>
+                </div>
+
+                <!-- Prediction Insights -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex: 1; overflow-y: auto; min-height: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Prediction Insights</h2>
+                    <div id="insights-results" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <div style="color: #d1d5db; text-align: center; padding: 0.75rem; font-size: 0.75rem;">Waiting for scores...</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle Column: Picture Score -->
+            <div style="display: flex; flex-direction: column; gap: 0.75rem; overflow: hidden; max-width: 100%;">
+                <!-- Picture Score -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex-shrink: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Picture</h2>
+                    <div id="picture-score" style="font-size: 2rem; font-weight: bold; color: #f472b6; margin-bottom: 0.5rem;">-</div>
+                    <div style="background: rgba(255, 255, 255, 0.1); border-radius: 0.5rem; height: 0.5rem; margin-bottom: 0.5rem;">
+                        <div id="picture-bar" style="height: 0.5rem; border-radius: 0.5rem; background: linear-gradient(to right, #ec4899, #f97316); width: 0%"></div>
+                    </div>
+                    <div style="color: #d1d5db; font-size: 0.75rem;">Visual Appeal</div>
+                </div>
+
+                <!-- Recommendations -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex: 1; overflow-y: auto; min-height: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Recommendations</h2>
+                    <div id="recommendations" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <div style="color: #d1d5db; text-align: center; padding: 0.75rem; font-size: 0.75rem;">Waiting for scores...</div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div style="display: flex; flex-direction: column; gap: 0.5rem; flex-shrink: 0;">
+                    <a href="/socialMediaHit/spotify/" 
+                       style="background: linear-gradient(to right, #9333ea, #2563eb); border-radius: 0.5rem; padding: 0.75rem; text-align: center; color: white; font-weight: bold; font-size: 0.875rem; text-decoration: none; display: block;">
+                        Back to Spotify
+                    </a>
+                    <a href="/socialMediaHit/" 
+                       style="background: linear-gradient(to right, #4f46e5, #9333ea); border-radius: 0.5rem; padding: 0.75rem; text-align: center; color: white; font-weight: bold; font-size: 0.875rem; text-decoration: none; display: block;">
+                        Start Over
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Caption Score -->
+            <div style="display: flex; flex-direction: column; gap: 0.75rem; overflow: hidden; max-width: 100%;">
+                <!-- Caption Score -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex-shrink: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Caption</h2>
+                    <div id="caption-score" style="font-size: 2rem; font-weight: bold; color: #9333ea; margin-bottom: 0.5rem;">-</div>
+                    <div style="background: rgba(255, 255, 255, 0.1); border-radius: 0.5rem; height: 0.5rem; margin-bottom: 0.5rem;">
+                        <div id="caption-bar" style="height: 0.5rem; border-radius: 0.5rem; background: linear-gradient(to right, #9333ea, #7c3aed); width: 0%"></div>
+                    </div>
+                    <div style="color: #d1d5db; font-size: 0.75rem;">Text Engagement</div>
+                </div>
+
+                <!-- Detailed Analysis -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex: 1; overflow-y: auto; min-height: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Detailed Analysis</h2>
+                    <div id="analysis-results" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <div style="color: #d1d5db; text-align: center; padding: 0.75rem; font-size: 0.75rem;">Waiting for scores...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Demo Notice Footer -->
+        <div style="margin-top: 0.75rem; flex-shrink: 0;">
+            <div style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(234, 179, 8, 0.3); border-radius: 0.5rem; padding: 0.75rem; text-align: center;">
+                <div style="color: #fbbf24; font-size: 0.75rem;">
+                    <strong>Demo Version:</strong> This Final Hit Prediction feature is currently in development. 
+                    Predictions shown are for demonstration purposes only and do not represent actual model performance.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Load scores from session/localStorage or calculate
+document.addEventListener('DOMContentLoaded', function() {
+    // Try to get scores from localStorage (set by previous pages)
+    const spotifyScore = parseFloat(localStorage.getItem('spotify_score')) || 50;
+    const pictureScore = parseFloat(localStorage.getItem('picture_score')) || 50;
+    const captionScore = parseFloat(localStorage.getItem('caption_score')) || 50;
+    
+    // Calculate final prediction
+    calculateFinalPrediction(spotifyScore, pictureScore, captionScore);
+});
+
+async function calculateFinalPrediction(spotifyScore, pictureScore, captionScore) {
+    try {
+        const response = await fetch('/socialMediaHit/api/predict/final/', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                spotify_score: spotifyScore,
+                picture_score: pictureScore,
+                caption_score: captionScore
+            })
+        });
+        const data = await response.json();
+        displayFinalPrediction(data);
+    } catch (error) {
+        console.error('Error calculating final prediction:', error);
+        // Fallback to manual calculation
+        const finalScore = (spotifyScore * 0.4 + pictureScore * 0.3 + captionScore * 0.3);
+        displayFinalPrediction({
+            final_score: finalScore,
+            breakdown: {
+                spotify: spotifyScore,
+                picture: pictureScore,
+                caption: captionScore
+            },
+            recommendation: getRecommendation(finalScore)
+        });
+    }
+}
+
+function displayFinalPrediction(data) {
+    const finalScore = data.final_score || 0;
+    const breakdown = data.breakdown || {};
+    
+    // Update main score
+    const scoreElement = document.querySelector('#final-score-container > div:first-child');
+    if (scoreElement) {
+        scoreElement.textContent = finalScore.toFixed(1);
+    }
+    const finalBar = document.getElementById('final-bar');
+    if (finalBar) {
+        finalBar.style.width = `${Math.min(100, finalScore)}%`;
+    }
+    const recommendationElement = document.getElementById('recommendation');
+    if (recommendationElement) {
+        recommendationElement.textContent = data.recommendation || getRecommendation(finalScore);
+    }
+    
+    // Update breakdown
+    const spotifyScoreEl = document.getElementById('spotify-score');
+    if (spotifyScoreEl) {
+        spotifyScoreEl.textContent = breakdown.spotify ? `${breakdown.spotify.toFixed(1)}` : '-';
+    }
+    const pictureScoreEl = document.getElementById('picture-score');
+    if (pictureScoreEl) {
+        pictureScoreEl.textContent = breakdown.picture ? `${breakdown.picture.toFixed(1)}` : '-';
+    }
+    const captionScoreEl = document.getElementById('caption-score');
+    if (captionScoreEl) {
+        captionScoreEl.textContent = breakdown.caption ? `${breakdown.caption.toFixed(1)}` : '-';
+    }
+    
+    // Update progress bars
+    const spotifyBar = document.getElementById('spotify-bar');
+    if (spotifyBar) {
+        spotifyBar.style.width = `${Math.min(100, breakdown.spotify || 0)}%`;
+    }
+    const pictureBar = document.getElementById('picture-bar');
+    if (pictureBar) {
+        pictureBar.style.width = `${Math.min(100, breakdown.picture || 0)}%`;
+    }
+    const captionBar = document.getElementById('caption-bar');
+    if (captionBar) {
+        captionBar.style.width = `${Math.min(100, breakdown.caption || 0)}%`;
+    }
+    
+    // Display insights
+    const insightsContainer = document.getElementById('insights-results');
+    const insights = generateInsights(finalScore, breakdown);
+    insightsContainer.innerHTML = insights.map(insight => `
+        <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem;">
+            <div style="display: flex; align-items: start; gap: 0.5rem;">
+                <div>
+                    <div style="color: white; font-weight: 600; font-size: 0.875rem; margin-bottom: 0.25rem;">${insight.title}</div>
+                    <div style="color: #d1d5db; font-size: 0.75rem; line-height: 1.4;">${insight.description}</div>
+                </div>
+            </div>
+        </div>
+    `).join('');
+    
+    // Display recommendations
+    const recommendationsContainer = document.getElementById('recommendations');
+    const recommendations = generateRecommendations(finalScore, breakdown);
+    recommendationsContainer.innerHTML = recommendations.map(rec => `
+        <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem;">
+            <div style="display: flex; align-items: start; gap: 0.5rem;">
+                <div>
+                    <div style="color: white; font-weight: 600; font-size: 0.875rem; margin-bottom: 0.25rem;">${rec.title}</div>
+                    <div style="color: #d1d5db; font-size: 0.75rem; line-height: 1.4;">${rec.description}</div>
+                </div>
+            </div>
+        </div>
+    `).join('');
+    
+    // Display analysis
+    const analysisContainer = document.getElementById('analysis-results');
+    analysisContainer.innerHTML = `
+        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem;">
+                <div style="color: #d1d5db; font-size: 0.7rem; margin-bottom: 0.5rem;">Overall Performance</div>
+                <div style="background: rgba(255, 255, 255, 0.1); border-radius: 0.25rem; height: 0.25rem; margin-bottom: 0.5rem;">
+                    <div style="height: 0.25rem; border-radius: 0.25rem; background: linear-gradient(to right, #9333ea, #ec4899); width: ${Math.min(100, finalScore)}%"></div>
+                </div>
+                <div style="color: white; font-size: 0.875rem; font-weight: bold;">${finalScore.toFixed(0)}/100</div>
+            </div>
+            <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem;">
+                <div style="color: #d1d5db; font-size: 0.7rem; margin-bottom: 0.5rem;">Content Balance</div>
+                <div style="background: rgba(255, 255, 255, 0.1); border-radius: 0.25rem; height: 0.25rem; margin-bottom: 0.5rem;">
+                    <div style="height: 0.25rem; border-radius: 0.25rem; background: linear-gradient(to right, #9333ea, #ec4899); width: ${Math.min(100, calculateBalance(breakdown))}%"></div>
+                </div>
+                <div style="color: white; font-size: 0.875rem; font-weight: bold;">${calculateBalance(breakdown).toFixed(0)}/100</div>
+            </div>
+        </div>
+    `;
+}
+
+function getRecommendation(score) {
+    if (score >= 80) {
+        return "Excellent! This combination has high hit potential. Post it now!";
+    } else if (score >= 60) {
+        return "Good potential. Consider minor adjustments for better results.";
+    } else if (score >= 40) {
+        return "Moderate potential. Try different combinations.";
+    } else {
+        return "Low potential. Consider significant changes to improve performance.";
+    }
+}
+
+function generateInsights(finalScore, breakdown) {
+    const insights = [];
+    
+    if (finalScore >= 80) {
+        insights.push({
+            title: 'High Hit Potential',
+            description: 'This combination has excellent potential for viral performance on Instagram Reels.'
+        });
+    } else if (finalScore >= 60) {
+        insights.push({
+            title: 'Good Potential',
+            description: 'This combination shows promise but could benefit from optimization.'
+        });
+    } else if (finalScore >= 40) {
+        insights.push({
+            title: 'Moderate Potential',
+            description: 'This combination has moderate potential. Consider adjusting individual components.'
+        });
+    } else {
+        insights.push({
+            title: 'Low Potential',
+            description: 'This combination needs significant improvements to achieve better performance.'
+        });
+    }
+    
+    const scores = [breakdown.spotify || 0, breakdown.picture || 0, breakdown.caption || 0];
+    const minScore = Math.min(...scores);
+    const maxScore = Math.max(...scores);
+    
+    if (maxScore - minScore > 30) {
+        insights.push({
+            title: 'Unbalanced Components',
+            description: 'Your components have significant score differences. Balance them for better overall performance.'
+        });
+    }
+    
+    if (breakdown.spotify && breakdown.spotify < 40) {
+        insights.push({
+            title: 'Music Needs Improvement',
+            description: 'Your Spotify score is low. Consider selecting a more popular or engaging track.'
+        });
+    }
+    
+    if (breakdown.picture && breakdown.picture < 40) {
+        insights.push({
+            title: 'Visual Needs Enhancement',
+            description: 'Your picture score is low. Improve brightness, contrast, or composition.'
+        });
+    }
+    
+    if (breakdown.caption && breakdown.caption < 40) {
+        insights.push({
+            title: 'Caption Needs Work',
+            description: 'Your caption score is low. Add engaging questions, hashtags, or emojis.'
+        });
+    }
+    
+    return insights;
+}
+
+function generateRecommendations(finalScore, breakdown) {
+    const recommendations = [];
+    
+    if (finalScore < 60) {
+        recommendations.push({
+            title: 'Overall Improvement',
+            description: 'Focus on improving all three components (Spotify, Picture, Caption) for better results.'
+        });
+    }
+    
+    if (breakdown.spotify && breakdown.spotify < breakdown.picture && breakdown.spotify < breakdown.caption) {
+        recommendations.push({
+            title: 'Prioritize Music',
+            description: 'Your music score is the weakest. Start by selecting a more popular or trending track.'
+        });
+    }
+    
+    if (breakdown.picture && breakdown.picture < breakdown.spotify && breakdown.picture < breakdown.caption) {
+        recommendations.push({
+            title: 'Enhance Visuals',
+            description: 'Your picture score is the weakest. Improve image quality, brightness, or composition.'
+        });
+    }
+    
+    if (breakdown.caption && breakdown.caption < breakdown.spotify && breakdown.caption < breakdown.picture) {
+        recommendations.push({
+            title: 'Optimize Caption',
+            description: 'Your caption score is the weakest. Add questions, relevant hashtags, and engaging content.'
+        });
+    }
+    
+    if (finalScore >= 70 && finalScore < 80) {
+        recommendations.push({
+            title: 'Fine-Tuning',
+            description: 'You\'re close to excellent! Make minor adjustments to reach the top tier.'
+        });
+    }
+    
+    return recommendations;
+}
+
+function calculateBalance(breakdown) {
+    const scores = [breakdown.spotify || 0, breakdown.picture || 0, breakdown.caption || 0];
+    const avg = scores.reduce((a, b) => a + b, 0) / scores.length;
+    const variance = scores.reduce((sum, score) => sum + Math.pow(score - avg, 2), 0) / scores.length;
+    const balance = Math.max(0, 100 - variance);
+    return balance;
+}
+</script>
+<style>
+nav a:hover {
+    color: #00ff88 !important;
+}
+nav a:hover span {
+    width: 100% !important;
+}
+</style>
+</body>
+</html>

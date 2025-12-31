@@ -1,0 +1,1001 @@
+artists,track_name,danceability,energy,loudness,speechiness,acousticness,instrumentalness,liveness,valence,tempo,explicit,genre,emotion,release_year,source
+chris rea,bows and bangles,0.55,0.39,-14.02,0.03,0.31,0.0,0.1,0.34,112.0,False,rock,joy,1978,emotion_dataset
+french montana,make money,0.18,0.9,-7.02,0.35,0.01,0.0,0.35,0.31,109.0,True,rap,sadness,2012,emotion_dataset
+loyle carner,the seamstress tooting masala,0.54,0.52,-9.0,0.23,0.86,0.03,0.11,0.55,85.0,True,alternative,sadness,2017,emotion_dataset
+injury reserve,bad boys 3,0.51,0.5,-6.32,0.34,0.09,0.0,0.17,0.54,170.0,True,rap,joy,2016,emotion_dataset
+lukas graham,when i woke up... interlude,0.76,0.47,-5.83,0.05,0.29,0.0,0.39,0.34,120.0,False,pop,sadness,2016,emotion_dataset
+bruno mars,turn around,0.73,0.7,-4.17,0.04,0.05,0.0,0.31,0.87,144.0,False,pop,joy,2012,emotion_dataset
+planetshakers,enter in,0.12,0.67,-7.31,0.05,0.0,0.01,0.2,0.12,71.0,False,christian,fear,2004,emotion_dataset
+ali gatie,cut you off,0.73,0.46,-6.97,0.03,0.37,0.0,0.19,0.4,96.0,False,soul,joy,2019,emotion_dataset
+bones,linksysbroadbandrouter,0.44,0.47,-13.0,0.1,0.24,0.68,0.26,0.18,87.0,True,rap,anger,2014,emotion_dataset
+pitch perfect 2,jump,0.88,0.89,-4.5,0.18,0.14,0.0,0.13,0.88,107.0,False,"Unknown,Unknown,Unknown",joy,2015,emotion_dataset
+alkaline,black heart,0.62,0.73,-5.26,0.29,0.14,0.0,0.06,0.4,99.0,True,"Unknown,Unknown,Unknown",sadness,2018,emotion_dataset
+millionaires,hey rich boy,0.84,0.93,-4.25,0.12,0.06,0.0,0.03,0.91,142.0,True,electronic,joy,2008,emotion_dataset
+ren,dominoes,0.76,0.46,-12.24,0.46,0.18,0.0,0.09,0.66,90.0,True,"Unknown,Unknown,Unknown",joy,2016,emotion_dataset
+the avett brothers,bleeding white,0.46,0.78,-5.0,0.06,0.04,0.0,0.11,0.28,119.0,False,folk,sadness,2019,emotion_dataset
+austin mahone,banga banga,0.67,0.66,-4.49,0.32,0.24,0.0,0.06,0.88,162.0,False,pop,joy,2013,emotion_dataset
+new order,plastic,0.57,0.85,-7.95,0.04,0.0,0.16,0.66,0.25,128.0,False,electronic,joy,2015,emotion_dataset
+t.i.,turn it,0.77,1.0,0.08,0.16,0.12,0.54,0.6,0.83,174.0,False,rap,anger,2023,emotion_dataset
+fabolous,everything was the same,0.73,0.57,-8.36,0.03,0.18,0.0,0.05,0.63,92.0,False,rap,joy,2003,emotion_dataset
+foals,providence,0.46,0.89,-7.3,0.08,0.0,0.16,0.18,0.34,137.0,False,pop,anger,2013,emotion_dataset
+manowar,the god's made of heavy metal,0.6,0.66,-7.58,0.04,0.0,0.06,0.07,0.19,87.0,False,metal,sadness,2002,emotion_dataset
+jacob latimore,heartbreak heard around the world,0.63,0.75,-6.3,0.05,0.08,0.0,0.22,0.57,92.0,False,"Unknown,Unknown,Unknown",sadness,2014,emotion_dataset
+crack rock steady seven,so you wanna be a cop?,0.74,0.94,-3.21,0.15,0.22,0.0,0.31,0.96,100.0,False,"Unknown,Unknown,Unknown",anger,1999,emotion_dataset
+django django,default,0.75,0.88,-6.0,0.03,0.01,0.0,0.18,0.91,116.0,False,pop,sadness,2012,emotion_dataset
+koe wetzel,kuntry  wistern,0.5,0.82,-5.03,0.04,0.16,0.0,0.86,0.51,185.0,True,"Unknown,Unknown,Unknown",joy,2020,emotion_dataset
+kenny loggins,boogie man,0.76,0.93,-5.72,0.04,0.02,0.0,0.04,0.93,113.0,False,pop,joy,1976,emotion_dataset
+"alexis michelle, sasha velour, aja & peppermint",c.l.a.t. club legend art theatre,0.87,0.84,-3.88,0.17,0.33,0.0,0.17,0.91,124.0,True,"Unknown,Unknown,Unknown",joy,2017,emotion_dataset
+aaliyah,got to give it up,0.91,0.86,-3.0,0.08,0.03,0.0,0.27,0.9,110.0,True,hip-hop,joy,2005,emotion_dataset
+gucci mane,dirty cup,0.93,0.28,-11.08,0.19,0.6,0.0,0.15,0.47,115.0,True,rap,anger,2015,emotion_dataset
+the head and the heart,living mirage,0.64,0.52,-7.89,0.04,0.12,0.0,0.55,0.49,136.0,False,folk,joy,2019,emotion_dataset
+sage the gemini,mack down,0.51,0.6,-6.0,0.14,0.31,0.0,0.16,0.19,94.0,True,pop,anger,2013,emotion_dataset
+jessie paege,skeleton,0.28,0.46,-10.0,0.12,0.46,0.0,0.1,0.12,77.0,False,alternative,sadness,2020,emotion_dataset
+caravan palace,supersonics,0.82,0.87,-3.42,0.05,0.05,0.46,0.09,0.96,123.0,False,jazz,joy,2019,emotion_dataset
+yo gotti,they like,0.75,0.65,-6.05,0.07,0.19,0.0,0.26,0.68,140.0,True,hip-hop,sadness,2016,emotion_dataset
+jennifer lopez,love don't cost a thing,0.79,0.84,-5.12,0.07,0.0,0.0,0.47,0.68,98.0,False,pop,sadness,2001,emotion_dataset
+the dead milkmen,bitchin camaro,0.55,0.34,-16.77,0.46,0.59,0.0,0.05,0.83,155.0,True,comedy,joy,1985,emotion_dataset
+lou reed,i can't stand it,0.7,0.96,-5.47,0.04,0.15,0.01,0.07,0.97,138.0,False,rock,sadness,1972,emotion_dataset
+baka not nice,dope game,0.84,0.54,-6.15,0.1,0.04,0.0,0.12,0.07,140.0,True,hip-hop,anger,2018,emotion_dataset
+lucky daye,shoulda,0.7,0.52,-7.55,0.06,0.19,0.0,0.1,0.54,92.0,True,soul,anger,2020,emotion_dataset
+the neighbourhood,1 of those weaks,0.68,0.6,-7.0,0.2,0.32,0.0,0.1,0.31,83.0,True,alternative,sadness,2014,emotion_dataset
+sydney renae,dont remix,0.9,0.93,-4.37,0.15,0.26,0.0,0.25,0.86,126.0,True,"Unknown,Unknown,Unknown",anger,2021,emotion_dataset
+juice wrld,you aint safe,0.62,0.69,-5.12,0.05,0.33,0.0,0.15,0.57,80.0,True,rap,anger,2019,emotion_dataset
+sir mix-a-lot,put em on the glass,0.88,0.95,-7.11,0.09,0.02,0.0,0.12,0.84,130.0,True,rap,joy,1994,emotion_dataset
+oliver tree,me myself  i,0.45,0.86,-6.77,0.05,0.02,0.0,0.15,0.65,158.0,False,alternative,joy,2020,emotion_dataset
+nofx,180 degrees,0.38,0.95,-4.45,0.09,0.0,0.0,0.06,0.7,97.0,True,alternative,joy,1997,emotion_dataset
+olly murs,heart skips a beat,0.84,0.88,-3.95,0.06,0.14,0.0,0.08,0.88,111.0,False,pop,sadness,2011,emotion_dataset
+nav,brown boy,0.86,0.87,-4.31,0.12,0.16,0.0,0.2,0.87,147.0,True,rap,surprise,2020,emotion_dataset
+nina simone,silver city bound,0.66,0.24,-17.47,0.04,0.87,0.0,0.94,0.63,119.0,False,jazz,joy,1964,emotion_dataset
+death,jealousy,0.24,0.99,-5.11,0.14,0.0,0.68,0.11,0.18,102.0,False,metal,anger,2011,emotion_dataset
+justin bieber & beam,freedom,0.73,0.86,-5.24,0.14,0.04,0.0,0.11,0.54,65.0,False,"Unknown,Unknown,Unknown",joy,2010,emotion_dataset
+indiana bible college,he is,0.65,0.85,-9.68,0.07,0.05,0.0,0.95,0.63,135.0,False,"Unknown,Unknown,Unknown",joy,2010,emotion_dataset
+jgrxxn,november 56 the lil peep tribute,0.75,0.36,-6.54,0.12,0.02,0.0,0.14,0.12,78.0,True,"Unknown,Unknown,Unknown",anger,2016,emotion_dataset
+everlast,ends,0.65,0.8,-6.22,0.04,0.03,0.0,0.26,0.49,82.0,True,alternative,sadness,1998,emotion_dataset
+emtee,ngeke,0.73,0.92,-4.64,0.05,0.44,0.0,0.16,0.96,141.0,False,"Unknown,Unknown,Unknown",anger,2019,emotion_dataset
+ryan oakes,a love story,0.71,0.63,-8.33,0.43,0.12,0.0,0.12,0.16,180.0,True,"Unknown,Unknown,Unknown",sadness,2016,emotion_dataset
+farmer nappy,hookin meh,0.84,0.96,-4.0,0.07,0.16,0.0,0.3,0.94,106.0,False,"Unknown,Unknown,Unknown",sadness,2019,emotion_dataset
+robbie williams,do you mind,0.82,0.95,-3.5,0.05,0.12,0.0,0.09,0.95,120.0,False,pop,joy,2009,emotion_dataset
+john michael talbot,here i am lord,0.19,0.17,-14.95,0.04,0.83,0.0,0.12,0.27,83.0,False,christian,joy,1997,emotion_dataset
+ble$ (rapper),let you know,0.85,0.96,-2.98,0.24,0.44,0.0,0.2,0.96,140.0,False,"Unknown,Unknown,Unknown",sadness,2023,emotion_dataset
+a r i z o n a,problems,0.84,0.88,-4.51,0.08,0.01,0.0,0.2,0.9,105.0,True,pop,fear,1997,emotion_dataset
+huncho jack,saint,0.87,0.65,-3.68,0.05,0.01,0.0,0.1,0.08,150.0,True,rap,sadness,2017,emotion_dataset
+rupaul,ladyboy,0.81,0.86,-5.01,0.18,0.0,0.0,0.3,0.93,145.0,False,pop,anger,2009,emotion_dataset
+phyno,financial woman,0.88,0.86,-2.0,0.09,0.18,0.0,0.08,0.96,109.0,False,"Unknown,Unknown,Unknown",joy,2016,emotion_dataset
+sufjan stevens & angelo de augustine,this is the thing,0.44,0.1,-22.39,0.04,0.97,0.33,0.12,0.16,120.0,False,"Unknown,Unknown,Unknown",fear,2015,emotion_dataset
+azealia banks,movin on up,0.8,0.88,-5.36,0.11,0.06,0.0,0.12,0.94,121.0,True,rap,joy,2018,emotion_dataset
+faith hill,you will be mine,0.66,0.5,-10.43,0.04,0.16,0.0,0.57,0.55,84.0,False,pop,joy,1995,emotion_dataset
+starlito,insomnia addict,0.39,0.59,-11.65,0.47,0.1,0.0,0.22,0.35,92.0,True,"Unknown,Unknown,Unknown",love,2013,emotion_dataset
+"nat ""king"" cole",the christmas song merry christmas to you,0.29,0.25,-13.15,0.03,0.88,0.0,0.13,0.23,85.0,False,jazz,joy,2024,emotion_dataset
+latyrx,lady dont tek no,0.9,0.58,-5.0,0.22,0.06,0.0,0.05,0.85,97.0,True,"Unknown,Unknown,Unknown",joy,1997,emotion_dataset
+dschinghis khan,genghis khan english version,0.77,0.96,-3.55,0.05,0.09,0.17,0.33,0.96,142.0,False,"Unknown,Unknown,Unknown",joy,2024,emotion_dataset
+smoke dza,ashtray,0.61,0.75,-8.16,0.2,0.35,0.0,0.3,0.38,122.0,True,rap,anger,2014,emotion_dataset
+kamakaze,road rage part 2,0.91,0.8,-6.61,0.35,0.55,0.0,0.07,0.95,140.0,True,"Unknown,Unknown,Unknown",sadness,2017,emotion_dataset
+diana gordon,wolverine,0.71,0.5,-6.95,0.04,0.03,0.0,0.18,0.08,130.0,False,"Unknown,Unknown,Unknown",sadness,2018,emotion_dataset
+wanda jackson,empty arms,0.4,0.27,-7.32,0.03,0.79,0.0,0.2,0.41,86.0,False,pop,sadness,1963,emotion_dataset
+heritage singers,i am not ashamed,0.34,0.34,-8.76,0.03,0.8,0.0,0.12,0.13,127.0,False,"Unknown,Unknown,Unknown",joy,2009,emotion_dataset
+britney spears,cant make you love me,0.81,0.92,-4.02,0.04,0.12,0.0,0.15,0.87,108.0,False,pop,joy,2000,emotion_dataset
+akon,cant say no,0.94,0.74,-5.17,0.05,0.32,0.0,0.11,0.92,119.0,True,hip-hop,joy,2006,emotion_dataset
+blackalicious,deception,0.62,0.76,-9.49,0.25,0.01,0.16,0.37,0.44,158.0,False,hip-hop,joy,1999,emotion_dataset
+"the cast of rupaul's drag race: all stars, season 4",dont funk it up,0.96,0.79,-4.0,0.06,0.03,0.0,0.32,0.95,112.0,False,"Unknown,Unknown,Unknown",sadness,2018,emotion_dataset
+the jimi hendrix experience,voodoo child slight return,0.21,0.91,-6.66,0.39,0.48,0.01,0.05,0.45,176.0,False,rock,joy,1968,emotion_dataset
+krept & konan,first time,0.75,0.57,-6.89,0.26,0.02,0.0,0.26,0.49,95.0,True,"Unknown,Unknown,Unknown",love,2015,emotion_dataset
+bon iver,wash.,0.31,0.15,-19.28,0.03,0.99,0.26,0.08,0.33,163.0,False,folk,anger,2011,emotion_dataset
+lenny kravitz,flash,0.76,0.96,-3.58,0.04,0.07,0.39,0.05,0.97,128.0,False,alternative,joy,2004,emotion_dataset
+hindi zahra,stand up,0.76,0.89,-6.0,0.04,0.62,0.68,0.12,0.96,132.0,False,jazz,sadness,2024,emotion_dataset
+2pac,crooked nigga too,0.94,0.89,-4.73,0.14,0.45,0.0,0.06,0.86,118.0,True,rap,anger,2004,emotion_dataset
+regina spektor,laughing with,0.57,0.3,-12.64,0.06,0.86,0.11,0.11,0.23,77.0,False,alternative,joy,2024,emotion_dataset
+dystopia,now and forever,0.26,0.75,-7.23,0.05,0.13,0.89,0.31,0.1,109.0,False,metal,anger,2008,emotion_dataset
+rich the kid,real deal,0.88,0.52,-6.53,0.14,0.2,0.0,0.11,0.16,95.0,True,rap,anger,2018,emotion_dataset
+edward sharpe & the magnetic zeros,janglin,0.53,0.63,-5.76,0.03,0.24,0.0,0.1,0.1,112.0,False,"Unknown,Unknown,Unknown",surprise,2009,emotion_dataset
+070 shake,rewind,0.51,0.42,-12.21,0.11,0.6,0.0,0.11,0.06,148.0,True,alternative,anger,2016,emotion_dataset
+kelis,millionaire,0.68,0.85,-6.64,0.11,0.02,0.0,0.04,0.75,176.0,False,hip-hop,joy,2003,emotion_dataset
+james taylor,believe it or not,0.51,0.09,-19.74,0.03,0.78,0.0,0.09,0.08,76.0,False,folk,fear,1981,emotion_dataset
+turnover,humblest pleasures,0.54,0.87,-7.0,0.03,0.11,0.22,0.07,0.45,147.0,False,pop,sadness,2016,emotion_dataset
+miley cyrus,on my own,0.92,0.49,-6.79,0.09,0.03,0.0,0.06,0.8,122.0,False,pop,joy,2013,emotion_dataset
+"mike will made-it, crime mob & slim jxmmi",we can hit round 1,0.83,0.92,-4.0,0.16,0.01,0.0,0.14,0.87,150.0,True,"Unknown,Unknown,Unknown",anger,2018,emotion_dataset
+bfb da packman,made me mad,0.76,0.51,-7.03,0.42,0.02,0.0,0.24,0.19,95.0,True,rap,anger,2020,emotion_dataset
+demigodz,raiders cap,0.55,0.71,-8.67,0.05,0.0,0.65,0.18,0.66,187.0,False,"Unknown,Unknown,Unknown",anger,2013,emotion_dataset
+david pomeranz,undying admiration,0.59,0.5,-7.18,0.02,0.21,0.0,0.14,0.38,90.0,False,pop,love,2024,emotion_dataset
+michael franti & spearhead,hole in the bucket,0.74,0.98,-4.37,0.09,0.04,0.0,0.18,0.96,93.0,False,"Unknown,Unknown,Unknown",joy,2008,emotion_dataset
+buckwheat boyz,peanut butter jelly time,0.82,0.9,-7.57,0.13,0.06,0.0,0.06,0.97,77.0,False,"hilarious,ytmnd,internet",anger,2023,emotion_dataset
+rejjie snow,meddling loops,0.76,0.43,-7.21,0.19,0.48,0.03,0.09,0.73,83.0,True,alternative,sadness,2013,emotion_dataset
+primus,year of the parrot,0.61,0.92,-6.33,0.05,0.0,0.36,0.09,0.72,125.0,False,alternative,joy,1996,emotion_dataset
+chvse,blackout official,0.62,0.81,-5.87,0.52,0.69,0.0,0.2,0.75,177.0,True,"Unknown,Unknown,Unknown",fear,2019,emotion_dataset
+porches,country,0.53,0.26,-9.93,0.03,0.6,0.0,0.19,0.15,110.0,False,pop,sadness,2018,emotion_dataset
+clarence carter,strokin,0.84,0.86,-6.44,0.04,0.08,0.04,0.02,0.91,115.0,True,soul,joy,2012,emotion_dataset
+big sean,world ablaze,0.6,0.69,-4.9,0.04,0.27,0.0,0.07,0.32,142.0,True,rap,fear,2013,emotion_dataset
+fall out boy,church nothingnowhere. remix,0.39,0.86,-2.87,0.07,0.0,0.0,0.1,0.56,176.0,False,pop,sadness,2015,emotion_dataset
+jasmine thompson,adore,0.75,0.73,-4.29,0.03,0.09,0.0,0.13,0.7,120.0,False,pop,love,2015,emotion_dataset
+j. cole,the storm,0.49,0.01,-22.74,0.07,0.99,0.95,0.21,0.24,120.0,False,hip-hop,anger,2014,emotion_dataset
+"tyler, the creator",fuck this election,0.74,0.93,-7.21,0.1,0.06,0.0,0.27,0.97,130.0,True,rap,anger,2013,emotion_dataset
+icehouse,great southern land,0.72,0.84,-5.6,0.03,0.25,0.0,0.07,0.42,120.0,False,pop,sadness,1982,emotion_dataset
+"harry connick, jr.",lazybones,0.5,0.05,-22.39,0.09,0.94,0.0,0.14,0.39,72.0,False,jazz,sadness,1992,emotion_dataset
+hannah montana,dont wanna be torn,0.47,0.84,-2.94,0.03,0.0,0.0,0.11,0.31,88.0,False,pop,sadness,2009,emotion_dataset
+jay-z,guns  roses,0.71,0.82,-5.35,0.24,0.19,0.0,0.08,0.64,80.0,True,hip-hop,joy,2002,emotion_dataset
+little mix,clued up,0.58,0.51,-6.75,0.04,0.74,0.0,0.27,0.9,164.0,False,pop,sadness,2015,emotion_dataset
+reddy redd,hero,0.82,0.92,-2.9,0.08,0.24,0.0,0.1,0.94,127.0,True,"Unknown,Unknown,Unknown",joy,2018,emotion_dataset
+b.o.b,nothin on you,0.69,0.85,-5.81,0.05,0.39,0.0,0.09,0.74,104.0,False,hip-hop,sadness,2010,emotion_dataset
+project pat,never be a g remix,0.92,0.81,-6.78,0.26,0.07,0.0,0.1,0.9,137.0,True,rap,anger,2014,emotion_dataset
+ab-soul,big pay back,0.67,0.56,-9.08,0.06,0.44,0.0,0.12,0.37,148.0,True,hip-hop,anger,2024,emotion_dataset
+stone roses,straight to the man,0.63,0.82,-10.61,0.04,0.0,0.04,0.09,0.89,92.0,False,pop,sadness,1994,emotion_dataset
+central cee,pinging 6 figures,0.91,0.85,-6.0,0.24,0.19,0.0,0.1,0.84,142.0,True,rap,anger,2021,emotion_dataset
+waterparks,gladiator interlude,0.73,0.86,-5.43,0.11,0.01,0.02,0.5,0.75,108.0,True,pop,joy,2021,emotion_dataset
+them,baby please dont go,0.72,0.7,-6.82,0.04,0.51,0.0,0.15,0.78,106.0,False,rock,sadness,2015,emotion_dataset
+hillsong united,fire fall down,0.35,0.4,-9.05,0.03,0.02,0.0,0.11,0.04,142.0,False,christian,joy,2006,emotion_dataset
+devo,when we do it,0.78,0.87,-7.26,0.05,0.07,0.0,0.06,0.96,158.0,False,pop,joy,1980,emotion_dataset
+genius english translations,kero kero bonito - flamingo english translation,0.81,0.87,-5.98,0.07,0.07,0.06,0.06,0.94,125.0,False,"Unknown,Unknown,Unknown",joy,2014,emotion_dataset
+maren morris,great ones,0.58,0.83,-5.37,0.05,0.09,0.0,0.08,0.57,145.0,False,pop,sadness,2019,emotion_dataset
+drake,come winter,0.14,0.26,-11.88,0.03,0.24,0.93,0.14,0.03,93.0,False,hip-hop,joy,2013,emotion_dataset
+amanda blank,a love song,0.74,0.67,-5.18,0.08,0.19,0.0,0.14,0.37,93.0,False,electronic,sadness,2009,emotion_dataset
+metallica,metal militia,0.17,0.96,-5.0,0.14,0.0,0.01,0.12,0.24,176.0,False,metal,anger,1983,emotion_dataset
+used,the taste of ink,0.54,0.9,-3.0,0.04,0.0,0.0,0.19,0.54,98.0,True,alternative,joy,2002,emotion_dataset
+the strokes,gratisfaction,0.64,0.79,-5.04,0.06,0.05,0.34,0.24,0.71,135.0,False,alternative,anger,2011,emotion_dataset
+bing crosby,i ain't got nobody,0.66,0.28,-13.58,0.05,0.84,0.68,0.76,0.73,94.0,False,jazz,sadness,1991,emotion_dataset
+devo,man turned inside out,0.78,0.87,-7.26,0.05,0.07,0.0,0.06,0.96,158.0,False,pop,joy,1980,emotion_dataset
+death,poison (rehearsal 1984),0.54,0.92,-3.8,0.08,0.0,0.0,0.25,0.78,160.0,True,metal,sadness,2024,emotion_dataset
+ralph castelli,good morning,0.79,0.66,-10.86,0.03,0.64,0.04,0.1,0.31,117.0,False,alternative,joy,2017,emotion_dataset
+wiley,chasing the art,0.82,0.94,-2.0,0.14,0.42,0.0,0.36,0.94,140.0,False,hip-hop,anger,2015,emotion_dataset
+bella shmurda,cash app,0.81,0.93,-4.0,0.32,0.46,0.0,0.12,0.92,120.0,True,"Unknown,Unknown,Unknown",love,2020,emotion_dataset
+"the cast of rupaul's drag race uk, season 2",uk hun? united kingdolls version,0.86,0.85,-5.15,0.07,0.06,0.0,0.31,0.91,134.0,False,"Unknown,Unknown,Unknown",joy,2021,emotion_dataset
+wiley,badman,0.93,0.87,-3.01,0.04,0.12,0.0,0.1,0.93,141.0,False,hip-hop,surprise,2014,emotion_dataset
+the roots,the seed,0.76,0.96,-2.0,0.04,0.04,0.0,0.13,0.97,111.0,True,hip-hop,joy,2024,emotion_dataset
+devz,blackbox freestyle,0.83,0.94,-2.22,0.13,0.26,0.0,0.24,0.93,143.0,True,"Unknown,Unknown,Unknown",anger,2023,emotion_dataset
+tee grizzley,everything,0.91,0.9,-3.01,0.25,0.22,0.03,0.12,0.8,102.0,True,rap,anger,2020,emotion_dataset
+unknown mortal orchestra,american guilt,0.48,0.92,-4.0,0.18,0.16,0.0,0.32,0.37,100.0,False,pop,sadness,2018,emotion_dataset
+sir mix-a-lot,jump on it,0.91,0.94,-5.68,0.2,0.07,0.0,0.8,0.75,114.0,True,rap,joy,1996,emotion_dataset
+rudy mancuso,new year new me with steph curry,0.52,0.8,-6.34,0.03,0.0,0.02,0.61,0.63,133.0,False,"Unknown,Unknown,Unknown",joy,1998,emotion_dataset
+lil wayne,start this shit off right,0.86,0.57,-5.11,0.24,0.02,0.0,0.19,0.88,91.0,True,rap,joy,2018,emotion_dataset
+meek mill,intro,0.68,0.76,-5.55,0.22,0.06,0.0,0.36,0.24,96.0,True,rap,anger,2018,emotion_dataset
+modern talking,diamonds never made a lady,0.77,0.87,-8.0,0.05,0.34,0.03,0.11,0.97,119.0,False,pop,surprise,1985,emotion_dataset
+tory lanez,if it aint right,0.66,0.77,-4.41,0.23,0.14,0.0,0.44,0.66,156.0,True,hip-hop,anger,2018,emotion_dataset
+dax,hilly hilly hilly clinton,0.82,0.5,-9.62,0.05,0.26,0.0,0.1,0.41,130.0,False,rap,anger,2023,emotion_dataset
+the chicks,the long way around,0.6,0.87,-3.38,0.04,0.43,0.0,0.15,0.25,128.0,False,pop,sadness,2006,emotion_dataset
+genius english translations,natti natasha  becky g - ram pam pam english translation,0.91,0.81,-2.75,0.08,0.3,0.0,0.28,0.92,97.0,True,"Unknown,Unknown,Unknown",anger,2021,emotion_dataset
+los campesinos!,selling rope swan dive to estuary,0.52,0.9,-5.04,0.06,0.03,0.02,0.36,0.24,132.0,False,pop,joy,2013,emotion_dataset
+pamungkas,break it,0.6,0.87,-3.27,0.04,0.12,0.0,0.1,0.84,146.0,True,"Unknown,Unknown,Unknown",joy,2019,emotion_dataset
+mikelwj,smile little princess,0.6,0.53,-15.16,0.2,0.54,0.0,0.43,0.31,90.0,True,"Unknown,Unknown,Unknown",sadness,2017,emotion_dataset
+"parks, squares and alleys",youth,0.62,0.64,-10.53,0.03,0.82,0.91,0.14,0.29,135.0,False,pop,sadness,2015,emotion_dataset
+megadeth,family tree,0.55,0.79,-5.0,0.04,0.0,0.0,0.1,0.37,124.0,False,metal,sadness,1994,emotion_dataset
+john mayer,crossroads,0.89,0.51,-6.95,0.06,0.22,0.07,0.06,0.92,114.0,False,pop,anger,2009,emotion_dataset
+project pat,cheese and dope,0.88,0.85,-5.09,0.18,0.01,0.0,0.09,0.96,75.0,True,rap,anger,2001,emotion_dataset
+ghostface killah & adrian younge,the center of attraction,0.73,0.96,-3.76,0.1,0.03,0.0,0.33,0.8,105.0,True,"Unknown,Unknown,Unknown",anger,2003,emotion_dataset
+jon lajoie,wtf collective 3,0.76,0.85,-3.66,0.18,0.11,0.0,0.32,0.25,90.0,False,comedy,love,2012,emotion_dataset
+jj doom,wash your hands,0.65,0.67,-8.0,0.35,0.4,0.0,0.61,0.53,90.0,False,rap,joy,2012,emotion_dataset
+george strait,baby your baby,0.79,0.54,-11.93,0.03,0.42,0.0,0.08,0.94,106.0,False,"country,modern country,waltz",sadness,1992,emotion_dataset
+toni braxton,spanish guitar,0.62,0.56,-6.51,0.04,0.44,0.0,0.18,0.36,120.0,False,soul,love,2024,emotion_dataset
+hazel (tr),1996,0.64,0.23,-11.37,0.04,0.56,0.0,0.09,0.53,102.0,False,"Unknown,Unknown,Unknown",joy,2023,emotion_dataset
+kenny loggins,celebrate me home,0.38,0.29,-14.55,0.04,0.32,0.0,0.19,0.35,105.0,False,pop,sadness,1977,emotion_dataset
+duckwrth,rare panther,0.87,0.77,-5.6,0.19,0.53,0.0,0.2,0.96,110.0,True,hip-hop,anger,2016,emotion_dataset
+the hunna,sycamore tree,0.42,0.25,-11.11,0.03,0.33,0.0,0.1,0.11,124.0,False,alternative,love,2016,emotion_dataset
+lady gaga,before i cry,0.48,0.56,-5.2,0.04,0.16,0.0,0.17,0.17,146.0,False,pop,sadness,2018,emotion_dataset
+frank ocean,bad religion,0.36,0.37,-7.68,0.03,0.74,0.0,0.07,0.1,83.0,False,soul,anger,2012,emotion_dataset
+toosii,club house,0.69,0.55,-9.93,0.27,0.02,0.0,0.05,0.45,85.0,True,rap,anger,2020,emotion_dataset
+frank turner,dont worry,0.6,0.51,-6.99,0.06,0.44,0.0,0.08,0.41,76.0,False,folk,sadness,2018,emotion_dataset
+hannah montana,im still good,0.71,0.99,-3.89,0.04,0.01,0.0,0.07,0.96,133.0,False,pop,joy,2010,emotion_dataset
+keith green,run to the end of the highway,0.62,0.47,-15.58,0.07,0.2,0.0,0.28,0.65,80.0,False,christian,anger,1984,emotion_dataset
+young thug,see you,0.79,0.55,-8.33,0.14,0.03,0.0,0.49,0.17,106.0,True,rap,sadness,2014,emotion_dataset
+oingo boingo,private life,0.49,0.79,-11.42,0.05,0.02,0.0,0.09,0.94,148.0,False,alternative,sadness,1982,emotion_dataset
+jazmine sullivan,if you dare,0.72,0.93,-4.68,0.03,0.0,0.0,0.17,0.96,135.0,False,soul,fear,2015,emotion_dataset
+quincy jones,stuff like that,0.82,0.84,-7.44,0.03,0.21,0.0,0.06,0.95,121.0,False,soul,sadness,1978,emotion_dataset
+citipointe worship,seek live,0.48,0.59,-7.31,0.03,0.0,0.0,0.16,0.16,140.0,False,"Unknown,Unknown,Unknown",joy,2018,emotion_dataset
+billy talent,diamond on a landmine,0.61,0.91,-3.97,0.04,0.0,0.01,0.19,0.91,150.0,False,alternative,anger,2009,emotion_dataset
+johnny rain,the gray room,0.82,0.38,-10.21,0.15,0.74,0.01,0.1,0.5,92.0,False,"Unknown,Unknown,Unknown",joy,2019,emotion_dataset
+kranium,we can,0.55,0.62,-6.76,0.32,0.42,0.0,0.11,0.4,133.0,True,reggae,love,2016,emotion_dataset
+bon jovi,now and forever,0.19,0.67,-6.58,0.04,0.16,0.0,0.1,0.32,174.0,False,rock,joy,1988,emotion_dataset
+150,mandem salute,0.88,0.57,-8.71,0.14,0.3,0.0,0.1,0.35,100.0,False,"Unknown,Unknown,Unknown",sadness,2019,emotion_dataset
+random encounters,fnaf: web of lies,0.49,0.5,-10.65,0.03,0.04,0.0,0.12,0.11,120.0,False,"Unknown,Unknown,Unknown",fear,2019,emotion_dataset
+phineas and ferb,danville is very nice,0.81,0.88,-5.42,0.12,0.07,0.0,0.04,0.96,120.0,False,"Unknown,Unknown,Unknown",love,2009,emotion_dataset
+lola marsh -,shes a rainbow,0.25,0.69,-5.03,0.03,0.01,0.24,0.32,0.13,174.0,False,"Unknown,Unknown,Unknown",fear,2017,emotion_dataset
+jonah marais,i meant it,0.65,0.4,-9.76,0.03,0.03,0.0,0.11,0.28,134.0,False,"Unknown,Unknown,Unknown",sadness,2015,emotion_dataset
+fur,brother live session,0.74,0.46,-12.0,0.26,0.31,0.0,0.1,0.37,91.0,True,"Unknown,Unknown,Unknown",sadness,2022,emotion_dataset
+the underachievers,shine all gold,0.56,0.71,-7.87,0.37,0.08,0.0,0.08,0.2,128.0,True,rap,joy,2015,emotion_dataset
+loretta lynn,man of the house,0.6,0.33,-13.8,0.03,0.76,0.0,0.12,0.79,132.0,False,folk,sadness,1971,emotion_dataset
+ugly kid joe,12 cents,0.44,0.38,-19.34,0.08,0.77,0.94,0.11,0.22,120.0,False,metal,joy,1996,emotion_dataset
+garbage,i think im paranoid,0.54,0.84,-4.57,0.04,0.0,0.04,0.48,0.49,114.0,False,alternative,fear,2012,emotion_dataset
+p-square,no one like u,0.83,0.87,-2.9,0.18,0.57,0.0,0.09,0.93,102.0,False,reggae,joy,2008,emotion_dataset
+the notorious b.i.g.,mo money mo problems,0.84,0.88,-4.51,0.08,0.01,0.0,0.2,0.9,105.0,True,rap,love,1997,emotion_dataset
+roy orbison,(all i can do is) dream you,0.54,0.73,-12.48,0.04,0.03,0.0,0.18,0.7,154.0,False,pop,love,1989,emotion_dataset
+erasure,nothing lasts forever,0.69,0.64,-8.08,0.04,0.02,0.03,0.07,0.76,116.0,False,pop,joy,2003,emotion_dataset
+keith green,soften your heart,0.8,0.88,-5.59,0.04,0.08,0.0,0.01,0.94,136.0,False,christian,joy,2008,emotion_dataset
+erasure,tenderest moment,0.62,0.27,-14.16,0.03,0.9,0.0,0.13,0.29,105.0,False,pop,joy,2006,emotion_dataset
+black eyed peas,hey mama,0.86,0.88,-6.34,0.24,0.11,0.0,0.6,0.94,100.0,True,hip-hop,love,2003,emotion_dataset
+the jacksons,state of shock,0.98,0.85,-7.7,0.14,0.28,0.15,0.05,0.89,122.0,False,pop,joy,1984,emotion_dataset
+vince gill,if i had my way,0.6,0.34,-10.42,0.03,0.67,0.0,0.12,0.3,77.0,False,pop,fear,1994,emotion_dataset
+marianne faithfull,that was the day,0.69,0.27,-16.76,0.04,0.84,0.0,0.1,0.74,121.0,False,folk,joy,1979,emotion_dataset
+hearts & colors,too many friends,0.67,0.62,-6.0,0.1,0.73,0.0,0.12,0.55,88.0,False,"Unknown,Unknown,Unknown",joy,2019,emotion_dataset
+flogging molly,if i ever leave this world alive,0.35,0.62,-6.0,0.03,0.23,0.0,0.05,0.49,105.0,False,folk,surprise,2002,emotion_dataset
+frank carter & the rattlesnakes,thunder,0.47,0.86,-6.29,0.04,0.02,0.0,0.08,0.63,156.0,True,"Unknown,Unknown,Unknown",sadness,2019,emotion_dataset
+miley cyrus,4 x 4,0.92,0.8,-6.57,0.06,0.05,0.0,0.13,0.92,120.0,True,pop,fear,2013,emotion_dataset
+joshua bassett,feel something,0.52,0.9,-5.45,0.41,0.33,0.0,0.18,0.51,200.0,False,pop,anger,2021,emotion_dataset
+bright eyes,land locked blues,0.44,0.28,-11.07,0.08,0.83,0.0,0.12,0.32,92.0,False,folk,anger,2005,emotion_dataset
+john mayer,shadow days,0.52,0.56,-10.0,0.03,0.07,0.35,0.12,0.25,147.0,False,pop,sadness,2012,emotion_dataset
+khia,the k-wang,0.98,0.86,-6.87,0.09,0.0,0.0,0.08,0.85,108.0,True,hip-hop,joy,2015,emotion_dataset
+donna summer,the planet is alive,0.8,0.89,-8.31,0.03,0.0,0.02,0.07,0.96,120.0,False,pop,joy,1979,emotion_dataset
+ingrid michaelson,i'm through,0.26,0.16,-12.92,0.04,0.87,0.0,0.08,0.05,72.0,False,pop,joy,2012,emotion_dataset
+johnny rain,dance...,0.74,0.25,-12.14,0.04,0.07,0.78,0.09,0.08,81.0,True,"Unknown,Unknown,Unknown",joy,2015,emotion_dataset
+ariana grande & social house,boyfriend,0.7,0.71,-5.51,0.06,0.04,0.0,0.29,0.35,122.0,False,"Unknown,Unknown,Unknown",love,2018,emotion_dataset
+donna missal,keep lying,0.62,0.44,-5.8,0.03,0.2,0.0,0.19,0.32,134.0,True,pop,sadness,2018,emotion_dataset
+madeintyo,chucky cheese,0.89,0.54,-4.83,0.31,0.52,0.0,0.12,0.56,78.0,True,rap,joy,2018,emotion_dataset
+ceelo green,spongebob squarepants theme song,0.82,0.83,-5.83,0.1,0.1,0.0,0.3,0.96,120.0,False,soul,joy,2024,emotion_dataset
+hanson,teach your children,0.44,0.72,-7.01,0.05,0.09,0.0,0.11,0.34,140.0,False,pop,love,1997,emotion_dataset
+anathema,a simple mistake,0.2,0.7,-8.31,0.03,0.01,0.02,0.13,0.32,149.0,False,progressive,joy,2010,emotion_dataset
+natewantstobattle,paid in exposure,0.5,0.9,-4.49,0.07,0.0,0.0,0.04,0.54,87.0,False,metal,anger,2018,emotion_dataset
+gino vannelli,mama coco,0.52,0.79,-10.04,0.05,0.11,0.0,0.32,0.84,101.0,False,pop,fear,1975,emotion_dataset
+genius english translations,given - marutsuke english translation,0.71,0.63,-6.18,0.08,0.07,0.0,0.22,0.49,96.0,False,"Unknown,Unknown,Unknown",anger,2023,emotion_dataset
+songer,songer | bl@ckbox s13 ep. 102,0.83,0.94,-2.22,0.13,0.26,0.0,0.24,0.93,143.0,True,"Unknown,Unknown,Unknown",anger,2023,emotion_dataset
+faye,screams and dreams,0.42,0.04,-16.49,0.04,0.94,0.0,0.07,0.12,78.0,False,"Unknown,Unknown,Unknown",joy,2018,emotion_dataset
+gummibr,i am a gummy bear the gummy bear song,0.93,0.89,-7.78,0.04,0.05,0.0,0.09,0.99,128.0,False,"Unknown,Unknown,Unknown",joy,2007,emotion_dataset
+piero pirupa,braindead heroin kills edit,0.74,0.93,-4.0,0.04,0.0,0.01,0.05,0.53,125.0,False,"Unknown,Unknown,Unknown",sadness,2020,emotion_dataset
+frank zappa,baby snakes,0.56,0.6,-10.0,0.04,0.0,0.0,0.13,0.56,97.0,False,progressive,joy,1979,emotion_dataset
+hank williams,next sunday darling is my birthday,0.48,0.32,-10.38,0.03,0.82,0.0,0.22,0.65,78.0,False,pop,joy,2020,emotion_dataset
+surfer blood,say yes to me,0.35,0.95,-3.36,0.06,0.0,0.88,0.24,0.56,198.0,False,"indie,rock,indie rock",sadness,2013,emotion_dataset
+christmas songs,all i want for christmas is you,0.4,0.31,-7.57,0.03,0.85,0.0,0.11,0.27,130.0,False,xmas,joy,2023,emotion_dataset
+iggy pop,real wild child,0.59,0.85,-11.75,0.03,0.02,0.1,0.15,0.97,146.0,False,pop,joy,1986,emotion_dataset
+disclosure,masterpiece,0.61,0.47,-7.46,0.17,0.06,0.0,0.54,0.53,110.0,False,electronic,love,2015,emotion_dataset
+roxette,one is such a lonely number,0.73,0.88,-4.66,0.03,0.47,0.0,0.35,0.98,129.0,False,pop,sadness,1988,emotion_dataset
+modern talking,taxi girl,0.75,0.99,-3.41,0.03,0.05,0.0,0.09,0.98,126.0,False,pop,joy,1999,emotion_dataset
+sonseed,jesus is a friend of mine,0.85,0.89,-6.69,0.08,0.02,0.02,0.08,0.98,152.0,False,metal,joy,2009,emotion_dataset
+ice cube,you aint gotta lie ta kick it,0.86,0.88,-4.34,0.09,0.01,0.0,0.05,0.88,96.0,True,rap,anger,2000,emotion_dataset
+missy elliott,crazy feelings,0.78,0.3,-7.02,0.05,0.25,0.0,0.05,0.22,125.0,True,hip-hop,anger,1998,emotion_dataset
+smart songs,bill of rights,0.86,0.84,-7.25,0.19,0.23,0.0,0.15,0.93,96.0,False,"Unknown,Unknown,Unknown",fear,2011,emotion_dataset
+transit,the only one,0.61,0.87,-3.48,0.12,0.01,0.0,0.08,0.65,171.0,False,pop,sadness,2014,emotion_dataset
+desiigner,priice tag,0.94,0.95,-4.72,0.15,0.03,0.0,0.09,0.91,140.0,True,rap,anger,2018,emotion_dataset
+serebro,mi mi mi,0.93,0.78,-2.33,0.05,0.01,0.42,0.12,0.92,126.0,False,pop,joy,2015,emotion_dataset
+jeff williams,touch the sky,0.52,0.92,-7.91,0.1,0.0,0.0,0.1,0.56,100.0,False,"Unknown,Unknown,Unknown",joy,2020,emotion_dataset
+cuban doll,let it blow remix,0.74,0.57,-7.86,0.31,0.01,0.0,0.14,0.44,180.0,True,"Unknown,Unknown,Unknown",anger,2017,emotion_dataset
+g herbo,bug,0.7,0.69,-6.1,0.24,0.08,0.0,0.45,0.5,110.0,True,rap,joy,2019,emotion_dataset
+reo speedwagon,do your best,0.8,0.89,-6.98,0.03,0.4,0.0,0.36,0.97,122.0,False,rock,fear,1974,emotion_dataset
+baby ariel,the new kid in town,0.8,0.64,-8.06,0.04,0.01,0.0,0.09,0.7,97.0,False,pop,joy,2020,emotion_dataset
+luke,scarred,0.85,0.92,-5.0,0.24,0.03,0.0,0.76,0.91,147.0,True,hip-hop,joy,2024,emotion_dataset
+runtown,bend down pause,0.9,0.96,-3.0,0.17,0.22,0.0,0.42,0.82,100.0,True,"Unknown,Unknown,Unknown",sadness,2017,emotion_dataset
+paul mccartney,find my way,0.87,0.81,-4.79,0.04,0.26,0.0,0.14,0.92,118.0,False,pop,fear,2021,emotion_dataset
+isley brothers,it's a disco night (rock don't stop),0.8,0.91,-6.0,0.05,0.37,0.01,0.08,0.97,133.0,False,soul,joy,1979,emotion_dataset
+virgin steele,"mind,body,spirit",0.33,0.9,-4.87,0.11,0.16,0.0,0.35,0.28,116.0,False,metal,joy,2014,emotion_dataset
+backstreet boys,my heart stays with you,0.68,0.4,-15.57,0.03,0.06,0.91,0.3,0.45,90.0,False,pop,sadness,2013,emotion_dataset
+justice vs simian,we are your friends,0.61,0.97,1.33,0.12,0.01,0.39,0.18,0.51,123.0,False,electronic,sadness,2006,emotion_dataset
+foolio,wwe,0.9,0.57,-7.0,0.44,0.11,0.0,0.09,0.47,87.0,True,"Unknown,Unknown,Unknown",anger,2019,emotion_dataset
+lil darkie,sound of grinding a politicians skull into a fine powder,0.55,0.95,-0.44,0.33,0.12,0.0,0.12,0.3,111.0,True,hip-hop,anger,2020,emotion_dataset
+saturday night live,come back barack,0.42,0.68,-10.16,0.94,0.79,0.0,0.73,0.61,68.0,True,"Unknown,Unknown,Unknown",joy,2019,emotion_dataset
+tritonal,strangers,0.63,0.77,-4.58,0.05,0.2,0.0,0.08,0.27,100.0,False,electronic,joy,2017,emotion_dataset
+"only the family, lil durk & slimelife shawty",dying 2 hitem,0.76,0.55,-7.12,0.36,0.01,0.0,0.21,0.56,155.0,True,"Unknown,Unknown,Unknown",anger,2018,emotion_dataset
+dizzee rascal,dont gas me,0.88,0.94,-4.27,0.12,0.16,0.0,0.51,0.97,132.0,True,hip-hop,joy,2018,emotion_dataset
+mansionz,dennis rodman,0.87,0.4,-5.25,0.1,0.06,0.0,0.12,0.64,96.0,True,"Unknown,Unknown,Unknown",joy,2017,emotion_dataset
+south park mexican,one of those nights,0.84,0.55,-6.7,0.1,0.59,0.0,0.11,0.33,75.0,True,rap,anger,2002,emotion_dataset
+wizkid,tease me / bad guys,0.8,0.95,-2.34,0.19,0.0,0.0,0.08,0.92,105.0,False,pop,sadness,2011,emotion_dataset
+epic rap battles of history,sir isaac newton vs bill nye,0.82,0.92,-6.99,0.14,0.02,0.0,0.07,0.87,138.0,False,rap,joy,2014,emotion_dataset
+yes,city of love,0.52,0.86,-6.59,0.05,0.18,0.0,0.09,0.62,90.0,False,progressive,joy,1983,emotion_dataset
+guapdad 4000,stuck with it,0.71,0.58,-7.65,0.07,0.42,0.0,0.18,0.72,98.0,True,"Unknown,Unknown,Unknown",anger,2019,emotion_dataset
+the white stripes,truth doesn't make a noise,0.37,0.62,-9.0,0.05,0.33,0.0,0.08,0.53,80.0,False,alternative,sadness,2000,emotion_dataset
+chvrches,final girl,0.49,0.83,-5.54,0.05,0.0,0.0,0.57,0.63,93.0,False,pop,joy,2021,emotion_dataset
+peter gabriel,"burn you up, burn you down",0.71,0.9,-7.8,0.1,0.11,0.0,0.07,0.77,96.0,False,progressive,joy,2003,emotion_dataset
+say anything,every man has a molly,0.52,0.82,-4.0,0.04,0.0,0.0,0.24,0.54,113.0,False,alternative,sadness,2005,emotion_dataset
+jordan mackampa,open arms,0.53,0.53,-7.0,0.05,0.57,0.0,0.39,0.33,93.0,False,"Unknown,Unknown,Unknown",sadness,2016,emotion_dataset
+wale,my sweetie,0.89,0.85,-6.79,0.11,0.02,0.0,0.31,0.92,120.0,True,hip-hop,joy,2009,emotion_dataset
+ariana grande,hands on me,0.66,0.77,-5.69,0.04,0.21,0.0,0.32,0.38,98.0,False,pop,anger,2014,emotion_dataset
+bob seger,are you,0.71,0.94,-2.95,0.04,0.21,0.0,0.07,0.96,124.0,False,rock,sadness,1978,emotion_dataset
+saint jhn,albino blue,0.77,0.72,-5.48,0.05,0.02,0.01,0.35,0.9,122.0,True,rap,sadness,2019,emotion_dataset
+michael jackson,d.s.,0.89,0.91,-4.31,0.06,0.22,0.01,0.35,0.97,109.0,False,pop,anger,1995,emotion_dataset
+the d.o.c.,the grand finale,0.8,0.91,-5.82,0.11,0.11,0.0,0.82,0.92,111.0,True,rap,sadness,1989,emotion_dataset
+george thorogood & the destroyers,get a haircut,0.46,0.73,-11.78,0.03,0.01,0.07,0.38,0.96,149.0,False,"Unknown,Unknown,Unknown",anger,1982,emotion_dataset
+the pussycat dolls,wait a minute,0.87,0.84,-5.21,0.05,0.05,0.0,0.33,0.97,136.0,False,pop,joy,2005,emotion_dataset
+the verve,love is noise,0.42,0.86,-4.16,0.04,0.0,0.0,0.39,0.31,123.0,False,pop,joy,2008,emotion_dataset
+nate dogg,i need a bitch,0.9,0.41,-8.11,0.06,0.1,0.0,0.09,0.76,99.0,True,rap,joy,2001,emotion_dataset
+scarlxrd,gxing the distance,0.65,0.82,-4.0,0.1,0.03,0.0,0.57,0.25,140.0,True,rap,anger,2019,emotion_dataset
+mellowhype,copkiller,0.85,0.95,-4.25,0.09,0.06,0.64,0.05,0.82,136.0,True,hip-hop,joy,2021,emotion_dataset
+reekado banks,ladies and gentlemen,0.8,0.88,-6.52,0.08,0.09,0.0,0.06,0.92,123.0,False,"Unknown,Unknown,Unknown",love,2016,emotion_dataset
+notorious b.i.g.,mo money mo problems,0.84,0.88,-4.51,0.08,0.01,0.0,0.2,0.9,105.0,True,rap,love,1997,emotion_dataset
+gus dapperton,the fool,0.61,0.34,-10.02,0.03,0.36,0.0,0.08,0.43,137.0,False,pop,anger,2017,emotion_dataset
+adriana caselotti & harry stockwell,im wishing / one song,0.38,0.14,-19.47,0.06,0.77,0.0,0.28,0.34,84.0,False,"Unknown,Unknown,Unknown",joy,1997,emotion_dataset
+xzibit,front 2 back,0.77,0.86,-4.23,0.34,0.3,0.0,0.3,0.79,97.0,True,rap,joy,2000,emotion_dataset
+erasure,who needs love like that,0.77,0.88,-6.91,0.03,0.13,0.0,0.03,0.97,120.0,False,pop,sadness,1986,emotion_dataset
+elton john,sad songs say so much,0.76,0.74,-11.21,0.02,0.09,0.0,0.05,0.94,107.0,False,rock,love,1984,emotion_dataset
+human beinz,nobody but me,0.57,0.75,-8.91,0.05,0.07,0.0,0.12,0.41,76.0,False,"60s,rock,Garage Rock",joy,1968,emotion_dataset
+jordaan mason & the horse museum,​birds nest,0.41,0.48,-8.91,0.03,0.4,0.0,0.26,0.45,132.0,False,"Unknown,Unknown,Unknown",joy,2009,emotion_dataset
+one acen,verified,0.55,0.67,-7.0,0.3,0.37,0.0,0.15,0.79,98.0,True,"Unknown,Unknown,Unknown",joy,2017,emotion_dataset
+tom waits,green grass,0.62,0.18,-18.42,0.05,0.89,0.02,0.11,0.46,95.0,False,alternative,fear,2004,emotion_dataset
+saint motel,1997,0.34,0.81,-5.86,0.04,0.04,0.01,0.09,0.32,102.0,False,pop,anger,2012,emotion_dataset
+sub urban,paramour,0.72,0.46,-7.82,0.24,0.55,0.0,0.77,0.57,166.0,False,electronic,fear,2022,emotion_dataset
+inna,more than friends,0.8,0.79,-5.02,0.05,0.02,0.0,0.41,0.96,128.0,False,pop,anger,2013,emotion_dataset
+21st century,remember the rain?,0.4,0.39,-12.34,0.13,0.06,0.44,0.14,0.28,85.0,True,"Unknown,Unknown,Unknown",sadness,2023,emotion_dataset
+jls,beat again,0.88,0.92,-5.94,0.07,0.02,0.0,0.07,0.97,120.0,False,pop,sadness,2009,emotion_dataset
+johnny clegg,scatterlings of africa,0.8,0.88,-8.58,0.03,0.06,0.0,0.29,0.96,126.0,False,pop,sadness,1987,emotion_dataset
+the raven age,fleur de lis,0.38,0.97,-4.0,0.11,0.0,0.0,0.09,0.27,85.0,False,metal,sadness,2024,emotion_dataset
+ilira,pay me back,0.79,0.81,-3.0,0.06,0.01,0.0,0.08,0.61,120.0,False,"Unknown,Unknown,Unknown",anger,2019,emotion_dataset
+bruce springsteen,lucky town,0.59,0.9,-7.89,0.04,0.09,0.0,0.19,0.65,122.0,False,rock,joy,1992,emotion_dataset
+seventh angelo,s.e.x,0.67,0.68,-11.96,0.14,0.0,0.0,0.28,0.59,155.0,True,"Unknown,Unknown,Unknown",sadness,2019,emotion_dataset
+helloween,warrior,0.32,0.9,-10.2,0.12,0.0,0.03,0.2,0.49,88.0,False,metal,sadness,1985,emotion_dataset
+ten years after,choo choo moma,0.87,0.27,-9.61,0.11,0.77,0.89,0.1,0.74,104.0,False,rock,love,2023,emotion_dataset
+usher,so many girls,0.68,0.66,-8.0,0.06,0.0,0.0,0.08,0.65,109.0,False,pop,joy,2010,emotion_dataset
+larnelle,were it not for grace,0.3,0.18,-14.31,0.03,0.89,0.0,0.12,0.12,141.0,False,"Contemporary Gospel Tag,Unknown,Unknown",joy,1995,emotion_dataset
+linda ronstadt,hurt so bad,0.63,0.43,-9.45,0.03,0.37,0.0,0.11,0.6,100.0,False,pop,sadness,1980,emotion_dataset
+blur,beetlebum,0.54,0.63,-7.11,0.02,0.08,0.0,0.28,0.81,90.0,False,pop,sadness,1997,emotion_dataset
+eazy-e,niggaz my height dont fight,0.8,0.87,-5.84,0.14,0.02,0.0,0.09,0.63,102.0,True,rap,anger,1992,emotion_dataset
+killstation,ascension,0.43,0.45,-9.91,0.04,0.0,0.0,0.12,0.29,145.0,False,rap,joy,2019,emotion_dataset
+alltta,that good ship,0.85,0.54,-7.0,0.31,0.32,0.0,0.08,0.73,100.0,False,"Unknown,Unknown,Unknown",joy,2017,emotion_dataset
+boston manor,laika,0.5,0.9,-4.55,0.04,0.0,0.0,0.4,0.57,90.0,False,"Unknown,Unknown,Unknown",sadness,2016,emotion_dataset
+nekrogoblikon,dressed as goblins,0.63,1.0,-3.0,0.07,0.0,0.01,0.32,0.26,124.0,True,metal,joy,2018,emotion_dataset
+breakup shoes,nicotine dream,0.52,0.61,-6.0,0.03,0.3,0.0,0.32,0.72,115.0,False,"Unknown,Unknown,Unknown",joy,2016,emotion_dataset
+gorillaz,dare,0.76,0.89,-5.85,0.04,0.02,0.09,0.3,0.97,120.0,False,electronic,joy,2005,emotion_dataset
+russ,the formula,0.58,0.29,-13.0,0.29,0.88,0.0,0.08,0.5,140.0,True,rap,joy,2015,emotion_dataset
+steely dan,the caves of altamira,0.67,0.56,-12.0,0.04,0.11,0.0,0.13,0.82,79.0,False,jazz,sadness,1976,emotion_dataset
+rhett and link,its my belly button,0.93,0.84,-6.79,0.13,0.26,0.0,0.22,0.85,100.0,False,"Unknown,Unknown,Unknown",joy,2014,emotion_dataset
+jennifer lopez,lets get loud,0.82,0.94,-4.81,0.05,0.14,0.0,0.32,0.92,131.0,False,pop,love,1999,emotion_dataset
+teen beach 2 cast,best summer ever,0.8,0.88,-4.44,0.04,0.02,0.5,0.02,0.96,130.0,False,"Unknown,Unknown,Unknown",joy,2013,emotion_dataset
+xxxtentacion,bad,0.78,0.49,-3.4,0.07,0.06,0.03,0.17,0.37,144.0,False,rap,sadness,2018,emotion_dataset
+t-pain,cant believe it remix,0.41,0.43,-10.89,0.07,0.01,0.0,0.07,0.12,87.0,False,rap,joy,2008,emotion_dataset
+ta-ku & wafia,love somebody,0.59,0.43,-10.0,0.05,0.55,0.03,0.09,0.16,135.0,False,"Unknown,Unknown,Unknown",love,2019,emotion_dataset
+easha,dying is a beautiful thing to do,0.44,0.12,-15.28,0.04,0.82,0.0,0.32,0.49,159.0,False,"Unknown,Unknown,Unknown",joy,2020,emotion_dataset
+elzhi,hello,0.53,0.89,-6.38,0.46,0.14,0.0,0.65,0.45,136.0,True,hip-hop,anger,2016,emotion_dataset
+marvin sapp,the best in me,0.4,0.59,-8.9,0.19,0.39,0.0,0.47,0.26,100.0,False,"Unknown,Unknown,Unknown",joy,2023,emotion_dataset
+chip,school of grime,0.58,0.62,-7.56,0.24,0.03,0.0,0.61,0.34,131.0,True,rap,joy,2015,emotion_dataset
+jessie reyez,dope,0.94,0.81,-4.18,0.33,0.57,0.0,0.06,0.9,125.0,True,soul,anger,2020,emotion_dataset
+pretenders,downtown,0.63,0.73,-11.28,0.06,0.01,0.02,0.12,0.64,115.0,False,pop,sadness,1990,emotion_dataset
+upchurch,hillbilly,0.79,0.76,-5.0,0.11,0.07,0.0,0.13,0.2,140.0,True,rap,anger,2016,emotion_dataset
+xtc,the disappointed,0.67,0.79,-5.0,0.04,0.03,0.0,0.24,0.51,108.0,False,alternative,sadness,1992,emotion_dataset
+b.o.b,lambo,0.77,0.8,-6.51,0.25,0.08,0.0,0.33,0.87,132.0,True,hip-hop,anger,2015,emotion_dataset
+rockie fresh,kush do remix,0.95,0.99,0.33,0.23,0.01,0.0,0.24,0.94,130.0,False,"Unknown,Unknown,Unknown",anger,2023,emotion_dataset
+dax,all night long,0.72,0.68,-7.92,0.07,0.15,0.0,0.12,0.14,150.0,True,rap,anger,2018,emotion_dataset
+lucki,count on me ii,0.64,0.46,-12.46,0.33,0.82,0.0,0.18,0.32,61.0,True,rap,anger,2013,emotion_dataset
+elli ingram,stone cold,0.64,0.37,-6.71,0.06,0.68,0.0,0.13,0.25,126.0,False,"Unknown,Unknown,Unknown",love,2017,emotion_dataset
+anders,diamonds,0.83,0.72,-6.25,0.08,0.0,0.0,0.09,0.62,150.0,True,"Unknown,Unknown,Unknown",joy,2017,emotion_dataset
+andy mineo,bitter,0.34,0.76,-5.11,0.37,0.01,0.0,0.42,0.37,74.0,False,christian,sadness,2013,emotion_dataset
+chaka khan,got to be there,0.32,0.48,-10.83,0.03,0.27,0.0,0.09,0.36,171.0,False,soul,love,1982,emotion_dataset
+jubyphonic,mind brand,0.65,0.8,-6.3,0.09,0.35,0.0,0.15,0.8,144.0,False,"Unknown,Unknown,Unknown",joy,2023,emotion_dataset
+choking victim,crack rock steady,0.74,0.94,-3.21,0.15,0.22,0.0,0.31,0.96,100.0,False,"punk,ska punk,ska",anger,1999,emotion_dataset
+status quo,lucille,0.78,0.9,-6.34,0.03,0.09,0.0,0.21,0.97,140.0,False,rock,joy,1996,emotion_dataset
+will joseph cook,sweet dreamer,0.69,0.78,-4.71,0.05,0.11,0.0,0.2,0.77,116.0,False,pop,sadness,2017,emotion_dataset
+hillsong,by your side,0.47,0.7,-8.49,0.04,0.04,0.0,0.82,0.3,128.0,False,christian,love,1999,emotion_dataset
+nitty gritty dirt band,you ain't going nowhere,0.59,0.5,-13.33,0.05,0.34,0.0,0.23,0.66,134.0,False,folk,anger,1989,emotion_dataset
+junel monceda,manok na pula red chicken english version,0.54,0.06,-24.03,0.05,0.99,0.93,0.09,0.63,127.0,False,"Unknown,Unknown,Unknown",joy,2022,emotion_dataset
+u. d. o.,i'm a rebel,0.74,0.98,-4.37,0.09,0.04,0.0,0.18,0.96,93.0,False,metal,anger,2008,emotion_dataset
+meek mill,mandela freestyle,0.63,0.78,-4.48,0.3,0.06,0.0,0.22,0.53,159.0,True,rap,joy,2024,emotion_dataset
+videogamedunkey,im going to kill you,0.94,0.94,-2.76,0.2,0.26,0.0,0.24,0.75,108.0,True,rap,sadness,2009,emotion_dataset
+ace of base,voulez-vous danser,0.71,0.98,-4.78,0.06,0.0,0.0,0.03,0.92,129.0,False,pop,joy,1993,emotion_dataset
+austin mahone,perfect beauty,0.95,0.9,-6.52,0.09,0.41,0.51,0.14,0.52,114.0,False,pop,sadness,2023,emotion_dataset
+comethazine,mans,0.9,0.85,-5.88,0.12,0.01,0.0,0.07,0.94,143.0,True,metal,anger,2018,emotion_dataset
+methods of mayhem,get naked,0.78,0.92,-4.75,0.16,0.04,0.0,0.02,0.9,100.0,True,rap,joy,1999,emotion_dataset
+boney m.,gadda-da-vida,0.84,0.84,-7.51,0.04,0.19,0.26,0.25,0.97,123.0,False,pop,love,1984,emotion_dataset
+jung youth,only one king,0.68,0.93,-4.67,0.13,0.06,0.0,0.36,0.42,144.0,False,"Unknown,Unknown,Unknown",joy,2018,emotion_dataset
+mishlawi,always on my mind,0.64,0.44,-10.0,0.44,0.25,0.0,0.11,0.62,125.0,False,"Unknown,Unknown,Unknown",sadness,2018,emotion_dataset
+de staat,witch doctor,0.6,0.56,-7.5,0.06,0.0,0.0,0.05,0.33,145.0,False,alternative,sadness,2013,emotion_dataset
+pablo skywalkin,flex on em,0.95,0.73,-5.72,0.05,0.42,0.0,0.28,0.97,130.0,True,"Unknown,Unknown,Unknown",love,2021,emotion_dataset
+coldplay,have yourself a merry little christmas,0.42,0.08,-13.46,0.04,0.97,0.0,0.11,0.06,98.0,False,alternative,joy,2001,emotion_dataset
+gnarls barkley,just a thought,0.56,0.96,-5.16,0.12,0.06,0.0,0.13,0.31,101.0,False,soul,joy,2006,emotion_dataset
+chinko ekun,able god,0.91,0.92,-3.47,0.2,0.21,0.0,0.07,0.82,125.0,False,"Unknown,Unknown,Unknown",joy,2018,emotion_dataset
+idontknowjeffery,after hours,0.83,0.59,-6.56,0.22,0.03,0.0,0.4,0.46,125.0,True,"Unknown,Unknown,Unknown",joy,2017,emotion_dataset
+teen beach movie cast,falling for ya,0.8,0.88,-4.44,0.04,0.02,0.5,0.02,0.96,130.0,False,"Unknown,Unknown,Unknown",joy,2013,emotion_dataset
+"dustin atlas, erin bowman, night panda",fake ass friends,0.92,0.9,-6.02,0.06,0.06,0.01,0.41,0.9,122.0,True,"Unknown,Unknown,Unknown",sadness,2017,emotion_dataset
+the cranberries,when youre gone,0.45,0.52,-7.13,0.03,0.35,0.0,0.07,0.35,187.0,False,alternative,sadness,1996,emotion_dataset
+marina,supermodels legs,0.77,0.9,-3.97,0.04,0.05,0.0,0.24,0.96,127.0,False,pop,anger,2009,emotion_dataset
+the underachievers,my prism,0.7,0.74,-7.37,0.42,0.19,0.0,0.16,0.91,143.0,True,rap,anger,2013,emotion_dataset
+bruno mars,today my life begins,0.65,0.15,-15.33,0.03,0.89,0.57,0.11,0.07,138.0,False,pop,joy,2014,emotion_dataset
+"tyler, the creator",tamale,0.74,0.93,-7.21,0.1,0.06,0.0,0.27,0.97,130.0,True,rap,anger,2013,emotion_dataset
+soko (fra),ill kill her,0.68,0.44,-8.53,0.15,0.43,0.0,0.11,0.36,104.0,True,"Unknown,Unknown,Unknown",joy,2019,emotion_dataset
+your smith,the spot,0.93,0.76,-6.96,0.08,0.06,0.0,0.12,0.96,112.0,False,"SXSW,Unknown,Unknown",sadness,2018,emotion_dataset
+peter gabriel,big time,0.73,0.95,-2.74,0.06,0.31,0.0,0.07,0.96,116.0,False,progressive,surprise,1986,emotion_dataset
+jim haas,happy days,0.95,0.86,-14.48,0.12,0.31,0.25,0.04,0.97,110.0,False,"Unknown,Unknown,Unknown",joy,2024,emotion_dataset
+russ,let me in,0.46,0.53,-12.88,0.14,0.79,0.0,0.19,0.63,107.0,True,rap,sadness,2016,emotion_dataset
+common,retrospect for life,0.69,0.42,-12.46,0.24,0.02,0.0,0.78,0.31,88.0,False,hip-hop,joy,1997,emotion_dataset
+shanguy,la louze english version,0.87,0.98,1.46,0.1,0.76,0.68,0.33,0.83,130.0,True,"Unknown,Unknown,Unknown",joy,2024,emotion_dataset
+red hot chili peppers,brendans death song,0.36,0.87,-3.82,0.12,0.01,0.0,0.11,0.18,114.0,False,alternative,sadness,2011,emotion_dataset
+waka flocka flame,activist,0.58,0.74,-7.0,0.08,0.0,0.0,0.09,0.48,130.0,True,rap,anger,2013,emotion_dataset
+dj cassidy,kill the lights,0.84,0.85,-4.56,0.05,0.01,0.0,0.14,0.93,126.0,False,"Unknown,Unknown,Unknown",sadness,2016,emotion_dataset
+tyga,designer,0.83,0.88,-5.66,0.24,0.01,0.0,0.07,0.94,140.0,False,rap,anger,2014,emotion_dataset
+the postal service,brand new colony,0.7,0.6,-7.0,0.07,0.1,0.01,0.36,0.29,87.0,False,electronic,joy,2003,emotion_dataset
+bob seger,old time rock and roll,0.72,0.94,-3.01,0.04,0.2,0.0,0.06,0.96,124.0,False,rock,sadness,2011,emotion_dataset
+glee,just can't get enough,0.7,0.95,-5.0,0.03,0.02,0.0,0.06,0.97,128.0,False,soundtrack,joy,2021,emotion_dataset
+future,hallucinating,0.79,0.49,-6.57,0.26,0.36,0.0,0.24,0.24,130.0,True,rap,fear,2017,emotion_dataset
+the offspring,come out and play keep em separated,0.44,0.95,-5.41,0.08,0.01,0.0,0.44,0.85,81.0,False,alternative,sadness,2010,emotion_dataset
+dove cameron,cooties,0.79,0.88,-3.38,0.05,0.47,0.0,0.26,0.98,122.0,False,pop,sadness,2016,emotion_dataset
+lynyrd skynyrd,poor man's dream,0.36,0.88,-4.65,0.04,0.0,0.47,0.29,0.69,168.0,False,rock,sadness,2012,emotion_dataset
+inner wave,diamond eyes,0.74,0.59,-7.0,0.03,0.34,0.92,0.3,0.22,104.0,False,pop,joy,2014,emotion_dataset
+freddie dredd,hate your guts,0.98,0.77,-10.34,0.09,0.03,0.0,0.18,0.88,119.0,True,rap,anger,2017,emotion_dataset
+nelly,greed hate envy,0.92,0.86,-6.4,0.21,0.06,0.0,0.3,0.92,94.0,True,hip-hop,love,2000,emotion_dataset
+unwritten law,seein' red,0.59,0.79,-4.79,0.03,0.05,0.0,0.22,0.53,103.0,False,alternative,sadness,2024,emotion_dataset
+kamakaze,road rage,0.91,0.8,-6.61,0.35,0.55,0.0,0.07,0.95,140.0,True,"Unknown,Unknown,Unknown",sadness,2017,emotion_dataset
+propagandhi,in flagrante delicto,0.25,0.98,-3.19,0.11,0.0,0.0,0.27,0.44,179.0,False,"Unknown,Unknown,Unknown",sadness,2017,emotion_dataset
+the fixx,one thing leads to another,0.79,0.94,-5.22,0.05,0.2,0.0,0.06,0.96,137.0,False,"80s,new wave,rock",sadness,1983,emotion_dataset
+carpenters,my favorite things,0.67,0.44,-9.76,0.02,0.88,0.54,0.17,0.5,98.0,False,pop,sadness,1984,emotion_dataset
+georgie fame,the ballad of bonnie and clyde,0.71,0.47,-9.52,0.09,0.71,0.0,0.25,0.74,107.0,False,pop,joy,1968,emotion_dataset
+nelly,give u dat,0.7,0.71,-7.15,0.04,0.02,0.0,0.14,0.46,134.0,True,hip-hop,joy,2013,emotion_dataset
+travis whittaker,dead come alive,0.82,0.44,-12.71,0.32,0.03,0.0,0.28,0.58,95.0,True,"Unknown,Unknown,Unknown",sadness,2023,emotion_dataset
+shampoo,trouble,0.8,0.97,-6.34,0.09,0.02,0.0,0.32,0.96,133.0,False,pop,joy,1994,emotion_dataset
+mastodon,cold dark place,0.4,0.71,-6.81,0.03,0.01,0.28,0.3,0.16,136.0,False,metal,love,2017,emotion_dataset
+backstreet boys,from this moment on,0.36,0.69,-5.91,0.04,0.12,0.0,0.94,0.31,136.0,False,pop,joy,1997,emotion_dataset
+andrew ripp,falling faster,0.58,0.83,-6.18,0.04,0.07,0.0,0.09,0.68,122.0,False,soundtrack,sadness,2015,emotion_dataset
+spring gang,written in the stars,0.65,0.52,-5.46,0.05,0.32,0.0,0.26,0.55,92.0,False,"Unknown,Unknown,Unknown",love,2019,emotion_dataset
+little mix,hair remix,0.73,0.82,-4.91,0.04,0.01,0.0,0.34,0.74,125.0,False,pop,joy,2015,emotion_dataset
+towkio,symphony,0.71,0.68,-7.28,0.27,0.06,0.0,0.07,0.45,130.0,True,"Unknown,Unknown,Unknown",joy,2018,emotion_dataset
+chief keef,doctor,0.82,0.34,-14.88,0.45,0.03,0.0,0.07,0.26,138.0,True,rap,anger,2015,emotion_dataset
+genius english translations,zedline - polozhenie zedline remix english translation,0.73,1.0,-11.39,0.07,0.01,0.89,0.08,0.97,130.0,False,"Unknown,Unknown,Unknown",sadness,2024,emotion_dataset
+yuna,decorate,0.59,0.46,-10.01,0.03,0.44,0.0,0.13,0.24,134.0,False,pop,joy,2012,emotion_dataset
+partynextdoor,9 months until next september,0.6,0.68,-5.18,0.03,0.02,0.0,0.42,0.26,117.0,True,rap,sadness,2013,emotion_dataset
+mother mother,give me back the night,0.46,0.85,-5.22,0.05,0.0,0.0,0.31,0.42,166.0,True,pop,sadness,2018,emotion_dataset
+gawvi,slingshot,0.77,0.68,-7.0,0.06,0.04,0.0,0.08,0.64,76.0,False,"Unknown,Unknown,Unknown",joy,2018,emotion_dataset
+gigi d'agostino,bla bla bla,0.82,0.83,-8.29,0.08,0.07,0.54,0.07,0.96,133.0,False,electronic,anger,1999,emotion_dataset
+eddie cochran,stockin's and shoes,0.7,0.48,-10.2,0.04,0.71,0.0,0.24,0.77,83.0,False,"Unknown,Unknown,Unknown",joy,2020,emotion_dataset
+microwave,dull,0.58,0.57,-6.67,0.03,0.03,0.0,0.19,0.42,147.0,False,alternative,sadness,2016,emotion_dataset
+arrogant worms,stalker girl,0.43,0.66,-9.16,0.03,0.0,0.0,0.11,0.44,151.0,False,comedy,joy,2001,emotion_dataset
+the who,i am the sea,0.08,0.69,-25.04,0.1,0.36,0.03,0.34,0.02,168.0,False,rock,fear,1973,emotion_dataset
+diiv,like before you were born,0.48,0.8,-7.16,0.04,0.0,0.76,0.07,0.25,108.0,False,pop,joy,2019,emotion_dataset
+yngwie malmsteen,end of my rope,0.47,0.96,-7.16,0.08,0.0,0.05,0.05,0.5,136.0,False,metal,anger,1997,emotion_dataset
+nicki minaj,freaky gurl wanna minaj?,0.95,0.89,-2.65,0.24,0.06,0.0,0.31,0.91,133.0,True,rap,fear,2022,emotion_dataset
+riven,run it up,0.46,0.24,-18.0,0.21,0.09,0.54,0.11,0.26,157.0,True,"Unknown,Unknown,Unknown",joy,2018,emotion_dataset
+christina aguilera,infatuation,0.68,0.81,-3.92,0.21,0.15,0.0,0.07,0.63,90.0,False,pop,joy,2002,emotion_dataset
+the who,my generation,0.41,0.78,-9.19,0.06,0.31,0.01,0.08,0.7,97.0,False,rock,sadness,1965,emotion_dataset
+jade bird,cathedral,0.59,0.58,-6.0,0.1,0.71,0.0,0.12,0.4,95.0,False,folk,joy,2017,emotion_dataset
+tom brock,theres nothing in this world that can stop me from loving you,0.56,0.83,-7.85,0.07,0.32,0.0,0.1,0.89,156.0,False,"Unknown,Unknown,Unknown",sadness,2009,emotion_dataset
+jennifer lopez,let's get loud,0.82,0.94,-4.81,0.05,0.14,0.0,0.32,0.92,131.0,False,pop,love,1999,emotion_dataset
+pet shop boys,shopping,0.77,0.97,-4.02,0.04,0.06,0.48,0.58,0.95,125.0,False,pop,joy,1987,emotion_dataset
+pink sweat$,coke  henny pt. 2,0.8,0.28,-10.0,0.04,0.61,0.0,0.11,0.48,90.0,False,soul,sadness,2019,emotion_dataset
+genius english translations,stray kids - get cool english translation,0.8,0.85,-4.17,0.11,0.07,0.0,0.28,0.96,152.0,False,"Unknown,Unknown,Unknown",joy,2020,emotion_dataset
+2pac,187 on a hook youtube remix,0.85,0.9,-4.78,0.14,0.02,0.0,0.05,0.85,99.0,True,rap,anger,1996,emotion_dataset
+og 3three never broke again,intro,0.86,0.75,-6.09,0.32,0.43,0.0,0.19,0.74,80.0,True,"Unknown,Unknown,Unknown",anger,2017,emotion_dataset
+kmfdm,godlike,0.57,0.97,-4.9,0.05,0.0,0.57,0.17,0.72,106.0,False,metal,joy,2010,emotion_dataset
+chaka khan,love has fallen on me,0.41,0.7,-8.0,0.11,0.39,0.0,0.12,0.56,87.0,False,soul,joy,1978,emotion_dataset
+david banner,get down like a pimp remix,0.84,0.85,-5.17,0.18,0.0,0.0,0.08,0.91,144.0,True,rap,joy,2003,emotion_dataset
+run,its tricky,0.96,0.86,-8.46,0.17,0.0,0.0,0.07,0.95,128.0,False,"Unknown,Unknown,Unknown",joy,1986,emotion_dataset
+beenie man,dude remix,0.8,0.87,-6.49,0.15,0.06,0.0,0.09,0.96,94.0,True,reggae,joy,2022,emotion_dataset
+d'angelo,chicken grease,0.9,0.5,-10.09,0.31,0.11,0.01,0.66,0.69,91.0,False,soul,joy,2000,emotion_dataset
+bon jovi,limitless,0.45,0.82,-5.66,0.07,0.01,0.0,0.36,0.37,144.0,False,rock,joy,2020,emotion_dataset
+celine dion,breakaway,0.6,0.69,-3.77,0.04,0.2,0.0,0.11,0.28,115.0,False,pop,sadness,2013,emotion_dataset
+the notorious b.i.g.,macs and dons,0.84,0.88,-4.51,0.08,0.01,0.0,0.2,0.9,105.0,True,rap,joy,1997,emotion_dataset
+lil tecca,hold on,0.61,0.66,-7.54,0.34,0.05,0.0,0.14,0.83,147.0,True,rap,anger,2021,emotion_dataset
+sonny cleveland,youve got me running in circles,0.5,0.67,-7.11,0.03,0.48,0.0,0.09,0.7,111.0,False,"Unknown,Unknown,Unknown",joy,2015,emotion_dataset
+prince paul,people places  things,0.76,0.82,-8.0,0.36,0.03,0.0,0.21,0.84,96.0,True,"Unknown,Unknown,Unknown",anger,2003,emotion_dataset
+bones,whitenoise,0.85,0.41,-9.24,0.33,0.0,0.0,0.11,0.48,170.0,True,rap,joy,2014,emotion_dataset
+weird al yankovic,theme from rocky xiii,0.84,0.52,-12.06,0.04,0.21,0.0,0.11,0.55,113.0,False,comedy,sadness,1984,emotion_dataset
+scarface,mr. scarface,0.92,0.52,-13.5,0.32,0.07,0.0,0.18,0.57,97.0,True,rap,sadness,1991,emotion_dataset
+bow wow,bow wow thats my name remix,0.95,0.73,-4.34,0.18,0.34,0.0,0.24,0.96,101.0,False,hip-hop,joy,2000,emotion_dataset
+a$ap mob,skool bus skit,0.6,0.7,-11.82,0.55,0.83,0.0,0.15,0.49,105.0,True,rap,anger,2017,emotion_dataset
+tech n9ne,sinister tech,0.78,0.89,-1.91,0.34,0.12,0.0,0.32,0.63,90.0,True,hip-hop,sadness,2024,emotion_dataset
+urltv,john john da don vs. mr. wavy,0.48,0.93,-0.85,0.81,0.9,0.0,0.76,0.42,84.0,True,"Unknown,Unknown,Unknown",anger,2015,emotion_dataset
+juice wrld,lock box,0.51,0.57,-7.23,0.2,0.35,0.0,0.34,0.22,84.0,True,rap,joy,2018,emotion_dataset
+chris rea,set me free,0.49,0.47,-10.0,0.03,0.27,0.01,0.19,0.14,83.0,False,rock,sadness,1991,emotion_dataset
+dillon francis,candy,0.89,0.89,-3.0,0.13,0.09,0.0,0.05,0.86,110.0,False,rap,joy,2016,emotion_dataset
+miike snow,animal mark ronson remix,0.88,0.78,-6.62,0.05,0.09,0.65,0.64,0.95,116.0,False,pop,joy,2010,emotion_dataset
+big k.r.i.t.,get away,0.62,0.72,-4.5,0.27,0.37,0.0,0.1,0.15,156.0,True,rap,sadness,2017,emotion_dataset
+duke ellington,satin doll,0.61,0.1,-12.0,0.03,0.74,0.86,0.1,0.4,89.0,False,jazz,joy,1997,emotion_dataset
+blur,wear me down,0.36,0.91,-6.65,0.04,0.0,0.0,0.09,0.26,95.0,False,pop,sadness,1991,emotion_dataset
+"whatever, dad",warsh_tippy and zelda,0.42,0.08,-21.56,0.03,0.75,0.32,0.12,0.06,129.0,False,"Aprils taste,Unknown,Unknown",sadness,2015,emotion_dataset
+eminem,jealousy woes ii,0.71,0.81,-6.6,0.04,0.0,0.05,0.1,0.95,125.0,False,rap,anger,2006,emotion_dataset
+clash,long time jerk,0.85,0.94,-8.04,0.18,0.1,0.0,0.33,0.89,102.0,False,reggae,joy,2013,emotion_dataset
+lou reed,outside,0.7,0.98,-6.65,0.03,0.03,0.0,0.32,0.98,124.0,False,rock,joy,1986,emotion_dataset
+harold melvin & the blue notes,the love i lost,0.34,0.46,-9.55,0.04,0.72,0.0,0.58,0.46,95.0,False,"Unknown,Unknown,Unknown",sadness,1972,emotion_dataset
+toto,st. george and the dragon,0.62,0.52,-10.35,0.04,0.05,0.0,0.1,0.74,120.0,False,rock,joy,1979,emotion_dataset
+dawn golden,last train,0.66,0.35,-10.71,0.03,0.34,0.67,0.12,0.18,120.0,False,pop,joy,2014,emotion_dataset
+meghan trainor,all about that bass,0.81,0.89,-3.73,0.05,0.06,0.0,0.12,0.96,134.0,True,pop,joy,2015,emotion_dataset
+b.o.b,bet i,0.82,0.88,-5.0,0.12,0.1,0.0,0.33,0.96,134.0,True,hip-hop,joy,2010,emotion_dataset
+armand hammer,rehearse with ornette,0.46,0.52,-12.0,0.2,0.24,0.11,0.11,0.28,80.0,True,"Unknown,Unknown,Unknown",joy,2018,emotion_dataset
+the used,all that ive got,0.34,0.85,-4.76,0.05,0.0,0.0,0.22,0.48,178.0,True,alternative,sadness,2004,emotion_dataset
+yello,vicious games,0.75,0.88,-8.0,0.04,0.02,0.68,0.14,0.73,128.0,False,electronic,love,1985,emotion_dataset
+warren zevon,laissez-moi tranquille,0.66,0.79,-6.52,0.03,0.34,0.0,0.08,0.86,140.0,False,rock,joy,2002,emotion_dataset
+byron lee and the dragonaires,tiny winey,0.88,0.81,-5.77,0.04,0.02,0.01,0.05,0.98,116.0,False,"calypso,Unknown,Unknown",joy,2024,emotion_dataset
+thornhill,lily  the moon,0.43,0.96,-7.6,0.09,0.0,0.52,0.82,0.24,135.0,False,metal,love,2019,emotion_dataset
+cyndi lauper,lies,0.85,0.87,-7.21,0.04,0.08,0.0,0.26,0.96,121.0,False,pop,joy,2010,emotion_dataset
+daughters,satan in the wait,0.36,0.74,-5.95,0.04,0.0,0.45,0.29,0.2,75.0,False,metal,joy,2018,emotion_dataset
+yellow days,a little while,0.58,0.6,-7.84,0.03,0.18,0.0,0.2,0.35,100.0,False,pop,sadness,2016,emotion_dataset
+solange,cranes in the sky,0.72,0.62,-5.97,0.04,0.41,0.0,0.24,0.46,97.0,False,soul,sadness,2016,emotion_dataset
+g-eazy,leviathan,0.66,0.51,-8.82,0.19,0.03,0.0,0.27,0.13,96.0,True,hip-hop,anger,2017,emotion_dataset
+unknown,pop! goes the weasel,0.37,0.26,-14.88,0.03,0.84,0.12,0.13,0.47,139.0,False,"Unknown,Unknown,Unknown",joy,2024,emotion_dataset
+und,foresight,0.75,0.66,-6.03,0.1,0.0,0.85,0.08,0.1,87.0,False,"Unknown,Unknown,Unknown",anger,2018,emotion_dataset
+ayo jay,your number remix,0.75,0.6,-6.76,0.12,0.18,0.0,0.29,0.75,100.0,True,"Unknown,Unknown,Unknown",joy,2016,emotion_dataset
+the underachievers,super potent,0.88,0.82,-6.5,0.12,0.12,0.0,0.09,0.97,134.0,True,rap,joy,2017,emotion_dataset
+rittz,profit,0.9,0.96,-3.49,0.11,0.01,0.0,0.17,0.91,140.0,True,hip-hop,anger,2014,emotion_dataset
+bladee,smile,0.63,0.17,-17.2,0.04,0.86,0.03,0.11,0.14,105.0,False,rap,sadness,2018,emotion_dataset
+kirk franklin,why we sing,0.43,0.52,-10.71,0.06,0.6,0.0,0.55,0.34,109.0,False,christian,joy,1993,emotion_dataset
+lcd soundsystem,watch the tapes,0.83,0.9,-5.53,0.06,0.19,0.01,0.43,0.97,153.0,False,electronic,fear,2007,emotion_dataset
+talking heads,life during wartime,0.8,0.93,-7.37,0.04,0.08,0.15,0.06,0.97,133.0,False,alternative,love,1979,emotion_dataset
+the chainsmokers,side effects,0.67,0.71,-6.76,0.03,0.0,0.0,0.47,0.54,110.0,False,pop,joy,2018,emotion_dataset
+bryan ferry,lets stick together,0.78,0.89,-4.71,0.04,0.07,0.0,0.11,0.97,120.0,False,pop,joy,1976,emotion_dataset
+sherman brothers,chitty chitty bang bang,0.66,0.83,-8.46,0.08,0.77,0.0,0.48,0.88,140.0,False,"Unknown,Unknown,Unknown",joy,2009,emotion_dataset
+m huncho,one summer,0.46,0.8,-4.0,0.23,0.05,0.0,0.32,0.26,175.0,True,"Unknown,Unknown,Unknown",anger,2019,emotion_dataset
+cheap trick,i must be dreaming,0.17,0.01,-30.32,0.05,0.98,0.98,0.11,0.07,125.0,False,rock,joy,2021,emotion_dataset
+rush,available light,0.69,0.63,-10.86,0.04,0.01,0.07,0.17,0.76,130.0,False,progressive,fear,1989,emotion_dataset
+modern talking,no. 1 hit medley,0.84,0.94,-5.46,0.05,0.17,0.01,0.06,0.89,116.0,False,pop,sadness,1998,emotion_dataset
+julien baker,red door,0.49,0.37,-11.36,0.03,0.82,0.0,0.13,0.22,110.0,False,folk,sadness,2019,emotion_dataset
+sean paul,we be burnin recognize it,0.96,0.79,-4.3,0.14,0.15,0.0,0.08,0.88,117.0,False,reggae,joy,2022,emotion_dataset
+chicago,chasin' the wind,0.43,0.65,-5.84,0.03,0.2,0.0,0.34,0.27,80.0,False,jazz,sadness,2002,emotion_dataset
+somo,curve,0.63,0.57,-7.63,0.07,0.08,0.0,0.17,0.45,130.0,False,"Unknown,Unknown,Unknown",love,2017,emotion_dataset
+neil young,fonda wanda,0.5,0.49,-12.08,0.03,0.34,0.71,0.98,0.24,114.0,False,folk,love,2023,emotion_dataset
+phoenix,oblique city,0.25,0.78,-6.47,0.04,0.01,0.0,0.08,0.2,136.0,False,pop,sadness,2013,emotion_dataset
+mika,any other world,0.53,0.24,-11.74,0.03,0.88,0.0,0.12,0.26,132.0,False,pop,sadness,2007,emotion_dataset
+john mellencamp,cherry bomb,0.74,0.94,-3.27,0.03,0.05,0.0,0.04,0.96,114.0,False,rock,joy,1987,emotion_dataset
+yasin,see me shine,0.83,0.35,-8.58,0.58,0.42,0.0,0.14,0.24,166.0,True,"Unknown,Unknown,Unknown",sadness,2023,emotion_dataset
+buju banton,shiloh,0.71,0.69,-7.23,0.09,0.04,0.0,0.36,0.85,74.0,False,reggae,sadness,2006,emotion_dataset
+reba mcentire,if i fell,0.71,0.5,-7.86,0.02,0.54,0.0,0.1,0.33,108.0,False,pop,sadness,2000,emotion_dataset
+william bonney,no pizza,0.22,0.89,-3.41,0.06,0.0,0.01,0.12,0.33,76.0,True,"skramz,emo,screamo",sadness,2018,emotion_dataset
+rich homie quan,da streetz,0.67,0.59,-4.04,0.04,0.13,0.0,0.31,0.5,154.0,True,hip-hop,anger,2017,emotion_dataset
+system of a down,old school hollywood,0.27,0.97,-2.74,0.1,0.0,0.0,0.05,0.6,163.0,False,metal,sadness,2005,emotion_dataset
+stephen flaherty,make them hear you,0.38,0.09,-18.46,0.04,0.98,0.0,0.14,0.1,124.0,False,soundtrack,joy,2023,emotion_dataset
+mac miller,1 threw 8,0.44,0.67,-8.16,0.37,0.01,0.0,0.12,0.26,80.0,True,rap,anger,2012,emotion_dataset
+snow tha product,get down low,0.96,0.78,-4.0,0.12,0.59,0.0,0.56,0.87,121.0,True,rap,anger,2016,emotion_dataset
+tesher,jalebi baby,0.69,0.83,-7.18,0.04,0.03,0.0,0.25,0.87,93.0,True,rap,joy,2021,emotion_dataset
+robbie williams,let's face the music and dance,0.59,0.45,-8.38,0.04,0.67,0.0,0.16,0.52,100.0,False,pop,sadness,2005,emotion_dataset
+mnek,dont call this love,0.81,0.98,-6.59,0.03,0.06,0.01,0.35,0.96,125.0,False,electronic,joy,2000,emotion_dataset
+the scary jokes,jeannie... youre a tragedy,0.56,0.66,-9.28,0.03,0.53,0.0,0.33,0.59,135.0,False,electronic,fear,2019,emotion_dataset
+demi lovato,can you keep a secret?,0.5,0.78,-4.8,0.1,0.07,0.0,0.24,0.5,174.0,False,pop,joy,2013,emotion_dataset
+brushy one string,chicken in the corn,0.93,0.77,-7.36,0.06,0.68,0.0,0.38,0.92,128.0,False,reggae,joy,2013,emotion_dataset
+cam'ron,hey lady,0.87,0.85,-6.19,0.22,0.0,0.0,0.1,0.91,96.0,True,rap,sadness,2004,emotion_dataset
+jain,dynabeat,0.91,0.61,-4.63,0.05,0.08,0.0,0.02,0.57,110.0,False,pop,joy,2016,emotion_dataset
+maria jacinta,human,0.78,0.98,-6.94,0.04,0.06,0.0,0.1,0.98,130.0,False,"Unknown,Unknown,Unknown",anger,2020,emotion_dataset
+ne obliviscaris,and plague flowers the kaleidoscope,0.34,0.87,-7.42,0.07,0.0,0.11,0.15,0.19,107.0,False,metal,sadness,2012,emotion_dataset
+dodie,crazy human psycho crush,0.29,0.6,-5.71,0.04,0.0,0.93,0.65,0.14,158.0,False,pop,fear,2023,emotion_dataset
+alison krauss,wish i still had you,0.57,0.38,-9.74,0.03,0.79,0.0,0.83,0.36,120.0,False,folk,sadness,2009,emotion_dataset
+lisa lisa and cult jam,i wonder if i take you home,0.84,0.56,-13.05,0.1,0.03,0.04,0.09,0.6,115.0,False,pop,fear,1990,emotion_dataset
+dean martin,if you were the only girl in the world,0.42,0.02,-17.66,0.04,0.97,0.0,0.1,0.16,101.0,False,jazz,joy,1964,emotion_dataset
+blood orange,holy will,0.3,0.26,-15.67,0.06,0.62,0.0,0.16,0.18,86.0,False,pop,joy,2018,emotion_dataset
+john waite,back on my feet again,0.45,0.89,-7.58,0.13,0.0,0.0,0.83,0.09,119.0,False,pop,sadness,2015,emotion_dataset
+ub40,reggae music,0.91,0.76,-10.95,0.2,0.07,0.0,0.1,0.96,98.0,False,reggae,joy,1993,emotion_dataset
+melanie martinez,you love i,0.56,0.84,-5.56,0.04,0.24,0.02,0.18,0.38,115.0,False,pop,joy,2015,emotion_dataset
+project pat,a1s,0.94,0.84,-4.14,0.11,0.01,0.0,0.09,0.89,136.0,True,rap,anger,2000,emotion_dataset
+dvsn,flawless do it well pt. 3,0.61,0.42,-9.31,0.06,0.22,0.0,0.13,0.64,141.0,True,soul,joy,2020,emotion_dataset
+athena,for real,0.87,0.86,-5.26,0.08,0.3,0.0,0.06,0.96,126.0,False,"ska,Eurovision,turkish rock",joy,2004,emotion_dataset
+new jersey mass choir,hes coming back,0.62,0.62,-6.24,0.04,0.55,0.0,0.14,0.41,121.0,False,"Unknown,Unknown,Unknown",joy,2003,emotion_dataset
+akon,make me feel,0.94,0.74,-5.17,0.05,0.32,0.0,0.11,0.92,119.0,True,hip-hop,love,2006,emotion_dataset
+blur,badhead,0.54,0.62,-8.71,0.03,0.05,0.0,0.56,0.45,111.0,False,pop,sadness,1994,emotion_dataset
+jesca hoop,the lost sky,0.59,0.29,-11.08,0.04,0.9,0.0,0.11,0.54,135.0,False,folk,anger,2017,emotion_dataset
+the coup,the magic clap,0.84,0.88,-3.31,0.17,0.04,0.0,0.13,0.92,138.0,False,hip-hop,sadness,2012,emotion_dataset
+xs project,meanwhile in russia take me to russia,0.8,0.98,-3.26,0.09,0.0,0.32,0.67,0.9,150.0,False,"Unknown,Unknown,Unknown",joy,2018,emotion_dataset
+niki,if theres nothing left...,0.5,0.4,-9.26,0.05,0.45,0.0,0.09,0.28,80.0,False,alternative,joy,2020,emotion_dataset
+goody grace,two shots,0.77,0.41,-8.55,0.07,0.05,0.0,0.11,0.09,130.0,True,"Unknown,Unknown,Unknown",joy,2018,emotion_dataset
+realisticbeatz,imagination,0.86,0.96,-3.38,0.13,0.24,0.11,0.11,0.81,160.0,True,"Unknown,Unknown,Unknown",sadness,2023,emotion_dataset
+zico,artist,0.88,0.86,-4.56,0.24,0.14,0.0,0.11,0.87,118.0,False,hip-hop,joy,2017,emotion_dataset
+r2bees,kiss your hand,0.75,0.95,-3.58,0.05,0.19,0.0,0.07,0.92,125.0,False,"Unknown,Unknown,Unknown",joy,2009,emotion_dataset
+ne-yo,because of you,0.81,0.54,-5.78,0.04,0.53,0.0,0.1,0.83,110.0,False,soul,sadness,2007,emotion_dataset
+lily allen,alfie,0.78,0.91,-5.28,0.03,0.02,0.0,0.09,0.97,120.0,True,pop,sadness,2006,emotion_dataset
+colbie caillat,try,0.61,0.37,-9.77,0.03,0.8,0.0,0.11,0.55,140.0,False,pop,love,2014,emotion_dataset
+ozzy osbourne,facing hell,0.59,0.81,-6.83,0.04,0.0,0.0,0.09,0.4,129.0,False,metal,sadness,2001,emotion_dataset
+$oe gang,back to tha trap freestyle,0.83,0.32,-18.72,0.08,0.02,0.04,0.08,0.21,133.0,False,"Unknown,Unknown,Unknown",anger,2023,emotion_dataset
+modern talking,there's something in the air,0.58,0.01,-5.1,0.05,0.03,0.09,0.31,0.86,130.0,False,pop,joy,2001,emotion_dataset
+war,the cisco kid,0.85,0.84,-7.15,0.1,0.21,0.0,0.03,0.96,142.0,False,soul,anger,1976,emotion_dataset
+yinyang (user),drug dreams,0.9,0.96,-3.64,0.25,0.34,0.59,0.12,0.8,153.0,True,"Unknown,Unknown,Unknown",sadness,2023,emotion_dataset
+genius english translations,shadows of the sun - shadows of a setting sun english translation,0.52,0.68,-10.18,0.03,0.29,0.0,0.34,0.53,112.0,False,"Unknown,Unknown,Unknown",sadness,1982,emotion_dataset
+varg & bladee,shinie,0.59,0.84,-5.99,0.04,0.01,0.02,0.1,0.42,145.0,False,"Unknown,Unknown,Unknown",joy,2024,emotion_dataset
+kylie minogue,got to be certain,0.75,0.98,-4.5,0.04,0.03,0.41,0.13,0.96,117.0,False,pop,sadness,1988,emotion_dataset
+against all logic,this old house is all i have,0.59,0.8,-6.0,0.13,0.31,0.77,0.17,0.49,174.0,False,electronic,sadness,2018,emotion_dataset
+leon bridges,if it feels good then it must be,0.78,0.72,-5.29,0.05,0.04,0.0,0.25,0.94,115.0,False,soul,joy,2018,emotion_dataset
+velvet underground,femme fatale,0.55,0.14,-15.75,0.03,0.91,0.0,0.12,0.14,104.0,False,rock,sadness,1967,emotion_dataset
+the underachievers,metropolis,0.84,0.89,-5.37,0.18,0.23,0.0,0.13,0.88,131.0,True,rap,joy,2014,emotion_dataset
+john fogerty,centerfield,0.78,0.95,-3.65,0.05,0.13,0.0,0.07,0.97,142.0,False,rock,joy,2017,emotion_dataset
+jack harlow,cody banks,0.76,0.62,-8.74,0.38,0.72,0.0,0.11,0.67,189.0,True,hip-hop,fear,2018,emotion_dataset
+jay-z,fuckwithmeyouknowigotit,0.88,0.81,-6.31,0.14,0.17,0.01,0.06,0.94,138.0,True,hip-hop,joy,1999,emotion_dataset
+led zeppelin,hots on for nowhere,0.51,0.89,-9.04,0.06,0.08,0.0,0.18,0.75,96.0,False,rock,sadness,1976,emotion_dataset
+kerser,speak of that,0.76,0.8,-3.36,0.04,0.31,0.0,0.1,0.28,110.0,True,rap,anger,2021,emotion_dataset
+alexandra savior,but you,0.35,0.61,-6.92,0.04,0.46,0.2,0.1,0.2,80.0,False,pop,sadness,2020,emotion_dataset
+tech n9ne,ego trippin,0.83,0.82,-5.27,0.22,0.48,0.0,0.13,0.96,88.0,True,hip-hop,fear,2011,emotion_dataset
+neil young,motion pictures for carrie,0.51,0.17,-15.44,0.03,0.46,0.23,0.09,0.18,114.0,False,rock,joy,1974,emotion_dataset
+chris brown,hope you do,0.67,0.53,-7.29,0.06,0.04,0.0,0.13,0.19,100.0,True,soul,anger,2017,emotion_dataset
+masicka,the right place,0.53,0.83,-3.54,0.26,0.44,0.0,0.08,0.4,127.0,True,"Unknown,Unknown,Unknown",anger,2017,emotion_dataset
+chaze sharp,tree carvings,0.71,0.69,-6.09,0.03,0.75,0.0,0.09,0.84,154.0,True,"Unknown,Unknown,Unknown",sadness,2020,emotion_dataset
+mayday parade,im with you,0.33,0.74,-6.71,0.04,0.0,0.0,0.08,0.36,175.0,False,pop,joy,2019,emotion_dataset
+yelawolf,fiddle me this,0.78,0.98,-2.7,0.21,0.02,0.0,0.56,0.88,136.0,True,rap,sadness,2015,emotion_dataset
+native deen,m-u-s-l-i-m,0.92,0.92,-8.26,0.08,0.08,0.0,0.06,0.81,96.0,False,"Unknown,Unknown,Unknown",sadness,2007,emotion_dataset
+glee,hey jude,0.52,0.64,-6.05,0.02,0.1,0.0,0.16,0.55,76.0,False,soundtrack,joy,2013,emotion_dataset
+crazy ex-girlfriend cast,dont be a lawyer,0.88,0.86,-4.25,0.05,0.16,0.0,0.03,0.96,100.0,False,pop,joy,2019,emotion_dataset
+olivia newton-john,o holy night,0.83,0.74,-8.23,0.04,0.1,0.0,0.17,0.88,124.0,False,pop,joy,2018,emotion_dataset
+ab-soul,ab-soul,0.51,0.81,-6.87,0.36,0.39,0.0,0.11,0.63,154.0,True,hip-hop,joy,2024,emotion_dataset
+phineas and ferb,f-games,0.81,0.88,-5.42,0.12,0.07,0.0,0.04,0.96,120.0,False,"Unknown,Unknown,Unknown",joy,2009,emotion_dataset
+billie holiday,keeps on rainin',0.51,0.17,-11.49,0.06,0.92,0.0,0.22,0.45,67.0,False,jazz,sadness,2024,emotion_dataset
+sister hazel,all for you,0.63,0.75,-6.5,0.04,0.03,0.0,0.09,0.64,137.0,False,alternative,fear,1997,emotion_dataset
+veruca salt,number one blind,0.69,0.46,-9.32,0.03,0.0,0.0,0.07,0.86,104.0,False,alternative,sadness,1994,emotion_dataset
+glen campbell,dream baby,0.55,0.51,-7.11,0.02,0.38,0.0,0.08,0.64,80.0,False,pop,love,1971,emotion_dataset
+niki & gabi,​hair tie,0.95,0.89,-2.65,0.24,0.06,0.0,0.31,0.91,133.0,True,"Unknown,Unknown,Unknown",joy,2022,emotion_dataset
+poison,untitled,0.79,0.42,-13.12,0.17,0.36,0.15,0.1,0.96,80.0,True,metal,joy,2019,emotion_dataset
+hank williams jr.,storms never last,0.44,0.1,-15.56,0.03,0.49,0.01,0.11,0.45,110.0,False,"country,classic country,80s",sadness,1977,emotion_dataset
+fall out boy,the music or the misery,0.51,0.98,-3.0,0.14,0.0,0.0,0.35,0.47,93.0,False,pop,sadness,2006,emotion_dataset
+sleepy hallow,bestie,0.75,0.47,-9.26,0.06,0.73,0.0,0.21,0.9,82.0,True,rap,anger,2019,emotion_dataset
+tay money,fresh princess,0.92,0.85,-6.19,0.3,0.02,0.0,0.07,0.68,92.0,True,"Unknown,Unknown,Unknown",anger,2019,emotion_dataset
+the temptations,can't get next to you,0.69,0.69,-12.91,0.1,0.57,0.0,0.4,0.7,109.0,False,soul,sadness,1969,emotion_dataset
+baby tate,i am,0.93,0.84,-3.91,0.16,0.1,0.0,0.08,0.93,144.0,True,"Unknown,Unknown,Unknown",joy,2020,emotion_dataset
+red hot chili peppers,yertle the turtle,0.74,0.94,-5.1,0.08,0.18,0.0,0.07,0.96,93.0,False,alternative,joy,1985,emotion_dataset
+the temptations,treat her like a lady,0.79,0.91,-8.12,0.04,0.14,0.0,0.19,0.91,113.0,False,soul,love,2000,emotion_dataset
+hundred waters,show me love,0.42,0.79,-4.97,0.08,0.08,0.0,0.33,0.18,129.0,True,electronic,sadness,2016,emotion_dataset
+of mice & men,bloom,0.27,0.97,-3.32,0.08,0.0,0.0,0.39,0.19,133.0,False,metal,sadness,2010,emotion_dataset
+yung mal & lil quill,phonebook,0.9,0.79,-4.52,0.37,0.01,0.0,0.11,0.64,136.0,True,"Unknown,Unknown,Unknown",sadness,2021,emotion_dataset
+willie nelson,goin' home,0.62,0.13,-16.47,0.04,0.74,0.01,0.11,0.19,118.0,False,folk,joy,1971,emotion_dataset
+1nonly,dance,0.9,0.83,-6.43,0.17,0.07,0.0,0.06,0.91,125.0,True,"Unknown,Unknown,Unknown",sadness,2021,emotion_dataset
+akon,look me in my eyes,0.94,0.74,-5.17,0.05,0.32,0.0,0.11,0.92,119.0,True,hip-hop,joy,2006,emotion_dataset
+wicca phase springs eternal,contact,0.68,0.6,-7.14,0.04,0.03,0.0,0.09,0.1,150.0,False,rap,fear,2019,emotion_dataset
+blackbear,down,0.77,0.7,-3.43,0.16,0.23,0.0,0.23,0.72,115.0,True,hip-hop,sadness,2017,emotion_dataset
+mori calliope,live again,0.76,0.78,-6.39,0.16,0.32,0.0,0.29,0.74,100.0,False,rap,sadness,2020,emotion_dataset
+niki & gabi,ru,0.95,0.89,-2.65,0.24,0.06,0.0,0.31,0.91,133.0,True,"Unknown,Unknown,Unknown",fear,2022,emotion_dataset
+eric donaldson,land of my birth,0.82,0.86,-5.45,0.04,0.13,0.01,0.04,0.97,146.0,False,reggae,joy,2004,emotion_dataset
+ilovemakonnen,loaded up,0.74,0.5,-5.0,0.15,0.01,0.0,0.33,0.07,147.0,True,soul,anger,2014,emotion_dataset
+kid cudi,cudi spazzin,0.74,0.94,-4.42,0.29,0.75,0.0,0.21,0.93,170.0,True,rap,fear,2022,emotion_dataset
+aftertheparty,take a number,0.76,0.3,-12.42,0.04,0.47,0.01,0.1,0.53,136.0,True,"Unknown,Unknown,Unknown",sadness,2019,emotion_dataset
+smle,halo,0.56,0.93,-5.19,0.39,0.08,0.0,0.35,0.48,75.0,False,pop,sadness,2016,emotion_dataset
+iamsu!,100 grand,0.82,0.91,-3.99,0.07,0.04,0.0,0.12,0.9,98.0,True,hip-hop,joy,2013,emotion_dataset
+outkast,sumthin wicked this way comes,0.73,0.97,-2.26,0.07,0.1,0.0,0.17,0.96,80.0,False,hip-hop,love,2024,emotion_dataset
+rae sremmurd,do yoga,0.8,0.45,-10.0,0.05,0.11,0.0,0.09,0.19,132.0,True,hip-hop,joy,2016,emotion_dataset
+between the buried and me,millions,0.56,0.84,-5.77,0.03,0.0,0.0,0.11,0.34,120.0,False,metal,sadness,2018,emotion_dataset
+generationals,when they fight they fight,0.76,0.9,-2.0,0.03,0.24,0.0,0.14,0.97,120.0,False,pop,anger,2009,emotion_dataset
+action bronson & the alchemist,tear away shorts,0.51,0.6,-9.63,0.34,0.45,0.0,0.36,0.34,153.0,True,"Unknown,Unknown,Unknown",joy,2020,emotion_dataset
+team starkid,tickle-me wiggly jingle,0.28,0.4,-6.66,0.03,0.53,0.0,0.23,0.39,102.0,False,"Unknown,Unknown,Unknown",joy,2013,emotion_dataset
+garth brooks,papa loved mama,0.24,0.92,-9.17,0.06,0.2,0.04,0.79,0.37,170.0,False,pop,anger,2022,emotion_dataset
+thutmose & rema,love in the morning,0.6,0.68,-7.77,0.05,0.31,0.0,0.11,0.21,146.0,False,"Unknown,Unknown,Unknown",sadness,2018,emotion_dataset
+bladee,sentence,0.62,0.2,-12.45,0.03,0.9,0.0,0.08,0.19,102.0,False,rap,sadness,2018,emotion_dataset
+adventure time,fries,0.76,0.36,-17.43,0.93,0.69,0.0,0.1,0.34,74.0,False,soundtrack,sadness,2019,emotion_dataset
+sob x rbe,carpoolin,0.87,0.88,-7.95,0.31,0.0,0.0,0.29,0.45,116.0,True,"Unknown,Unknown,Unknown",anger,2018,emotion_dataset
+morrissey,cosmic dancer,0.26,0.52,-10.87,0.05,0.57,0.0,0.41,0.13,124.0,False,alternative,fear,2021,emotion_dataset
+the real group,chili con carne,0.9,0.84,-8.18,0.08,0.3,0.0,0.03,0.96,98.0,False,jazz,joy,2001,emotion_dataset
+phil collins,please come out tonight,0.39,0.24,-13.07,0.03,0.85,0.0,0.11,0.14,180.0,False,pop,joy,2004,emotion_dataset
+xzibit,getcha groove on,0.9,0.78,-6.29,0.31,0.02,0.0,0.18,0.96,94.0,True,rap,joy,2000,emotion_dataset
+lecrae,i love you,0.79,0.79,-4.83,0.04,0.02,0.0,0.1,0.34,120.0,False,rap,love,2010,emotion_dataset
+air supply,just another woman,0.74,0.94,-6.32,0.06,0.06,0.0,0.18,0.96,135.0,False,pop,sadness,2012,emotion_dataset
+the kinks,picture book,0.83,0.95,-7.53,0.03,0.17,0.0,0.2,0.97,121.0,False,rock,joy,1968,emotion_dataset
+alice cooper,millie and billie,0.56,0.23,-17.42,0.04,0.4,0.0,0.09,0.2,122.0,False,rock,sadness,1978,emotion_dataset
+the clash,the call up,0.82,0.91,-7.83,0.03,0.02,0.0,0.04,0.97,120.0,False,reggae,joy,1980,emotion_dataset
+ice cube,in the late night hour,0.8,0.78,-4.72,0.14,0.32,0.0,0.27,0.82,82.0,True,rap,joy,2001,emotion_dataset
+adam lambert,if i had you,0.65,0.91,-4.26,0.11,0.01,0.0,0.52,0.77,131.0,False,pop,joy,2024,emotion_dataset
+vampire weekend,unbearably white,0.53,0.42,-7.08,0.06,0.22,0.02,0.06,0.58,188.0,False,pop,joy,2019,emotion_dataset
+korn,another brick in the wall,0.61,0.51,-8.76,0.03,0.0,0.12,0.08,0.08,103.0,False,metal,sadness,1994,emotion_dataset
+suga free,if u stay ready,0.7,0.69,-6.0,0.21,0.02,0.0,0.04,0.44,98.0,True,rap,joy,1997,emotion_dataset
+2pac,gangsters paradise remix,0.85,0.9,-4.78,0.14,0.02,0.0,0.05,0.85,99.0,True,rap,anger,1996,emotion_dataset
+teeway,mad about bars,0.91,0.55,-6.58,0.35,0.15,0.0,0.1,0.55,142.0,True,"Unknown,Unknown,Unknown",sadness,2020,emotion_dataset
+ruel,free time,0.64,0.48,-5.78,0.03,0.1,0.0,0.1,0.2,100.0,False,pop,sadness,2019,emotion_dataset
+james brown,soul power,0.91,0.75,-6.49,0.04,0.33,0.0,0.09,0.96,104.0,False,soul,love,2003,emotion_dataset
+andrew e.,andrew ford medina,0.96,0.86,-8.64,0.12,0.29,0.0,0.65,0.91,121.0,True,"Unknown,Unknown,Unknown",joy,1990,emotion_dataset
+mike epps,big girls,0.56,0.87,-10.39,0.51,0.14,0.0,0.4,0.4,102.0,True,"Unknown,Unknown,Unknown",love,2009,emotion_dataset
+florence + the machine,blinding,0.52,0.79,-6.1,0.04,0.12,0.02,0.72,0.25,108.0,False,alternative,sadness,2024,emotion_dataset
+pogues,miss otis regrets,0.33,0.79,-11.02,0.08,0.34,0.0,0.15,0.64,157.0,False,folk,sadness,2024,emotion_dataset
+nickelodeon,happy happy joy joy,0.57,0.18,-16.56,0.03,0.87,0.95,0.11,0.12,110.0,False,"Unknown,Unknown,Unknown",joy,2024,emotion_dataset
+chuck berry,oh baby doll,0.77,0.88,-5.62,0.03,0.6,0.0,0.09,0.97,130.0,False,rock,joy,1958,emotion_dataset
+daphne and celeste,u.g.l.y.,0.86,0.88,-4.62,0.07,0.18,0.0,0.17,0.97,130.0,False,rap,joy,2000,emotion_dataset
+anthony russo,2:am,0.43,0.6,-5.82,0.06,0.2,0.0,0.22,0.47,148.0,False,hip-hop,sadness,2018,emotion_dataset
+dove cameron,evil,0.56,0.57,-4.79,0.04,0.61,0.0,0.12,0.37,85.0,False,pop,joy,2015,emotion_dataset
+strfkr,mystery cloud,0.41,0.89,-6.63,0.08,0.0,0.04,0.17,0.4,160.0,False,pop,sadness,2011,emotion_dataset
+genius english translations,ozuna - amor genuino english translation,0.93,0.59,-10.84,0.09,0.13,0.0,0.04,0.75,103.0,False,"Unknown,Unknown,Unknown",joy,1981,emotion_dataset
+madison beer,barbie,0.68,0.52,-7.83,0.04,0.1,0.06,0.71,0.46,133.0,False,pop,sadness,2023,emotion_dataset
+matt berninger,all i want,0.61,0.47,-10.0,0.03,0.49,0.91,0.1,0.1,120.0,False,"Unknown,Unknown,Unknown",joy,2021,emotion_dataset
+pup,morbid stuff,0.45,0.91,-4.3,0.06,0.0,0.0,0.25,0.53,161.0,True,pop,anger,2019,emotion_dataset
+jay-z,big pimpin,0.88,0.81,-6.31,0.14,0.17,0.01,0.06,0.94,138.0,True,hip-hop,joy,1999,emotion_dataset
+prince,pheromone,0.69,0.68,-12.77,0.05,0.0,0.87,0.08,0.13,137.0,False,soul,love,2022,emotion_dataset
+migos,fuck up the pot,0.91,0.46,-14.38,0.51,0.11,0.0,0.04,0.66,138.0,True,rap,joy,2020,emotion_dataset
+jessie j,big white room live,0.42,0.34,-9.52,0.04,0.74,0.0,0.72,0.4,138.0,False,pop,sadness,2011,emotion_dataset
+george michael,father figure,0.69,0.33,-13.29,0.03,0.16,0.0,0.09,0.28,102.0,False,pop,joy,1987,emotion_dataset
+annie,little girls,0.61,0.21,-13.6,0.06,0.82,0.0,0.06,0.56,106.0,False,electronic,sadness,1972,emotion_dataset
+odesza,falls,0.29,0.7,-6.03,0.13,0.04,0.0,0.14,0.18,161.0,False,electronic,sadness,2017,emotion_dataset
+the byrds,eight miles high,0.36,0.77,-10.49,0.08,0.21,0.14,0.5,0.37,131.0,False,rock,fear,1966,emotion_dataset
+young dolph,tric or treat,0.97,0.77,-5.3,0.13,0.21,0.0,0.19,0.9,115.0,True,hip-hop,anger,2019,emotion_dataset
+cam'ron,i hate my job,0.66,0.75,-8.88,0.24,0.06,0.0,0.19,0.68,144.0,False,rap,sadness,2010,emotion_dataset
+henry (r&b),night drive,0.77,0.96,-4.77,0.04,0.2,0.33,0.04,0.91,135.0,False,"Unknown,Unknown,Unknown",sadness,2024,emotion_dataset
+cozz,knock tha hustle remix,0.68,0.87,-5.83,0.29,0.04,0.0,0.23,0.55,86.0,True,"Unknown,Unknown,Unknown",anger,2014,emotion_dataset
+depeche mode,surrender,0.38,0.63,-7.8,0.04,0.04,0.0,0.08,0.15,174.0,False,pop,joy,1997,emotion_dataset
+night lovell,louis v,0.72,0.56,-10.65,0.09,0.16,0.0,0.46,0.25,120.0,True,rap,anger,2016,emotion_dataset
+status quo,doesn't matter,0.8,0.89,-6.66,0.04,0.38,0.01,0.15,0.97,129.0,False,rock,sadness,1982,emotion_dataset
+shy glizzy,i cant trust myself,0.8,0.86,-6.02,0.19,0.26,0.0,0.22,0.96,126.0,True,hip-hop,anger,2014,emotion_dataset
+charli xcx,focus,0.86,0.6,-6.17,0.07,0.12,0.0,0.06,0.35,122.0,False,pop,joy,2018,emotion_dataset
+playboi carti,new n3on original,0.89,0.83,-6.55,0.07,0.06,0.0,0.11,0.95,130.0,True,rap,anger,2020,emotion_dataset
+dom kennedy,gold alpinas,0.6,0.58,-5.07,0.29,0.36,0.0,0.31,0.53,93.0,True,hip-hop,joy,2020,emotion_dataset
+jay prince,father father,0.63,0.75,-5.41,0.07,0.05,0.01,0.49,0.69,130.0,True,"Unknown,Unknown,Unknown",anger,2016,emotion_dataset
+chastity belt,joke,0.44,0.66,-8.0,0.03,0.0,0.16,0.11,0.41,149.0,False,pop,joy,2015,emotion_dataset
+etham,safety pin stripped,0.75,0.27,-8.56,0.05,0.71,0.0,0.32,0.44,111.0,False,"Unknown,Unknown,Unknown",sadness,2019,emotion_dataset
+fifth harmony,deliver,0.72,0.75,-4.15,0.17,0.14,0.0,0.25,0.84,144.0,False,pop,joy,2017,emotion_dataset
+josh groban,i'll be home for christmas,0.23,0.29,-13.57,0.04,0.94,0.0,0.1,0.17,165.0,False,pop,joy,2017,emotion_dataset
+hail mary mallon,meter feeder,0.78,0.96,-4.69,0.15,0.02,0.0,0.05,0.92,94.0,True,hip-hop,fear,2011,emotion_dataset
+baby tate,mean girl,0.95,0.86,-8.5,0.19,0.05,0.0,0.09,0.89,137.0,True,"Unknown,Unknown,Unknown",anger,2019,emotion_dataset
+n.e.r.d.,things are getting better,0.8,0.92,-4.31,0.13,0.02,0.0,0.06,0.92,118.0,True,hip-hop,joy,2002,emotion_dataset
+youngbloodz,ev'rybody know me,0.8,0.5,-7.0,0.09,0.06,0.0,0.13,0.45,162.0,True,hip-hop,joy,2024,emotion_dataset
+danny brown,fields,0.55,0.95,-4.69,0.28,0.02,0.0,0.18,0.68,90.0,True,rap,sadness,2012,emotion_dataset
+nelly,flap your wings,0.9,0.84,-4.0,0.07,0.02,0.0,0.08,0.88,106.0,True,hip-hop,sadness,2004,emotion_dataset
+celine dion,live for the one i love,0.36,0.39,-9.06,0.03,0.72,0.0,0.11,0.09,111.0,False,pop,joy,2019,emotion_dataset
+michael bolton,murder my heart,0.59,0.7,-6.0,0.03,0.19,0.0,0.11,0.47,82.0,False,pop,fear,2009,emotion_dataset
+genius english translations,enhypen - flicker english translation,0.8,0.78,-4.65,0.14,0.28,0.0,0.11,0.69,105.0,False,"Unknown,Unknown,Unknown",joy,2023,emotion_dataset
+tekno,rara,0.88,0.93,-3.64,0.1,0.06,0.0,0.04,0.96,102.0,False,"Unknown,Unknown,Unknown",anger,2016,emotion_dataset
+richard marx,whatever we started,0.55,0.68,-7.15,0.04,0.32,0.01,0.21,0.28,125.0,False,pop,sadness,2019,emotion_dataset
+wuki,dadadada,0.85,0.97,-1.66,0.07,0.4,0.0,0.43,0.89,124.0,False,"Unknown,Unknown,Unknown",joy,2019,emotion_dataset
+rise against,worth dying for,0.21,0.99,-3.79,0.23,0.0,0.0,0.34,0.36,172.0,False,alternative,joy,2006,emotion_dataset
+jehst,england,0.73,0.66,-6.0,0.36,0.07,0.0,0.11,0.53,93.0,True,rap,sadness,2011,emotion_dataset
+beastie boys,triple trouble,0.95,0.76,-7.49,0.28,0.31,0.0,0.22,0.9,110.0,False,hip-hop,joy,2004,emotion_dataset
+goodie mob,soul food,0.93,0.49,-8.78,0.3,0.07,0.0,0.08,0.62,96.0,True,hip-hop,joy,1995,emotion_dataset
+syml,the bird,0.42,0.48,-10.39,0.03,0.37,0.47,0.11,0.03,109.0,False,pop,sadness,2019,emotion_dataset
+j hus,scene,0.6,0.82,-2.03,0.35,0.22,0.0,0.11,0.7,150.0,True,rap,anger,2018,emotion_dataset
+outkast,chronomentrophobia,0.9,0.48,-9.54,0.3,0.04,0.0,0.04,0.38,95.0,True,hip-hop,anger,2006,emotion_dataset
+tender,outside,0.57,0.52,-8.24,0.04,0.17,0.0,0.1,0.44,75.0,False,electronic,joy,2016,emotion_dataset
+saweetie & london on da track,up now,0.9,0.81,-6.29,0.26,0.0,0.0,0.07,0.59,105.0,True,"Unknown,Unknown,Unknown",anger,2019,emotion_dataset
+stunna 4 vegas,ashley,0.88,0.81,-3.46,0.32,0.0,0.0,0.11,0.92,144.0,True,"Unknown,Unknown,Unknown",joy,2019,emotion_dataset
+genius english translations,bts  charli xcx - dream glow english translation,0.8,0.26,-28.18,0.09,0.03,0.52,0.11,0.99,120.0,False,"Unknown,Unknown,Unknown",joy,2022,emotion_dataset
+cody ko,knock it off,0.85,0.79,-7.97,0.15,0.01,0.48,0.11,0.96,124.0,True,"Unknown,Unknown,Unknown",anger,2022,emotion_dataset
+air supply,winter wonderland,0.59,0.23,-13.6,0.05,0.83,0.0,0.12,0.54,127.0,False,pop,joy,2006,emotion_dataset
+lykke li,im good im gone,0.84,0.9,-3.88,0.04,0.05,0.01,0.16,0.9,120.0,False,pop,joy,2008,emotion_dataset
+incubus,martini,0.57,0.95,-3.86,0.05,0.02,0.0,0.24,0.54,110.0,False,alternative,anger,2009,emotion_dataset
+alexandra stan,boy oh boy,0.64,0.73,-5.35,0.05,0.28,0.0,0.38,0.67,170.0,False,pop,sadness,2018,emotion_dataset
+doobie brothers,evil woman,0.31,0.84,-12.97,0.05,0.19,0.0,0.37,0.47,164.0,False,rock,sadness,1973,emotion_dataset
+screeching weasel,my brain hurts,0.38,0.97,-3.16,0.06,0.13,0.0,0.16,0.61,106.0,False,pop,sadness,1991,emotion_dataset
+chris brown,come together,0.5,0.6,-6.21,0.07,0.07,0.0,0.1,0.24,82.0,False,soul,fear,2019,emotion_dataset
+sophie ellis-bextor,come with us,0.67,0.83,-5.34,0.04,0.0,0.0,0.04,0.96,120.0,False,pop,love,2016,emotion_dataset
+miley cyrus,4x4,0.92,0.8,-6.57,0.06,0.05,0.0,0.13,0.92,120.0,True,pop,anger,2013,emotion_dataset
+twista,sunshine,0.93,0.89,-5.34,0.29,0.26,0.0,0.35,0.82,99.0,True,rap,love,2004,emotion_dataset
+neil sedaka,"good times, good music and good good friends",0.5,0.61,-9.46,0.02,0.35,0.01,0.04,0.92,101.0,False,pop,joy,2007,emotion_dataset
+mad season,long gone day,0.67,0.31,-15.01,0.03,0.92,0.51,0.15,0.52,115.0,False,alternative,sadness,1995,emotion_dataset
+black marble,its conditional,0.7,0.68,-8.96,0.04,0.65,0.87,0.11,0.74,128.0,False,pop,joy,2016,emotion_dataset
+dbangz,thick niggas  anime tiddies ft. lil b insta g,0.9,0.44,-9.33,0.45,0.22,0.0,0.1,0.63,136.0,True,rap,joy,2017,emotion_dataset
+indigo girls,pendulum swinger,0.73,0.74,-3.67,0.03,0.35,0.0,0.17,0.76,135.0,False,folk,anger,2006,emotion_dataset
+juelz santana,time ticking,0.56,0.88,-3.18,0.28,0.12,0.0,0.44,0.36,89.0,True,rap,anger,2016,emotion_dataset
+internet money,blastoff,0.76,0.52,-6.92,0.09,0.11,0.0,0.16,0.46,148.0,True,hip-hop,anger,2020,emotion_dataset
+"royce da 5'9""",startercoat,0.9,0.86,-6.27,0.2,0.04,0.0,0.15,0.87,93.0,True,rap,joy,2016,emotion_dataset
+shawn mendes,different kind of love,0.87,0.81,-4.06,0.06,0.38,0.0,0.08,0.97,122.0,False,pop,joy,2017,emotion_dataset
+all nations music,glory rise,0.23,0.7,-6.0,0.06,0.08,0.0,0.08,0.36,79.0,False,"Unknown,Unknown,Unknown",joy,2020,emotion_dataset
+matt dimona,the universe we dreamt,0.6,0.58,-6.59,0.04,0.2,0.0,0.09,0.6,98.0,False,"Unknown,Unknown,Unknown",sadness,2016,emotion_dataset
+crazy frog,jingle bells,0.76,0.96,-1.57,0.03,0.15,0.5,0.08,0.93,128.0,False,pop,joy,2009,emotion_dataset
+rich forever music,intro,0.74,0.49,-8.65,0.27,0.43,0.0,0.23,0.25,106.0,False,"Unknown,Unknown,Unknown",joy,2023,emotion_dataset
+jay-z,manyfacedgod,0.88,0.81,-6.31,0.14,0.17,0.01,0.06,0.94,138.0,True,hip-hop,sadness,1999,emotion_dataset
+jay fendi,kopy,0.8,0.4,-11.29,0.33,0.37,0.0,0.1,0.51,133.0,True,"Unknown,Unknown,Unknown",anger,2019,emotion_dataset
+wiz khalifa,medicated,0.75,0.89,-3.85,0.04,0.01,0.0,0.39,0.96,136.0,True,hip-hop,anger,2012,emotion_dataset
+flo milli,pussycat doll,0.89,0.77,-5.5,0.18,0.23,0.0,0.08,0.94,150.0,True,rap,anger,2020,emotion_dataset
+lana del rey,trash,0.78,0.39,-9.11,0.03,0.49,0.0,0.11,0.34,126.0,False,pop,joy,2023,emotion_dataset
+rico nasty,pussy poppin,0.94,0.82,-2.55,0.32,0.16,0.0,0.07,0.9,95.0,True,rap,anger,2020,emotion_dataset
+three 6 mafia,long nite,0.76,0.95,-5.68,0.15,0.06,0.0,0.03,0.92,166.0,True,rap,anger,2001,emotion_dataset
+x-treme,love song,0.74,0.94,-6.3,0.03,0.01,0.0,0.11,0.95,127.0,False,"90's,Unknown,Unknown",joy,1998,emotion_dataset
+everclear,"deep in, empty out",0.49,0.94,-5.33,0.13,0.16,0.0,0.37,0.39,100.0,False,alternative,sadness,1995,emotion_dataset
+miro (youtube),cross miro edit,0.83,0.81,-5.7,0.05,0.06,0.0,0.13,0.97,116.0,False,"Unknown,Unknown,Unknown",anger,2024,emotion_dataset
+zoey dollaz,post  delete,0.73,0.73,-3.86,0.16,0.07,0.0,0.16,0.33,120.0,True,"Unknown,Unknown,Unknown",joy,2017,emotion_dataset
+richie rich,lets ride,0.75,0.74,-4.87,0.16,0.01,0.0,0.13,0.65,89.0,True,"Unknown,Unknown,Unknown",joy,1996,emotion_dataset
+kris kristofferson,when i loved her,0.47,0.14,-19.63,0.03,0.86,0.0,0.38,0.32,78.0,False,folk,love,1971,emotion_dataset
+expos,let me be the one,0.66,0.71,-10.61,0.04,0.03,0.01,0.31,0.89,105.0,False,pop,love,1987,emotion_dataset
+robyn,human being,0.73,0.57,-10.11,0.04,0.69,0.48,0.09,0.24,110.0,False,pop,sadness,2018,emotion_dataset
+lil wayne,zoo,0.8,0.55,-7.93,0.03,0.01,0.42,0.08,0.82,132.0,False,rap,joy,2014,emotion_dataset
+vengaboys,skinnydippin',0.75,0.97,-4.2,0.04,0.0,0.0,0.17,0.93,136.0,False,pop,joy,2000,emotion_dataset
+faye webster,better distractions,0.7,0.52,-9.54,0.02,0.07,0.01,0.09,0.57,96.0,False,pop,sadness,2021,emotion_dataset
+carrie underwood,how great thou art live from acm presents: girls night out,0.3,0.58,-4.22,0.03,0.78,0.0,0.69,0.15,92.0,False,pop,joy,2014,emotion_dataset
+bones,trash,0.68,0.75,-9.59,0.06,0.03,0.02,0.37,0.34,108.0,True,rap,sadness,2014,emotion_dataset
+bon jovi,all about loving you,0.74,0.3,-8.07,0.03,0.22,0.0,0.08,0.56,136.0,False,rock,love,2015,emotion_dataset
+electric light orchestra,mrs. ward,0.55,0.65,-7.1,0.03,0.58,0.0,0.12,0.37,123.0,False,rock,joy,1976,emotion_dataset
+88glam,kitchen witch,0.63,0.74,-7.0,0.08,0.3,0.0,0.43,0.66,160.0,True,rap,anger,2018,emotion_dataset
+three 6 mafia,grab tha gauge,0.92,0.88,-3.45,0.22,0.18,0.0,0.31,0.82,118.0,True,rap,joy,2000,emotion_dataset
+buster poindexter,hot hot hot,0.59,0.73,-10.99,0.18,0.32,0.0,0.28,0.78,128.0,False,pop,love,1987,emotion_dataset
+sbtrkt,trials of the past,0.74,0.55,-6.84,0.17,0.28,0.01,0.11,0.17,78.0,False,electronic,love,2024,emotion_dataset
+victorious cast,5 fingaz to the face,0.81,0.79,-2.96,0.09,0.0,0.0,0.68,0.86,129.0,False,pop,joy,2012,emotion_dataset
+"lin-manuel miranda, christopher jackson, robin de jess, seth stewart, janet dacal & andrea burns",96000,0.5,0.84,-5.76,0.09,0.06,0.0,0.4,0.31,100.0,False,"Unknown,Unknown,Unknown",anger,2023,emotion_dataset
+sylvia vrethammar,y viva espana,0.72,0.75,-4.74,0.05,0.66,0.0,0.16,0.81,128.0,False,"countries and continents,godingar,Unknown",joy,1999,emotion_dataset
+juvenile,run for it,0.85,0.72,-8.89,0.19,0.01,0.0,0.04,0.85,95.0,True,rap,anger,1998,emotion_dataset
+lloyd cole,to the church,0.68,0.47,-15.13,0.03,0.27,0.01,0.13,0.74,102.0,False,pop,anger,1990,emotion_dataset
+a$ap ferg,chinatown,0.42,0.66,-7.73,0.33,0.02,0.0,0.14,0.31,110.0,True,rap,anger,2021,emotion_dataset
+kiss,kissin' time,0.49,0.84,-6.98,0.07,0.04,0.0,0.1,0.93,123.0,False,metal,joy,1974,emotion_dataset
+curren$y,motion,0.76,0.66,-6.29,0.1,0.07,0.53,0.41,0.35,115.0,False,rap,joy,2017,emotion_dataset
+lil yachty,2am,0.87,0.41,-7.59,0.05,0.3,0.0,0.12,0.1,142.0,True,rap,joy,2018,emotion_dataset
+edwin starr,twenty-five miles,0.81,0.84,-7.0,0.06,0.06,0.0,0.22,0.96,125.0,False,soul,sadness,1969,emotion_dataset
+jerreau,all night,0.58,0.88,-5.81,0.33,0.15,0.0,0.13,0.42,135.0,True,hip-hop,joy,2016,emotion_dataset
+griz & subtronics,griztronics,0.9,0.44,-8.66,0.05,0.46,0.14,0.1,0.94,118.0,False,"Unknown,Unknown,Unknown",joy,2014,emotion_dataset
+hbk gang,never going broke,0.64,0.72,-7.31,0.17,0.77,0.0,0.26,0.72,100.0,True,"Unknown,Unknown,Unknown",joy,2024,emotion_dataset
+meghan trainor,all about that bass radio disney edit,0.81,0.89,-3.73,0.05,0.06,0.0,0.12,0.96,134.0,True,pop,joy,2015,emotion_dataset
+deep purple,fireball,0.56,0.9,-12.03,0.06,0.0,0.01,0.12,0.91,121.0,False,rock,joy,1971,emotion_dataset
+the roots,thought @ work,0.8,0.96,-3.0,0.09,0.08,0.0,0.04,0.86,110.0,True,hip-hop,joy,2024,emotion_dataset
+leonard bernstein,new york new york,0.52,0.33,-13.12,0.26,0.59,0.03,0.34,0.36,131.0,False,"Unknown,Unknown,Unknown",joy,2023,emotion_dataset
+steve aoki & lil uzi vert,smoke my dope,0.61,0.85,-3.95,0.18,0.01,0.0,0.21,0.54,170.0,False,"Unknown,Unknown,Unknown",anger,2018,emotion_dataset
+rupaul,lucky,0.74,0.82,-2.56,0.07,0.08,0.0,0.16,0.93,151.0,False,pop,joy,2021,emotion_dataset
+justin bieber,speaking in tongues,0.83,0.61,-9.98,0.3,0.01,0.0,0.11,0.77,110.0,True,pop,joy,2023,emotion_dataset
+highly suspect,snow white,0.46,0.9,-4.0,0.04,0.04,0.0,0.05,0.41,160.0,True,alternative,joy,2019,emotion_dataset
+lil peep & harry fraud,living rooms,0.54,0.47,-9.84,0.1,0.09,0.02,0.12,0.31,93.0,True,"Unknown,Unknown,Unknown",anger,2015,emotion_dataset
+mick jenkins,stress fracture,0.8,0.93,-2.0,0.11,0.56,0.0,0.1,0.89,115.0,True,hip-hop,sadness,2018,emotion_dataset
+nas,pussy killz,0.88,0.56,-7.68,0.25,0.05,0.0,0.05,0.52,94.0,True,rap,anger,1996,emotion_dataset
+pj harvey,the wind,0.66,0.66,-10.88,0.03,0.14,0.74,0.07,0.69,110.0,False,alternative,love,1998,emotion_dataset
+rick ross,my man,0.54,0.61,-4.0,0.13,0.0,0.0,0.18,0.29,158.0,True,rap,anger,2017,emotion_dataset
+shy glizzy,get jiggy,0.84,0.62,-6.14,0.36,0.08,0.0,0.09,0.25,151.0,True,hip-hop,anger,2017,emotion_dataset
+gucci mane,el chapo,0.76,0.75,-4.46,0.16,0.07,0.0,0.11,0.35,138.0,True,rap,anger,2017,emotion_dataset
+tim mcgraw,i didn't know it at the time,0.55,0.64,-5.65,0.03,0.54,0.0,0.09,0.28,139.0,False,pop,sadness,2009,emotion_dataset
+future,afterlife,0.58,0.49,-8.25,0.42,0.09,0.0,0.1,0.12,108.0,True,rap,joy,2018,emotion_dataset
+kehlani,love language,0.58,0.59,-4.37,0.08,0.12,0.0,0.09,0.7,90.0,False,soul,love,2019,emotion_dataset
+french affair,you are so sexy,0.73,0.94,-8.79,0.03,0.23,0.09,0.12,0.94,132.0,False,pop,love,2008,emotion_dataset
+doc watson,shady grove,0.58,0.53,-12.0,0.03,0.64,0.01,0.08,0.94,133.0,False,folk,joy,1973,emotion_dataset
+vic mensa,fun,0.38,0.81,-2.84,0.27,0.34,0.0,0.1,0.58,72.0,True,hip-hop,joy,2024,emotion_dataset
+noah cyrus,young  sad,0.62,0.43,-8.5,0.04,0.59,0.0,0.19,0.36,142.0,False,pop,sadness,2020,emotion_dataset
+2pac,war games,0.85,0.9,-4.78,0.14,0.02,0.0,0.05,0.85,99.0,True,rap,sadness,1996,emotion_dataset
+oasis,to be someone,0.71,0.39,-12.07,0.03,0.78,0.96,0.72,0.33,98.0,False,pop,joy,1973,emotion_dataset
+kranium,cant believe,0.72,0.76,-4.89,0.08,0.0,0.0,0.08,0.61,100.0,True,reggae,sadness,2017,emotion_dataset
+the notorious b.i.g.,pepsi freestyle,0.84,0.88,-4.51,0.08,0.01,0.0,0.2,0.9,105.0,True,rap,joy,1997,emotion_dataset
+rittz,sober,0.68,0.73,-7.94,0.04,0.01,0.0,0.15,0.25,141.0,True,hip-hop,joy,2013,emotion_dataset
+vangelis,he-o,0.45,0.57,-13.98,0.03,0.27,0.17,0.04,0.61,76.0,False,electronic,anger,2016,emotion_dataset
+"sex, love & vices",fuck that condom,0.47,0.72,-9.16,0.03,0.01,0.0,0.09,0.71,146.0,True,"Unknown,Unknown,Unknown",anger,2021,emotion_dataset
+french montana,in the sun,0.7,0.52,-8.84,0.25,0.02,0.0,0.09,0.49,90.0,True,rap,anger,2015,emotion_dataset
+david byrne & brian eno,home,0.75,0.74,-4.73,0.05,0.45,0.0,0.06,0.95,121.0,False,"Unknown,Unknown,Unknown",joy,2024,emotion_dataset
+wyclef jean,the industry,0.74,0.68,-4.0,0.34,0.33,0.0,0.15,0.42,97.0,False,hip-hop,joy,2003,emotion_dataset
+"jeris johnson, ricky desktop & chad kroeger",​damn remix,0.75,0.59,-7.34,0.04,0.22,0.02,0.21,0.86,120.0,True,"Unknown,Unknown,Unknown",fear,2020,emotion_dataset
+dormtainment,thumb thuggin,0.94,0.56,-8.55,0.18,0.04,0.0,0.05,0.53,130.0,True,"Unknown,Unknown,Unknown",joy,2015,emotion_dataset
+bob dylan,can you please crawl out your window?,0.53,0.66,-8.03,0.03,0.46,0.0,0.21,0.9,114.0,False,folk,fear,2013,emotion_dataset
+dith piaf,hymn to love,0.32,0.38,-6.74,0.04,0.96,0.0,0.29,0.31,104.0,False,"Unknown,Unknown,Unknown",joy,1986,emotion_dataset
+shia labeouf,freestyle,0.71,0.32,-15.55,0.92,0.5,0.0,0.83,0.69,108.0,True,"Unknown,Unknown,Unknown",anger,2018,emotion_dataset
+emeli sand,highs  lows,0.61,0.85,-6.0,0.04,0.02,0.0,0.06,0.71,115.0,False,soul,sadness,2016,emotion_dataset
+polo g,start up again,0.88,0.6,-7.19,0.31,0.02,0.0,0.14,0.65,124.0,True,rap,anger,2021,emotion_dataset
+kris kristofferson,help me,0.6,0.35,-12.76,0.03,0.31,0.0,0.06,0.76,81.0,False,folk,love,2004,emotion_dataset
+the front bottoms,trampoline,0.62,0.84,-4.07,0.03,0.01,0.0,0.12,0.34,111.0,False,pop,fear,2017,emotion_dataset
+velvetears,will i ever care,0.55,0.27,-12.21,0.04,0.37,0.04,0.12,0.18,172.0,True,"Unknown,Unknown,Unknown",sadness,2018,emotion_dataset
+aurora,soft universe,0.5,0.59,-11.59,0.06,0.34,0.18,0.1,0.3,104.0,False,pop,love,2018,emotion_dataset
+pixies,levitate me,0.43,0.9,-5.63,0.04,0.0,0.0,0.29,0.73,126.0,False,alternative,anger,2024,emotion_dataset
+ludacris,fatty girl,0.92,0.79,-3.19,0.21,0.16,0.0,0.11,0.97,140.0,True,rap,joy,2000,emotion_dataset
+hooligan hefs,send it,0.96,0.93,-2.0,0.21,0.41,0.0,0.13,0.72,130.0,True,"Unknown,Unknown,Unknown",anger,2020,emotion_dataset
+nazareth,sweetheart tree,0.57,0.78,-6.86,0.03,0.0,0.0,0.13,0.68,127.0,False,rock,sadness,1984,emotion_dataset
+outlawz,tupac back g-mix,0.88,0.85,-6.55,0.23,0.08,0.0,0.1,0.91,100.0,True,hip-hop,joy,2001,emotion_dataset
+the bosshoss,little help,0.67,0.83,-3.7,0.06,0.03,0.0,0.06,0.93,140.0,False,"Unknown,Unknown,Unknown",joy,2018,emotion_dataset
+donna summer,journey to the center of your heart,0.79,0.95,-6.24,0.03,0.04,0.17,0.43,0.97,120.0,False,pop,joy,1979,emotion_dataset
+03 greedo,run for yo life,0.8,0.74,-3.07,0.04,0.07,0.0,0.22,0.38,96.0,True,alternative,anger,2018,emotion_dataset
+kings of convenience,id rather dance with you,0.84,0.83,-6.0,0.03,0.33,0.05,0.13,0.97,142.0,False,pop,joy,2004,emotion_dataset
+sunrise avenue,hollywood hills,0.54,0.76,-5.44,0.04,0.0,0.0,0.1,0.32,138.0,False,pop,sadness,2022,emotion_dataset
+tyron laurent,lonely,0.74,0.37,-9.53,0.21,0.31,0.01,0.37,0.34,132.0,True,"Unknown,Unknown,Unknown",anger,1997,emotion_dataset
+weezer,the spider,0.19,0.26,-9.27,0.03,0.71,0.0,0.1,0.18,157.0,False,alternative,anger,2008,emotion_dataset
+clash,midnight to stevens,0.73,0.72,-8.6,0.04,0.21,0.0,0.21,0.41,98.0,False,reggae,joy,2022,emotion_dataset
+craig david,one more time,0.74,0.49,-10.61,0.36,0.1,0.0,0.29,0.46,138.0,True,pop,sadness,2016,emotion_dataset
+bruce springsteen,point blank,0.48,0.42,-13.0,0.04,0.12,0.0,0.1,0.41,116.0,False,folk,sadness,1980,emotion_dataset
+chelsea staub,its all about me,0.82,0.93,-3.66,0.24,0.11,0.0,0.07,0.92,78.0,False,"Unknown,Unknown,Unknown",love,2007,emotion_dataset
+french montana,all for you remix,0.73,0.77,-5.04,0.12,0.03,0.01,0.1,0.73,98.0,True,rap,sadness,2017,emotion_dataset
+dumbfoundead,green,0.8,0.88,-5.53,0.12,0.05,0.0,0.06,0.93,160.0,False,hip-hop,joy,2011,emotion_dataset
+tech n9ne,last sad song,0.78,0.83,-2.87,0.27,0.13,0.0,0.06,0.51,178.0,True,hip-hop,sadness,2024,emotion_dataset
+merrell twins,runner runner,0.65,0.9,-5.0,0.05,0.1,0.0,0.09,0.34,128.0,False,"Unknown,Unknown,Unknown",joy,2017,emotion_dataset
+boosie badazz & mo3,one of them days again,0.8,0.65,-6.95,0.25,0.0,0.0,0.14,0.46,80.0,True,"Unknown,Unknown,Unknown",joy,2006,emotion_dataset
+iggy pop,knucklehead,0.4,0.97,-5.3,0.12,0.19,0.0,0.27,0.29,138.0,False,pop,joy,1996,emotion_dataset
+nocap,jail time,0.65,0.65,-6.99,0.29,0.2,0.0,0.1,0.33,98.0,True,"Unknown,Unknown,Unknown",sadness,2020,emotion_dataset
+oliver francis,aeou,0.48,0.7,-7.09,0.14,0.09,0.0,0.2,0.1,111.0,False,rap,sadness,2017,emotion_dataset
+kc and the sunshine band,im your boogie man,0.76,0.93,-5.72,0.04,0.02,0.0,0.04,0.93,113.0,False,pop,joy,1976,emotion_dataset
+mary lambert,know your name,0.73,0.77,-5.0,0.03,0.01,0.0,0.08,0.8,146.0,False,pop,joy,2017,emotion_dataset
+taylor bennett,roof gone,0.55,0.5,-9.07,0.26,0.48,0.0,0.09,0.06,164.0,True,rap,sadness,2017,emotion_dataset
+the longest johns,the curse,0.7,0.53,-6.64,0.29,0.92,0.0,0.36,0.65,109.0,False,folk,joy,2016,emotion_dataset
+jose guapo,fuck the rap game remix,0.77,0.19,-13.71,0.04,0.6,0.0,0.14,0.5,105.0,False,"Unknown,Unknown,Unknown",anger,2012,emotion_dataset
+henneysee,yu86,0.76,0.61,-6.89,0.1,0.08,0.0,0.08,0.44,85.0,False,"Unknown,Unknown,Unknown",anger,2014,emotion_dataset
+jimmy buffett,gravity storm,0.78,0.87,-10.04,0.04,0.17,0.0,0.01,0.97,112.0,False,pop,joy,1989,emotion_dataset
+juicy j,oh well remix,0.95,0.9,-5.03,0.31,0.07,0.0,0.12,0.94,135.0,True,rap,joy,2011,emotion_dataset
+typecast,the boston drama,0.28,0.79,-7.37,0.08,0.0,0.01,0.15,0.17,159.0,False,alternative,fear,2024,emotion_dataset
+haggard,awaking the centuries,0.3,0.76,-7.0,0.06,0.08,0.03,0.25,0.31,77.0,False,metal,anger,2000,emotion_dataset
+jack stauber's micropop,benny worm,0.42,0.66,-10.06,0.21,0.49,0.0,0.18,0.23,76.0,False,pop,joy,2019,emotion_dataset
+kenny rogers,bed of rose,0.68,0.26,-13.55,0.03,0.47,0.0,0.24,0.38,81.0,False,pop,joy,1991,emotion_dataset
+bone thugs-n-harmony,body rott,0.8,0.63,-4.74,0.06,0.28,0.0,0.73,0.8,94.0,True,rap,anger,1997,emotion_dataset
+blacklite district,with me now,0.5,0.82,-6.46,0.03,0.0,0.0,0.08,0.56,150.0,True,"Unknown,Unknown,Unknown",joy,2021,emotion_dataset
+dream theater,the glass prison,0.31,0.93,-6.2,0.14,0.0,0.01,0.37,0.43,139.0,False,progressive,fear,2002,emotion_dataset
+face to face,what difference does it make?,0.27,0.98,-4.12,0.09,0.0,0.0,0.13,0.36,171.0,False,alternative,sadness,2001,emotion_dataset
+wande coal,baby hello,0.81,0.92,-2.37,0.08,0.12,0.0,0.1,0.94,132.0,False,pop,joy,2015,emotion_dataset
+crass,banned from the roxy,0.68,0.74,-8.33,0.33,0.01,0.0,0.03,0.66,183.0,True,"anarcho-punk,punk,punk rock",anger,1979,emotion_dataset
+bread,change of heart,0.64,0.39,-13.29,0.03,0.28,0.0,0.19,0.43,108.0,False,rock,joy,1977,emotion_dataset
+the chameleons,perfume garden,0.22,0.8,-8.78,0.07,0.03,0.0,0.44,0.27,134.0,False,"post-punk,new wave,80s",love,2009,emotion_dataset
+kylie minogue,sleeping with the enemy,0.77,0.56,-7.52,0.03,0.03,0.68,0.12,0.96,126.0,False,pop,joy,2001,emotion_dataset
+clipping.,intro clppng,0.59,0.74,-9.48,0.15,0.07,0.0,0.03,0.61,136.0,True,hip-hop,fear,2014,emotion_dataset
+a6 (block 6),a6 | bl@ckbox 4k s11 ep. 1/201,0.83,0.94,-2.22,0.13,0.26,0.0,0.24,0.93,143.0,True,"Unknown,Unknown,Unknown",anger,2023,emotion_dataset
+quad city dj's,cmon n ride it the train,0.84,0.96,-4.93,0.09,0.09,0.0,0.41,0.92,136.0,False,soundtrack,joy,1996,emotion_dataset
+moody blues,the word,0.58,0.19,-23.81,0.86,0.92,0.0,0.14,0.36,78.0,False,rock,joy,1968,emotion_dataset
+los (cherfin music),one and only,0.53,0.47,-5.31,0.03,0.3,0.0,0.16,0.18,155.0,False,"Unknown,Unknown,Unknown",sadness,2011,emotion_dataset
+jade,dont walk away,0.83,0.92,-7.5,0.13,0.15,0.01,0.2,0.88,103.0,False,"loved,1990s,Unknown",joy,1992,emotion_dataset
+britney spears,i'm a slave 4 u,0.85,0.84,-3.58,0.11,0.42,0.0,0.11,0.96,110.0,False,pop,joy,2001,emotion_dataset
+phineas and ferb,phinedroids and ferbots,0.87,0.9,-5.32,0.04,0.13,0.0,0.17,0.96,123.0,False,"Unknown,Unknown,Unknown",joy,2009,emotion_dataset
+hillsong worship,running,0.45,0.92,-4.87,0.07,0.0,0.0,0.8,0.28,126.0,False,"Unknown,Unknown,Unknown",joy,2012,emotion_dataset
+dora the explorer,we did it,0.84,0.8,-5.57,0.04,0.38,0.0,0.05,0.98,145.0,False,"Unknown,Unknown,Unknown",joy,2004,emotion_dataset
+griffinilla,fishy love,0.83,0.67,-11.32,0.05,0.38,0.0,0.1,0.69,141.0,False,"Unknown,Unknown,Unknown",joy,2016,emotion_dataset
+"gizzelle andrea becerra, tru valentino & frank todaro",welcome to the cuphead show,0.76,0.48,-11.06,0.23,0.52,0.02,0.12,0.32,109.0,False,"Unknown,Unknown,Unknown",joy,2021,emotion_dataset
+da'ville,always on my mind remix,0.65,0.68,-6.3,0.13,0.03,0.0,0.06,0.78,84.0,False,reggae,love,2024,emotion_dataset
+level 42,running in the family,0.82,0.85,-5.57,0.04,0.15,0.0,0.1,0.93,125.0,False,pop,fear,2022,emotion_dataset
+mike dece,power,0.67,0.57,-9.42,0.16,0.16,0.0,0.69,0.52,140.0,False,"Unknown,Unknown,Unknown",fear,2022,emotion_dataset
+chris brown,loyal east coast version,0.6,0.49,-5.9,0.09,0.03,0.0,0.08,0.55,99.0,True,soul,love,2013,emotion_dataset
+future,rockstar chainz,0.87,0.52,-6.91,0.31,0.01,0.0,0.31,0.27,143.0,True,rap,joy,2020,emotion_dataset
+g-eazy,still,0.8,0.76,-4.69,0.05,0.01,0.0,0.09,0.28,104.0,True,hip-hop,joy,2020,emotion_dataset
+luther vandross,'til my baby comes home,0.8,0.71,-7.0,0.18,0.06,0.0,0.03,0.8,140.0,False,soul,fear,1985,emotion_dataset
+phineas and ferb,s.i.m.p. squirrels in my pants,0.81,0.88,-5.42,0.12,0.07,0.0,0.04,0.96,120.0,False,"Unknown,Unknown,Unknown",joy,2009,emotion_dataset
+of montreal,gallery piece,0.86,0.93,-5.0,0.09,0.26,0.0,0.07,0.9,120.0,False,pop,love,2008,emotion_dataset
+american football,honestly?,0.39,0.58,-8.0,0.03,0.0,0.33,0.1,0.3,130.0,False,pop,sadness,1999,emotion_dataset
+the irish brigade,my old mans a provo,0.48,0.71,-6.11,0.05,0.8,0.0,0.89,0.82,125.0,False,"Unknown,Unknown,Unknown",sadness,2015,emotion_dataset
+phineas and ferb,one good scare ought to do you some good,0.81,0.88,-5.42,0.12,0.07,0.0,0.04,0.96,120.0,False,"Unknown,Unknown,Unknown",fear,2009,emotion_dataset
+a tribe called quest,god lives through,0.8,0.65,-10.56,0.27,0.08,0.0,0.1,0.52,95.0,False,hip-hop,sadness,1993,emotion_dataset
+young face,greg young face,0.71,0.48,-9.0,0.09,0.0,0.0,0.38,0.19,134.0,True,"Unknown,Unknown,Unknown",anger,2018,emotion_dataset
+chamillionaire,think im crazy,0.72,0.78,-6.13,0.34,0.01,0.0,0.1,0.4,180.0,True,hip-hop,joy,2005,emotion_dataset
+the wrecking crew za,less friends more bandz,0.53,0.42,-6.26,0.03,0.41,0.0,0.11,0.35,120.0,False,"Unknown,Unknown,Unknown",joy,2013,emotion_dataset
+machel montano,play harder,0.82,0.95,-3.67,0.09,0.08,0.0,0.09,0.92,106.0,False,"Unknown,Unknown,Unknown",joy,2021,emotion_dataset
+outlawz,real talk,0.67,0.6,-5.12,0.34,0.1,0.01,0.23,0.55,94.0,True,hip-hop,anger,2005,emotion_dataset
+ottawan,hands up,0.89,0.88,-4.25,0.04,0.61,0.0,0.38,0.99,123.0,False,"Disco,80s,70s",joy,1980,emotion_dataset
+quackity,the lice song,0.8,0.88,-6.0,0.05,0.21,0.0,0.38,0.96,106.0,False,"Unknown,Unknown,Unknown",anger,2010,emotion_dataset
+johnny cinco,cant get enough,0.75,0.97,-6.0,0.04,0.0,0.56,0.31,0.98,128.0,False,hip-hop,anger,1998,emotion_dataset
+latto,blame me,0.52,0.54,-7.37,0.41,0.63,0.0,0.14,0.34,93.0,True,rap,sadness,2020,emotion_dataset
+tei shi,go slow,0.72,0.45,-9.44,0.05,0.04,0.08,0.35,0.6,150.0,False,pop,joy,2015,emotion_dataset
+jay critch,kd freestyle,0.9,0.77,-5.39,0.26,0.04,0.0,0.07,0.96,142.0,True,"Unknown,Unknown,Unknown",sadness,2022,emotion_dataset
+yungblud,die for the hype,0.74,0.84,-3.65,0.06,0.0,0.0,0.42,0.55,100.0,True,alternative,anger,2018,emotion_dataset
+puff daddy & the family,you could be my lover,0.84,0.88,-4.51,0.08,0.01,0.0,0.2,0.9,105.0,True,"Unknown,Unknown,Unknown",joy,1997,emotion_dataset
+manowar,die with honor,0.49,0.75,-4.89,0.08,0.0,0.0,0.08,0.16,157.0,False,metal,joy,2009,emotion_dataset
+run,mary mary,0.89,0.88,-6.0,0.1,0.0,0.0,0.04,0.93,115.0,False,"Unknown,Unknown,Unknown",anger,1988,emotion_dataset
+logic,slave,0.52,0.51,-6.0,0.16,0.03,0.0,0.11,0.13,91.0,True,rap,joy,2016,emotion_dataset
+grouplove,naked kids,0.59,0.6,-8.0,0.04,0.12,0.0,0.12,0.29,105.0,False,pop,joy,2011,emotion_dataset
+matt monro,over the rainbow,0.3,0.2,-16.82,0.03,0.86,0.0,0.08,0.14,148.0,False,pop,joy,2001,emotion_dataset
+gone west,what couldve been,0.59,0.54,-7.0,0.03,0.18,0.0,0.13,0.41,144.0,False,"Unknown,Unknown,Unknown",sadness,2020,emotion_dataset
+cupcakke,vagina,0.65,0.71,-8.55,0.48,0.17,0.0,0.36,0.33,130.0,True,rap,love,2016,emotion_dataset
+lou reed,mama's got a lover,0.71,0.97,-5.85,0.04,0.12,0.36,0.2,0.92,113.0,False,rock,love,1986,emotion_dataset
+empire cast,runnin,0.68,0.71,-6.69,0.09,0.13,0.0,0.19,0.28,138.0,False,"Unknown,Unknown,Unknown",anger,2016,emotion_dataset
+lady gaga,disco heaven,0.75,0.95,-3.4,0.08,0.04,0.0,0.31,0.91,128.0,False,pop,joy,2008,emotion_dataset
+max elto,shadow of the sun,0.58,0.16,-10.47,0.04,0.93,0.0,0.1,0.35,126.0,False,electronic,joy,2013,emotion_dataset
+yung swiss,david genaro remix,0.82,0.61,-6.02,0.15,0.63,0.0,0.16,0.32,110.0,True,"Unknown,Unknown,Unknown",anger,2016,emotion_dataset
+stone roses,all i want,0.49,0.86,-9.16,0.03,0.01,0.21,0.23,0.59,113.0,False,pop,sadness,1989,emotion_dataset
+cocoa tea,hurry up  come,0.8,0.52,-11.19,0.17,0.12,0.0,0.15,0.82,160.0,False,"Unknown,Unknown,Unknown",anger,2024,emotion_dataset
+r3hab & thrdl!fe,wrong move,0.73,0.86,-5.03,0.03,0.48,0.06,0.1,0.52,125.0,False,"Unknown,Unknown,Unknown",surprise,2019,emotion_dataset
+problem,take ya tights off,0.79,0.7,-7.0,0.39,0.02,0.01,0.24,0.71,96.0,True,hip-hop,anger,2012,emotion_dataset
+talking heads,the lady dont mind,0.75,0.88,-5.93,0.03,0.3,0.05,0.07,0.98,128.0,False,alternative,surprise,1985,emotion_dataset
+flo-rida,takeover,0.84,0.84,-2.0,0.03,0.02,0.0,0.12,0.95,124.0,False,hip-hop,joy,2011,emotion_dataset
+gwen stefani,crash,0.78,0.93,-2.0,0.04,0.02,0.0,0.87,0.93,126.0,False,pop,joy,2004,emotion_dataset
+iron maiden,the parchment,0.15,0.92,-5.35,0.09,0.01,0.22,0.11,0.21,80.0,False,metal,fear,2021,emotion_dataset
+the mcclures,way maker live at bethel,0.36,0.63,-7.11,0.04,0.03,0.0,0.11,0.22,136.0,False,"Unknown,Unknown,Unknown",joy,2019,emotion_dataset
+the underachievers,land of lords,0.57,0.92,-3.82,0.3,0.73,0.0,0.24,0.53,86.0,True,rap,anger,2013,emotion_dataset
+the game,everything red,0.6,0.64,-6.19,0.29,0.01,0.0,0.12,0.45,128.0,False,rap,sadness,2010,emotion_dataset
+craig mack,get down,0.7,0.57,-9.03,0.24,0.28,0.0,0.06,0.54,94.0,True,hip-hop,joy,1994,emotion_dataset
+shawn mendes,never be alone,0.38,0.47,-6.93,0.04,0.51,0.0,0.08,0.28,200.0,False,pop,sadness,2015,emotion_dataset
+arlo guthrie,sailing down this golden river,0.62,0.6,-9.23,0.03,0.08,0.0,0.06,0.83,133.0,False,folk,joy,1979,emotion_dataset
+luther vandross,let's make tonight the night,0.77,0.92,-3.64,0.04,0.14,0.0,0.04,0.97,105.0,False,soul,sadness,2001,emotion_dataset
+perfume genius,without you,0.65,0.76,-5.33,0.03,0.07,0.01,0.35,0.83,134.0,False,pop,fear,2020,emotion_dataset
+playboi carti,pop pills,0.78,0.9,-4.18,0.21,0.26,0.0,0.17,0.56,140.0,True,rap,anger,2020,emotion_dataset
+m.i.a.,u.r.a.q.t,0.93,0.94,-5.25,0.08,0.04,0.0,0.17,0.95,128.0,False,electronic,joy,2005,emotion_dataset
+slash,by the sword,0.42,0.66,-6.39,0.03,0.0,0.0,0.07,0.22,71.0,False,metal,sadness,2010,emotion_dataset
+el-p,7700 years to date,0.55,0.17,-27.34,0.05,0.98,0.96,0.12,0.19,100.0,False,hip-hop,joy,2023,emotion_dataset
+deer tick,ashamed,0.64,0.54,-5.57,0.03,0.52,0.0,0.07,0.24,120.0,False,folk,sadness,2007,emotion_dataset
+out of eden,make way,0.8,0.94,-3.61,0.07,0.0,0.0,0.07,0.94,139.0,False,christian,joy,2004,emotion_dataset
+twice,the feels korean ver.,0.81,0.9,-2.18,0.07,0.09,0.0,0.08,0.92,120.0,False,pop,joy,2021,emotion_dataset
+shaggy,if u slip u slide you could be mine,0.86,0.89,-5.74,0.03,0.08,0.0,0.34,0.96,124.0,False,reggae,love,2013,emotion_dataset
+neutral milk hotel,ferris wheel on fire,0.4,0.32,-4.28,0.04,0.29,0.0,0.14,0.15,106.0,False,folk,sadness,2023,emotion_dataset
+allman brothers band,woman across the river,0.36,0.88,-6.42,0.14,0.02,0.0,0.34,0.76,179.0,False,rock,sadness,2024,emotion_dataset
+dream theater,lines in the sand,0.37,0.94,-3.41,0.08,0.0,0.01,0.04,0.17,122.0,False,progressive,sadness,1997,emotion_dataset
+usher,make you a believer,0.89,0.79,-4.7,0.11,0.02,0.0,0.04,0.58,105.0,False,pop,joy,2004,emotion_dataset
+"sophia anne caruso, alex brightman, rob mcclure, kerry butler, adam dannheisser, beetlejuice original broadway cast recording ensemble, & leslie kritzer",creepy old guy,0.53,0.72,-5.69,0.09,0.37,0.0,0.85,0.69,166.0,False,"Unknown,Unknown,Unknown",sadness,2019,emotion_dataset
+lalah hathaway,surrender,0.76,0.95,-3.7,0.05,0.25,0.0,0.04,0.96,127.0,False,soul,joy,2016,emotion_dataset
+yellowcard,miles apart,0.36,0.97,-3.43,0.06,0.0,0.0,0.05,0.76,182.0,False,pop,sadness,2003,emotion_dataset
+sly and the family stone,dont call me nigger whitey,0.55,0.63,-8.24,0.04,0.5,0.0,0.55,0.72,101.0,False,soul,joy,1969,emotion_dataset
+young dolph,rich crack baby,0.83,0.47,-6.26,0.27,0.25,0.0,0.2,0.44,126.0,True,hip-hop,joy,2016,emotion_dataset
+tom waits,circus,0.29,0.57,-14.44,0.16,0.87,0.0,0.25,0.35,61.0,False,alternative,sadness,2004,emotion_dataset
+dj esco,chek,0.88,0.62,-6.33,0.25,0.2,0.0,0.26,0.34,144.0,True,rap,anger,2018,emotion_dataset
+marianas trench,shut up and kiss me,0.8,0.88,-4.16,0.14,0.05,0.0,0.55,0.93,98.0,False,pop,anger,2015,emotion_dataset
+aaron carter,aarons party come get it,0.94,0.89,-4.11,0.12,0.05,0.0,0.04,0.93,117.0,False,pop,joy,2006,emotion_dataset
+blur,polished stone,0.29,0.64,-9.07,0.03,0.08,0.05,0.21,0.36,174.0,False,pop,sadness,1997,emotion_dataset
+bondage fairies,gay wedding,0.73,0.4,-8.09,0.03,0.0,0.03,0.15,0.39,116.0,False,electronic,fear,2013,emotion_dataset
+john denver,dreamland express,0.74,0.36,-14.69,0.03,0.53,0.0,0.15,0.67,111.0,False,folk,joy,1985,emotion_dataset
+kay flock,shake it,0.87,0.84,-5.88,0.31,0.04,0.0,0.14,0.9,140.0,True,"Unknown,Unknown,Unknown",fear,2022,emotion_dataset
+p-square,no one like you,0.83,0.87,-2.9,0.2,0.56,0.0,0.09,0.94,102.0,False,reggae,joy,2007,emotion_dataset
+vertical worship,found in you,0.55,0.82,-5.06,0.03,0.07,0.0,0.09,0.3,118.0,False,"Unknown,Unknown,Unknown",joy,2017,emotion_dataset
+the vaccines,your love is my favourite band,0.58,0.69,-4.03,0.03,0.0,0.0,0.28,0.84,137.0,False,pop,joy,2018,emotion_dataset
+el-p,truancy,0.41,0.95,-4.66,0.51,0.32,0.0,0.35,0.33,71.0,True,hip-hop,anger,2024,emotion_dataset
+sonder,no mistake,0.57,0.7,-5.66,0.03,0.09,0.0,0.08,0.28,90.0,False,soul,joy,2021,emotion_dataset
+allan rayman,god is a woman,0.65,0.38,-11.62,0.04,0.12,0.0,0.08,0.06,142.0,False,"Unknown,Unknown,Unknown",sadness,2017,emotion_dataset
+lil skies,boss up,0.62,0.67,-6.88,0.06,0.02,0.0,0.09,0.43,160.0,True,rap,anger,2017,emotion_dataset
+jesse colin young,ridgetop,0.65,0.82,-5.74,0.04,0.19,0.04,0.22,0.78,119.0,True,"Roguesch0lar-loved,5 times or less,recomendeixons",joy,1973,emotion_dataset
+saul williams,burundi,0.61,0.88,-7.54,0.12,0.09,0.0,0.16,0.17,128.0,True,hip-hop,anger,2016,emotion_dataset
+reptilelegit,r.i.p club penguin,0.8,0.88,-2.81,0.07,0.29,0.0,0.08,0.93,75.0,True,"Unknown,Unknown,Unknown",joy,2019,emotion_dataset
+silver jews,pretty eyes,0.5,0.37,-10.64,0.04,0.84,0.01,0.11,0.28,115.0,False,folk,sadness,1996,emotion_dataset
+yo gotti,mitch,0.56,0.56,-6.53,0.36,0.18,0.0,0.09,0.16,95.0,True,hip-hop,sadness,2016,emotion_dataset
+tribal seeds,moonlight,0.76,0.54,-8.0,0.07,0.16,0.0,0.37,0.74,135.0,False,reggae,joy,2014,emotion_dataset
+insane clown posse,rainbows and stuff,0.7,0.84,-4.9,0.27,0.14,0.0,0.66,0.27,127.0,True,rap,joy,2000,emotion_dataset
+jay-z,supa ugly,0.88,0.81,-6.31,0.14,0.17,0.01,0.06,0.94,138.0,True,hip-hop,love,1999,emotion_dataset
+dj khaled,forgive me father,0.61,0.74,-4.45,0.13,0.13,0.0,0.12,0.22,128.0,True,rap,joy,2016,emotion_dataset
+roy orbison,hey good lookin',0.62,0.71,-5.38,0.05,0.66,0.0,0.13,0.56,146.0,False,pop,joy,1970,emotion_dataset
+america,half a man,0.48,0.63,-10.33,0.04,0.13,0.17,0.07,0.92,104.0,False,rock,sadness,1975,emotion_dataset
+lloyd banks,the natural,0.72,0.89,-2.4,0.26,0.12,0.0,0.25,0.89,172.0,True,rap,sadness,2004,emotion_dataset
+indigo girls,moment of forgiveness,0.74,0.44,-8.95,0.03,0.25,0.0,0.22,0.53,100.0,False,folk,sadness,2002,emotion_dataset
+james brown,super bad,0.88,0.87,-6.57,0.08,0.61,0.0,0.07,0.94,125.0,False,soul,joy,2007,emotion_dataset
+bob dylan,the lonesome death of hattie carroll,0.52,0.18,-12.0,0.04,0.88,0.0,0.28,0.24,140.0,False,folk,sadness,1964,emotion_dataset
+barbra streisand,i'll know,0.34,0.21,-17.61,0.05,0.72,0.0,0.56,0.18,92.0,False,pop,joy,1994,emotion_dataset
+side a,pangako,0.63,0.35,-17.39,0.04,0.64,0.0,0.31,0.46,86.0,False,world,joy,2024,emotion_dataset
+akon,gangsta bop,0.76,0.35,-6.94,0.16,0.07,0.0,0.06,0.83,176.0,True,hip-hop,joy,2006,emotion_dataset
+bob seger,i wonder,0.71,0.94,-2.95,0.04,0.21,0.0,0.07,0.96,124.0,False,rock,joy,1978,emotion_dataset
+m (robin scott),pop muzik,0.94,0.83,-7.49,0.04,0.28,0.0,0.08,0.97,109.0,False,"Unknown,Unknown,Unknown",joy,2022,emotion_dataset
+eminem,heat,0.84,0.86,-5.39,0.27,0.17,0.0,0.31,0.52,99.0,True,rap,anger,2017,emotion_dataset
+gucci mane & nicki minaj,make love,0.88,0.5,-6.03,0.18,0.24,0.0,0.1,0.4,106.0,True,"Unknown,Unknown,Unknown",anger,2019,emotion_dataset
+snakehips,gucci rock n rolla,0.8,0.93,-3.37,0.05,0.06,0.0,0.95,0.91,124.0,True,pop,joy,2019,emotion_dataset
+neffex,memories,0.77,0.9,-5.77,0.05,0.17,0.0,0.1,0.94,140.0,False,rap,joy,2019,emotion_dataset
+siedd,someone just like this,0.69,0.53,-7.55,0.07,0.44,0.0,0.13,0.8,103.0,False,"Unknown,Unknown,Unknown",joy,2017,emotion_dataset
+christina aguilera,come on over all i want is you,0.84,0.83,-6.0,0.04,0.03,0.0,0.33,0.96,119.0,False,pop,joy,1999,emotion_dataset
+rusty clanton,i hope its you,0.37,0.23,-8.96,0.04,0.98,0.0,0.17,0.16,134.0,False,"Unknown,Unknown,Unknown",fear,2018,emotion_dataset
+rod wave,heart 4 sale,0.86,0.46,-7.12,0.33,0.28,0.0,0.11,0.57,149.0,True,"Unknown,Unknown,Unknown",sadness,2018,emotion_dataset
+doors,roadhouse blues,0.62,0.63,-8.21,0.03,0.34,0.0,0.15,0.9,121.0,False,rock,joy,1970,emotion_dataset
+carolina liar,show me what im looking for,0.45,0.86,-1.0,0.04,0.01,0.0,0.1,0.36,105.0,False,alternative,sadness,2008,emotion_dataset
+2018 london cast of company,getting married today,0.42,0.49,-8.34,0.08,0.9,0.0,0.09,0.36,163.0,False,"Unknown,Unknown,Unknown",sadness,2007,emotion_dataset
+bee caves,running home to you,0.52,0.62,-8.24,0.03,0.13,0.38,0.1,0.65,110.0,False,"shoegazefan,sxsw 2016,Unknown",fear,2014,emotion_dataset
+jt music,hungry for another one,0.73,0.67,-6.0,0.04,0.22,0.0,0.17,0.39,130.0,False,rap,sadness,2017,emotion_dataset
+point of grace,when the wind blows,0.49,0.53,-4.77,0.03,0.61,0.0,0.12,0.13,128.0,False,christian,joy,2003,emotion_dataset
+shaggy,oh carolina,0.82,0.91,-5.04,0.1,0.47,0.0,0.33,0.92,125.0,False,reggae,anger,2008,emotion_dataset
+hail mary mallon,used cars,0.77,0.78,-4.66,0.18,0.01,0.0,0.26,0.62,172.0,True,hip-hop,anger,2014,emotion_dataset
+"agnee, parikrama and shilpa rao",i believe,0.28,0.46,-8.02,0.03,0.1,0.0,0.68,0.2,107.0,False,"Unknown,Unknown,Unknown",anger,2024,emotion_dataset
+omen,48 laws,0.87,0.84,-3.21,0.27,0.25,0.0,0.18,0.96,97.0,True,rap,anger,2015,emotion_dataset
+dizzy wright,here he go again,0.71,0.61,-7.0,0.24,0.03,0.0,0.09,0.59,88.0,True,rap,sadness,2013,emotion_dataset
+michael franti & spearhead,the sound of sunshine,0.74,0.98,-4.37,0.09,0.04,0.0,0.18,0.96,93.0,False,"Unknown,Unknown,Unknown",joy,2008,emotion_dataset
+m huncho & nafe smallz,wrong time,0.76,0.73,-3.51,0.16,0.0,0.0,0.3,0.5,134.0,True,"Unknown,Unknown,Unknown",sadness,2017,emotion_dataset
+capital cities,farrah fawcett hair,0.7,0.75,-5.03,0.04,0.02,0.01,0.13,0.64,126.0,False,pop,joy,2024,emotion_dataset
+krs-one,return of the boom bap,0.89,0.76,-9.93,0.26,0.01,0.0,0.06,0.97,97.0,False,hip-hop,anger,1993,emotion_dataset
+ski mask the slump god,he diddy,0.88,0.41,-12.92,0.12,0.58,0.0,0.12,0.26,130.0,True,rap,sadness,2019,emotion_dataset
+karmin,blame it on my heart,0.86,0.85,-4.59,0.05,0.05,0.0,0.12,0.95,126.0,False,pop,sadness,2016,emotion_dataset
+editors,darkness at the door,0.56,0.83,-8.29,0.03,0.02,0.0,0.32,0.59,111.0,False,pop,sadness,2018,emotion_dataset
+isaiah rashad,lay wit ya,0.91,0.86,-7.36,0.2,0.03,0.0,0.77,0.97,140.0,True,rap,anger,2021,emotion_dataset
+sort sol,let your fingers do the walking,0.31,0.39,-10.16,0.03,0.4,0.38,0.21,0.14,172.0,False,"rock,danish,dansk",joy,1993,emotion_dataset
+spoonie gee,love rap,0.84,0.89,-10.0,0.12,0.05,0.0,0.1,0.96,107.0,True,hip-hop,joy,1996,emotion_dataset
+outkast,hey ya,0.73,0.97,-2.26,0.07,0.1,0.0,0.17,0.96,80.0,False,hip-hop,sadness,2024,emotion_dataset
+the weeknd,material girl,0.74,0.89,-2.57,0.03,0.17,0.0,0.08,0.98,136.0,False,pop,joy,1985,emotion_dataset
+connie talbot,never give up on us,0.59,0.47,-5.11,0.02,0.27,0.0,0.1,0.16,90.0,False,"Unknown,Unknown,Unknown",joy,2019,emotion_dataset
+chuck berry,i'm just a name,0.69,0.74,-12.03,0.05,0.76,0.11,0.09,0.96,145.0,False,rock,fear,1975,emotion_dataset
+elton john,born bad,0.86,0.85,-10.89,0.04,0.0,0.05,0.03,0.96,127.0,False,pop,sadness,1979,emotion_dataset

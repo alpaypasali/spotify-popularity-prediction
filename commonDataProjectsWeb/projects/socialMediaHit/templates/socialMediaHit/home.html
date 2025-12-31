@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100vh; overflow: hidden;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Hit Prediction Platform</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+</head>
+<body style="margin: 0; padding: 0; height: 100vh; overflow: hidden; background: #0a0a0a; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+<div style="height: 100vh; display: flex; flex-direction: column; background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #0f0f1e 100%); position: relative;">
+    <!-- Subtle Grid Pattern -->
+    <div style="position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px); background-size: 50px 50px; pointer-events: none;"></div>
+    
+    <!-- Navigation -->
+    <nav style="position: relative; z-index: 10; padding: 1rem 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.3); backdrop-filter: blur(10px);">
+        <div style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <div style="width: 8px; height: 8px; background: #00ff88; border-radius: 50%; box-shadow: 0 0 10px #00ff88;"></div>
+                <a href="/socialMediaHit/" style="font-size: 1.25rem; font-weight: 600; color: #ffffff; letter-spacing: -0.5px; text-decoration: none;">SOCIAL MEDIA HIT</a>
+            </div>
+            <div style="display: flex; gap: 2rem;">
+                <a href="/socialMediaHit/spotify/" style="color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; position: relative;">
+                    SPOTIFY
+                    <span style="position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: #00ff88; transition: width 0.3s;"></span>
+                </a>
+                <a href="/socialMediaHit/instagram-picture/" style="color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; position: relative;">
+                    INSTAGRAM
+                    <span style="position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: #00ff88; transition: width 0.3s;"></span>
+                </a>
+                <a href="/socialMediaHit/final/" style="color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; position: relative;">
+                    FINAL
+                    <span style="position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: #00ff88; transition: width 0.3s;"></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div style="flex: 1; overflow-y: auto; overflow-x: hidden; position: relative; z-index: 5;">
+        <div style="max-width: 1400px; margin: 0 auto; padding: 3rem 2rem;">
+            
+            <!-- Hero Section -->
+            <div style="margin-bottom: 4rem;">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div style="width: 4px; height: 60px; background: linear-gradient(to bottom, #00ff88, #00cc6a);"></div>
+                    <div>
+                        <div style="font-size: 0.75rem; color: #00ff88; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.5rem;">PREDICTION ENGINE v2.0</div>
+                        <h1 style="font-size: 3.5rem; font-weight: 700; color: #ffffff; margin: 0; line-height: 1.1; letter-spacing: -1px;">
+                            INSTAGRAM REELS<br/>
+                            <span style="color: #00ff88;">HIT PREDICTION</span>
+                        </h1>
+                    </div>
+                </div>
+                <p style="font-size: 1rem; color: rgba(255,255,255,0.7); max-width: 600px; line-height: 1.6; margin-bottom: 2rem;">
+                    Machine learning platform designed for content creators, music producers, and influencers. 
+                    Analyze audio features, visual content and captions to predict viral potential across multiple markets.
+                </p>
+                <div style="display: flex; gap: 1rem; align-items: center;">
+                    <a href="/socialMediaHit/spotify/" 
+                       style="background: #00ff88; color: #0a0a0a; padding: 0.875rem 2rem; border-radius: 2px; font-weight: 600; font-size: 0.875rem; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.2s; box-shadow: 0 0 20px rgba(0,255,136,0.3);">
+                        START ANALYSIS
+                    </a>
+                    <div style="display: flex; gap: 2rem; font-size: 0.75rem; color: rgba(255,255,255,0.5);">
+                        <div>
+                            <div id="stats-tracks" style="color: #00ff88; font-weight: 600; font-size: 0.875rem;">-</div>
+                            <div>TRACKS ANALYZED</div>
+                        </div>
+                        <div>
+                            <div id="stats-models" style="color: #00ff88; font-weight: 600; font-size: 0.875rem;">-</div>
+                            <div>ML MODELS</div>
+                        </div>
+                        <div>
+                            <div id="stats-markets" style="color: #00ff88; font-weight: 600; font-size: 0.875rem;">-</div>
+                            <div>MARKETS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Features -->
+            <div style="margin-bottom: 4rem;">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                    <div style="width: 4px; height: 40px; background: #00ff88;"></div>
+                    <h2 style="font-size: 1.5rem; font-weight: 600; color: #ffffff; margin: 0; text-transform: uppercase; letter-spacing: 1px;">CORE SYSTEMS</h2>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+                    <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); padding: 2rem; transition: all 0.3s;">
+                        <div style="width: 48px; height: 48px; background: rgba(0,255,136,0.1); border: 1px solid rgba(0,255,136,0.3); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <div style="width: 24px; height: 24px; background: linear-gradient(135deg, #00ff88, #00cc6a); clip-path: polygon(50% 0%, 0% 100%, 100% 100%);"></div>
+                        </div>
+                        <h3 style="font-size: 1rem; font-weight: 600; color: #ffffff; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px;">AUDIO ANALYSIS</h3>
+                        <p style="font-size: 0.875rem; color: rgba(255,255,255,0.6); line-height: 1.6; margin-bottom: 1rem;">
+                            Real-time extraction and analysis of 13 audio features including danceability, energy, valence, tempo, and loudness.
+                        </p>
+                        <div style="font-size: 0.75rem; color: #00ff88; font-weight: 500;">XGBoost • Random Forest • GBM</div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); padding: 2rem; transition: all 0.3s;">
+                        <div style="width: 48px; height: 48px; background: rgba(0,255,136,0.1); border: 1px solid rgba(0,255,136,0.3); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <div style="width: 24px; height: 24px; background: linear-gradient(135deg, #00ff88, #00cc6a); clip-path: polygon(0% 0%, 100% 0%, 50% 100%);"></div>
+                        </div>
+                        <h3 style="font-size: 1rem; font-weight: 600; color: #ffffff; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px;">VISUAL PREDICTION</h3>
+                        <p style="font-size: 0.875rem; color: rgba(255,255,255,0.6); line-height: 1.6; margin-bottom: 1rem;">
+                            Computer vision models analyze image composition, color theory, and visual patterns to predict engagement rates.
+                        </p>
+                        <div style="font-size: 0.75rem; color: #00ff88; font-weight: 500;">CNN • Feature Extraction • Pattern Recognition</div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); padding: 2rem; transition: all 0.3s;">
+                        <div style="width: 48px; height: 48px; background: rgba(0,255,136,0.1); border: 1px solid rgba(0,255,136,0.3); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <div style="width: 20px; height: 20px; border: 2px solid #00ff88; border-radius: 2px; position: relative;">
+                                <div style="position: absolute; top: 2px; left: 2px; width: 12px; height: 12px; background: #00ff88;"></div>
+                            </div>
+                        </div>
+                        <h3 style="font-size: 1rem; font-weight: 600; color: #ffffff; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px;">CAPTION OPTIMIZATION</h3>
+                        <p style="font-size: 0.875rem; color: rgba(255,255,255,0.6); line-height: 1.6; margin-bottom: 1rem;">
+                            NLP models process captions and hashtags to optimize for maximum reach and engagement across target demographics.
+                        </p>
+                        <div style="font-size: 0.75rem; color: #00ff88; font-weight: 500;">NLP • Sentiment Analysis • Hashtag Scoring</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technology Stack -->
+            <div style="margin-bottom: 4rem;">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                    <div style="width: 4px; height: 40px; background: #00ff88;"></div>
+                    <h2 style="font-size: 1.5rem; font-weight: 600; color: #ffffff; margin: 0; text-transform: uppercase; letter-spacing: 1px;">TECHNOLOGY STACK</h2>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;">
+                    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 1.5rem; text-align: center;">
+                        <div style="font-size: 0.75rem; color: #00ff88; font-weight: 600; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">XGBoost</div>
+                        <div style="font-size: 0.7rem; color: rgba(255,255,255,0.5);">Gradient Boosting</div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 1.5rem; text-align: center;">
+                        <div style="font-size: 0.75rem; color: #00ff88; font-weight: 600; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Random Forest</div>
+                        <div style="font-size: 0.7rem; color: rgba(255,255,255,0.5);">Ensemble Learning</div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 1.5rem; text-align: center;">
+                        <div style="font-size: 0.75rem; color: #00ff88; font-weight: 600; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">LightGBM</div>
+                        <div style="font-size: 0.7rem; color: rgba(255,255,255,0.5);">Fast Training</div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 1.5rem; text-align: center;">
+                        <div style="font-size: 0.75rem; color: #00ff88; font-weight: 600; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Django</div>
+                        <div style="font-size: 0.7rem; color: rgba(255,255,255,0.5);">Web Framework</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Section -->
+            <div>
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                    <div style="width: 4px; height: 40px; background: #00ff88;"></div>
+                    <h2 style="font-size: 1.5rem; font-weight: 600; color: #ffffff; margin: 0; text-transform: uppercase; letter-spacing: 1px;">DEVELOPMENT TEAM</h2>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                    <div style="text-align: left;">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(0,255,136,0.2), rgba(0,204,106,0.2)); border: 1px solid rgba(0,255,136,0.3); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; position: relative;">
+                            <div style="width: 60px; height: 60px; background: rgba(0,255,136,0.1); border: 1px solid rgba(0,255,136,0.2);"></div>
+                        </div>
+                        <div style="font-size: 0.75rem; color: #00ff88; font-weight: 600; margin-bottom: 0.25rem; text-transform: uppercase; letter-spacing: 1px;">DATA SCIENCE</div>
+                        <div style="font-size: 1rem; font-weight: 600; color: #ffffff; margin-bottom: 0.5rem;">Machine Learning Engineer</div>
+                        <div style="font-size: 0.875rem; color: rgba(255,255,255,0.6); line-height: 1.5;">
+                            Model development, feature engineering, and performance optimization for prediction systems.
+                        </div>
+                    </div>
+                    <div style="text-align: left;">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(0,255,136,0.2), rgba(0,204,106,0.2)); border: 1px solid rgba(0,255,136,0.3); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; position: relative;">
+                            <div style="width: 60px; height: 60px; background: rgba(0,255,136,0.1); border: 1px solid rgba(0,255,136,0.2);"></div>
+                        </div>
+                        <div style="font-size: 0.75rem; color: #00ff88; font-weight: 600; margin-bottom: 0.25rem; text-transform: uppercase; letter-spacing: 1px;">UI/UX DESIGN</div>
+                        <div style="font-size: 1rem; font-weight: 600; color: #ffffff; margin-bottom: 0.5rem;">Interface Designer</div>
+                        <div style="font-size: 0.875rem; color: rgba(255,255,255,0.6); line-height: 1.5;">
+                            User experience design and visual systems for data visualization and interaction.
+                        </div>
+                    </div>
+                    <div style="text-align: left;">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(0,255,136,0.2), rgba(0,204,106,0.2)); border: 1px solid rgba(0,255,136,0.3); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; position: relative;">
+                            <div style="width: 60px; height: 60px; background: rgba(0,255,136,0.1); border: 1px solid rgba(0,255,136,0.2);"></div>
+                        </div>
+                        <div style="font-size: 0.75rem; color: #00ff88; font-weight: 600; margin-bottom: 0.25rem; text-transform: uppercase; letter-spacing: 1px;">BACKEND ENGINEERING</div>
+                        <div style="font-size: 1rem; font-weight: 600; color: #ffffff; margin-bottom: 0.5rem;">Platform Architect</div>
+                        <div style="font-size: 0.875rem; color: rgba(255,255,255,0.6); line-height: 1.5;">
+                            System architecture, API development, and infrastructure for scalable prediction services.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+a:hover {
+    color: #00ff88 !important;
+}
+a:hover span {
+    width: 100% !important;
+}
+</style>
+
+<script>
+// Load platform statistics dynamically
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('/socialMediaHit/api/stats/')
+        .then(response => response.json())
+        .then(data => {
+            // Update tracks count
+            const tracksEl = document.getElementById('stats-tracks');
+            if (tracksEl && data.tracks_analyzed) {
+                animateNumber(tracksEl, 0, data.tracks_analyzed, 1000);
+            }
+            
+            // Update ML models count
+            const modelsEl = document.getElementById('stats-models');
+            if (modelsEl && data.ml_models) {
+                animateNumber(modelsEl, 0, data.ml_models, 800);
+            }
+            
+            // Update markets count
+            const marketsEl = document.getElementById('stats-markets');
+            if (marketsEl && data.markets) {
+                animateNumber(marketsEl, 0, data.markets, 600);
+            }
+        })
+        .catch(error => {
+            console.error('Error loading stats:', error);
+            // Fallback to default values
+            document.getElementById('stats-tracks').textContent = '953';
+            document.getElementById('stats-models').textContent = '4';
+            document.getElementById('stats-markets').textContent = '6';
+        });
+});
+
+// Animate number counting
+function animateNumber(element, start, end, duration) {
+    const startTime = performance.now();
+    const difference = end - start;
+    
+    function update(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        
+        // Easing function (ease-out)
+        const easeOut = 1 - Math.pow(1 - progress, 3);
+        const current = Math.floor(start + difference * easeOut);
+        
+        element.textContent = current.toLocaleString();
+        
+        if (progress < 1) {
+            requestAnimationFrame(update);
+        } else {
+            element.textContent = end.toLocaleString();
+        }
+    }
+    
+    requestAnimationFrame(update);
+}
+</script>
+</body>
+</html>

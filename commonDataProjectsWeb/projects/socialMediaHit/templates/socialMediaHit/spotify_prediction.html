@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100vh; overflow: hidden;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Hit Prediction - Social Media Hit</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.css" rel="stylesheet">
+    <style>
+    .feature-slider {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 10px;
+        border-radius: 5px;
+        background: linear-gradient(to right, #1DB954, #1ed760);
+        outline: none;
+    }
+    .feature-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: white;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    .feature-slider::-moz-range-thumb {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: white;
+        cursor: pointer;
+        border: none;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    </style>
+    <style>
+        /* Responsive grid for smaller screens */
+        @media (max-width: 1024px) {
+            .spotify-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+                gap: 0.75rem !important;
+            }
+            #features-chart-container {
+                height: clamp(280px, 30vh, 380px) !important;
+            }
+            #market-chart-container {
+                height: clamp(200px, 22vh, 280px) !important;
+            }
+            .spotify-section {
+                padding: 0.75rem !important;
+            }
+            .spotify-section h2 {
+                font-size: 1.1rem !important;
+                margin-bottom: 0.5rem !important;
+            }
+            .spotify-header {
+                margin-bottom: 0.75rem !important;
+            }
+            .spotify-header h1 {
+                font-size: 1.75rem !important;
+            }
+        }
+        @media (max-width: 768px) {
+            .spotify-grid {
+                grid-template-columns: 1fr !important;
+                gap: 0.75rem !important;
+            }
+            #features-chart-container {
+                height: clamp(250px, 28vh, 350px) !important;
+            }
+            #market-chart-container {
+                height: clamp(180px, 20vh, 250px) !important;
+            }
+            .spotify-section {
+                padding: 0.75rem !important;
+            }
+            .spotify-header {
+                margin-bottom: 0.75rem !important;
+            }
+            .spotify-header h1 {
+                font-size: 1.5rem !important;
+            }
+            .spotify-header p {
+                font-size: 0.9rem !important;
+            }
+        }
+        
+        /* Responsive chart heights for different viewport heights */
+        @media (max-height: 900px) {
+            #features-chart-container {
+                height: clamp(280px, 32vh, 380px) !important;
+            }
+            #market-chart-container {
+                height: clamp(200px, 23vh, 280px) !important;
+            }
+        }
+        @media (max-height: 800px) {
+            #features-chart-container {
+                height: clamp(250px, 30vh, 350px) !important;
+            }
+            #market-chart-container {
+                height: clamp(180px, 22vh, 250px) !important;
+            }
+        }
+        @media (max-height: 700px) {
+            #features-chart-container {
+                height: clamp(220px, 28vh, 320px) !important;
+            }
+            #market-chart-container {
+                height: clamp(160px, 20vh, 220px) !important;
+            }
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; background: linear-gradient(to bottom right, #1DB954, #1aa34a, #191414, #121212); height: 100vh; overflow: hidden;">
+<div style="background: linear-gradient(to bottom right, #1DB954, #1aa34a, #191414, #121212); height: 100vh; display: flex; flex-direction: column; overflow: hidden;">
+    <!-- Navigation -->
+    <nav style="position: relative; z-index: 10; padding: 1rem 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.3); backdrop-filter: blur(10px);">
+        <div style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <div style="width: 8px; height: 8px; background: #00ff88; border-radius: 50%; box-shadow: 0 0 10px #00ff88;"></div>
+                <a href="/socialMediaHit/" style="font-size: 1.25rem; font-weight: 600; color: #ffffff; letter-spacing: -0.5px; text-decoration: none;">SOCIAL MEDIA HIT</a>
+            </div>
+            <div style="display: flex; gap: 2rem;">
+                <a href="/socialMediaHit/spotify/" style="color: #00ff88; text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; position: relative;">
+                    SPOTIFY
+                    <span style="position: absolute; bottom: -4px; left: 0; width: 100%; height: 1px; background: #00ff88;"></span>
+                </a>
+                <a href="/socialMediaHit/instagram-picture/" style="color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; position: relative;">
+                    INSTAGRAM
+                    <span style="position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: #00ff88; transition: width 0.3s;"></span>
+                </a>
+                <a href="/socialMediaHit/final/" style="color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; position: relative;">
+                    FINAL
+                    <span style="position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: #00ff88; transition: width 0.3s;"></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div style="width: 100%; max-width: 100%; margin: 0 auto; padding: 1.25rem 1.5rem; flex: 1; overflow: hidden; display: flex; flex-direction: column;">
+        <!-- Header -->
+        <div class="spotify-header" style="flex-shrink: 0; margin-bottom: 0.75rem;">
+            <h1 style="font-size: 1.75rem; font-weight: bold; color: white; margin-bottom: 0.375rem;">Spotify Hit Prediction</h1>
+            <p style="color: #d1d5db; font-size: 0.9rem;">Analyze your music and predict hit potential across global markets</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; flex: 1; overflow: hidden; width: 100%; min-height: 0;" class="spotify-grid">
+            <!-- Left Column: Playlist & Song Selection -->
+            <div style="display: flex; flex-direction: column; gap: 0.75rem; overflow: hidden; max-width: 100%;">
+                <!-- Playlist Section -->
+                <div class="spotify-section" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.5rem; flex-shrink: 0;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.4rem;">
+                        <h2 style="font-size: 1rem; font-weight: bold; color: white; margin: 0; flex-shrink: 0;">Playlist</h2>
+                        <input type="text" 
+                               id="playlist-search" 
+                               placeholder="Search artist or song..." 
+                               style="flex: 1; background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 0.5rem; padding: 0.4rem 0.6rem; color: white; font-size: 0.8rem; outline: none; transition: all 0.2s;"
+                               onfocus="this.style.background='rgba(255, 255, 255, 0.25)'; this.style.borderColor='rgba(255, 255, 255, 0.4)'"
+                               onblur="this.style.background='rgba(255, 255, 255, 0.15)'; this.style.borderColor='rgba(255, 255, 255, 0.2)'">
+                        <style>
+                            #playlist-search::placeholder {
+                                color: rgba(255, 255, 255, 0.5);
+                            }
+                        </style>
+                    </div>
+                    <div id="playlist-container" style="max-height: 14rem; overflow-y: auto; display: flex; flex-direction: column; gap: 0.3rem;">
+                        <div style="color: #d1d5db; text-align: center; padding: 0.5rem; font-size: 0.75rem;">Loading playlist...</div>
+                    </div>
+                </div>
+
+                <!-- Similar Songs Section -->
+                <div class="spotify-section" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex-shrink: 0;">
+                    <h2 style="font-size: 1.1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Similar Songs</h2>
+                    <div id="similar-songs-container" style="display: flex; flex-direction: column; gap: 0.4rem; max-height: 10rem; overflow-y: auto;">
+                        <div style="color: #d1d5db; text-align: center; padding: 0.5rem; font-size: 0.75rem;">Select a song to see similar tracks</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle Column: Audio Features & Controls -->
+            <div style="display: flex; flex-direction: column; gap: 1rem; overflow-x: hidden; max-width: 100%; overflow-y: auto;">
+                <!-- Selected Song Info -->
+                <div class="spotify-section" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.5rem; flex-shrink: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.25rem;">Selected Song</h2>
+                    <div id="selected-song" style="color: #d1d5db; font-size: 0.75rem; margin-bottom: 0.25rem;">
+                        <p style="text-align: center; padding: 0.25rem 0.5rem;">No song selected</p>
+                    </div>
+                    <!-- Spotify Embed Player -->
+                    <div id="spotify-player-container" style="display: none; margin-top: 0.25rem;">
+                        <div style="background: rgba(0, 0, 0, 0.3); border-radius: 0.5rem; padding: 0.5rem; margin-bottom: 0.25rem;">
+                            <iframe id="spotify-embed-player" 
+                                    style="border-radius: 0.5rem; width: 100%; height: 100px; display: none;" 
+                                    frameborder="0" 
+                                    allowtransparency="true" 
+                                    allow="encrypted-media">
+                            </iframe>
+                        </div>
+                        <div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; font-size: 0.65rem; align-items: center; margin-top: 0.25rem;" id="spotify-direct-link">
+                            <!-- Minimal links will be inserted here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Audio Features Visualization -->
+                <div class="spotify-section" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex-shrink: 0;">
+                    <h2 style="font-size: 1.1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Audio Features</h2>
+                    <div id="features-chart-container" style="position: relative; width: 100%; height: clamp(280px, 30vh, 380px); min-height: 280px;">
+                        <canvas id="features-chart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Feature Controls -->
+                <div class="spotify-section" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex-shrink: 0;">
+                    <h2 style="font-size: 1.1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Adjust Features</h2>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <label style="color: white; font-weight: 600; font-size: 0.9rem; min-width: 120px; flex-shrink: 0;">Danceability: <span id="danceability-value">0.5</span></label>
+                            <input type="range" id="danceability" min="0" max="1" step="0.01" value="0.5" class="feature-slider" style="flex: 1; height: 8px;">
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <label style="color: white; font-weight: 600; font-size: 0.9rem; min-width: 120px; flex-shrink: 0;">Energy: <span id="energy-value">0.5</span></label>
+                            <input type="range" id="energy" min="0" max="1" step="0.01" value="0.5" class="feature-slider" style="flex: 1; height: 8px;">
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <label style="color: white; font-weight: 600; font-size: 0.9rem; min-width: 120px; flex-shrink: 0;">Valence: <span id="valence-value">0.5</span></label>
+                            <input type="range" id="valence" min="0" max="1" step="0.01" value="0.5" class="feature-slider" style="flex: 1; height: 8px;">
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <label style="color: white; font-weight: 600; font-size: 0.9rem; min-width: 120px; flex-shrink: 0;">Loudness: <span id="loudness-value">-10</span> dB</label>
+                            <input type="range" id="loudness" min="-60" max="0" step="1" value="-10" class="feature-slider" style="flex: 1; height: 8px;">
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <label style="color: white; font-weight: 600; font-size: 0.9rem; min-width: 120px; flex-shrink: 0;">Tempo: <span id="tempo-value">120</span> BPM</label>
+                            <input type="range" id="tempo" min="60" max="200" step="1" value="120" class="feature-slider" style="flex: 1; height: 8px;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Market Selection -->
+                <div class="spotify-section" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex-shrink: 0;">
+                    <h2 style="font-size: 1.1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Target Markets</h2>
+                    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.25rem;">
+                        <label style="display: flex; align-items: center; color: white; font-size: 0.75rem;">
+                            <input type="checkbox" value="US" class="market-checkbox" style="margin-right: 0.25rem;" checked>
+                            United States
+                        </label>
+                        <label style="display: flex; align-items: center; color: white; font-size: 0.75rem;">
+                            <input type="checkbox" value="GB" class="market-checkbox" style="margin-right: 0.25rem;" checked>
+                            United Kingdom
+                        </label>
+                        <label style="display: flex; align-items: center; color: white; font-size: 0.75rem;">
+                            <input type="checkbox" value="DE" class="market-checkbox" style="margin-right: 0.25rem;" checked>
+                            Germany
+                        </label>
+                        <label style="display: flex; align-items: center; color: white; font-size: 0.75rem;">
+                            <input type="checkbox" value="FR" class="market-checkbox" style="margin-right: 0.25rem;" checked>
+                            France
+                        </label>
+                        <label style="display: flex; align-items: center; color: white; font-size: 0.75rem;">
+                            <input type="checkbox" value="JP" class="market-checkbox" style="margin-right: 0.25rem;" checked>
+                            Japan
+                        </label>
+                        <label style="display: flex; align-items: center; color: white; font-size: 0.75rem;">
+                            <input type="checkbox" value="BR" class="market-checkbox" style="margin-right: 0.25rem;" checked>
+                            Brazil
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Predictions -->
+            <div style="display: flex; flex-direction: column; gap: 0.75rem; overflow: hidden; max-width: 100%;">
+                <!-- Popularity Prediction -->
+                <div class="spotify-section" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.5rem; flex-shrink: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.4rem;">Popularity Prediction</h2>
+                    <div id="popularity-prediction">
+                        <div style="color: #d1d5db; text-align: center; padding: 0.4rem; font-size: 0.75rem;">
+                            Adjust features or select a song to see popularity prediction
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hit Prediction Results -->
+                <div class="spotify-section" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.4rem; flex-shrink: 0;">
+                    <h2 style="font-size: 0.95rem; font-weight: bold; color: white; margin-bottom: 0.3rem;">Hit Predictions</h2>
+                    <div id="prediction-results">
+                        <div style="color: #d1d5db; text-align: center; padding: 0.3rem; font-size: 0.7rem;">
+                            Adjust features or select a song to see predictions
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Market Breakdown -->
+                <div class="spotify-section" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex-shrink: 0;">
+                    <h2 style="font-size: 1.1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Market Breakdown</h2>
+                    <div id="market-chart-container" style="position: relative; width: 100%; height: clamp(200px, 22vh, 280px); min-height: 200px;">
+                        <canvas id="market-chart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Next Step Button -->
+                <div style="background: linear-gradient(to right, #1DB954, #1ed760); border-radius: 0.75rem; padding: 0.75rem; text-align: center; flex-shrink: 0;">
+                    <a href="/socialMediaHit/instagram-picture/" 
+                       style="color: white; font-weight: bold; font-size: 1rem; text-decoration: none; display: block;">
+                        Continue to Instagram Picture →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script>
+// Global state
+let currentSong = null;
+let featuresChart = null;
+let marketChart = null;
+let playlist = [];
+let filteredPlaylist = [];
+
+// Initialize
+document.addEventListener('DOMContentLoaded', function() {
+    // Wait a bit for canvas elements to be fully rendered
+    setTimeout(() => {
+        initializeCharts();
+        loadPlaylist();
+        setupEventListeners();
+        setupPlaylistSearch();
+    }, 100);
+});
+
+// Setup playlist search
+function setupPlaylistSearch() {
+    const searchInput = document.getElementById('playlist-search');
+    if (searchInput) {
+        // Real-time search as user types
+        searchInput.addEventListener('input', function(e) {
+            filterPlaylist(e.target.value);
+        });
+        
+        // Clear search on Escape key
+        searchInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                e.target.value = '';
+                filterPlaylist('');
+            }
+        });
+    }
+}
+
+// Load playlist
+async function loadPlaylist() {
+    try {
+        const response = await fetch('/socialMediaHit/api/playlist/');
+        if (!response.ok) {
+            console.error('Playlist API error:', response.status, response.statusText);
+            const container = document.getElementById('playlist-container');
+            if (container) {
+                container.innerHTML = '<div class="text-gray-300 text-center py-4">Error loading playlist</div>';
+            }
+            return;
+        }
+        const data = await response.json();
+        console.log('Playlist loaded:', data);
+        playlist = data.songs || [];
+        filteredPlaylist = [...playlist]; // Initialize filtered playlist
+        if (playlist.length === 0) {
+            console.warn('No songs in playlist');
+        }
+        renderPlaylist();
+    } catch (error) {
+        console.error('Error loading playlist:', error);
+        const container = document.getElementById('playlist-container');
+        if (container) {
+            container.innerHTML = '<div class="text-gray-300 text-center py-4">Error: ' + error.message + '</div>';
+        }
+    }
+}
+
+// Filter playlist
+function filterPlaylist(searchTerm) {
+    if (!searchTerm || searchTerm.trim() === '') {
+        filteredPlaylist = [...playlist];
+    } else {
+        const term = searchTerm.toLowerCase().trim();
+        filteredPlaylist = playlist.filter(song => {
+            const trackName = (song.track_name || '').toLowerCase();
+            const artistName = (song.artist_name || '').toLowerCase();
+            return trackName.includes(term) || artistName.includes(term);
+        });
+    }
+    renderPlaylist();
+}
+
+// Render playlist
+function renderPlaylist() {
+    const container = document.getElementById('playlist-container');
+    const searchInput = document.getElementById('playlist-search');
+    const searchTerm = searchInput ? searchInput.value.trim() : '';
+    
+    // Use filtered playlist if search is active, otherwise use full playlist
+    const displayPlaylist = searchTerm ? filteredPlaylist : playlist;
+    
+    if (playlist.length === 0) {
+        container.innerHTML = '<div class="text-gray-300 text-center py-4">No songs available</div>';
+        return;
+    }
+    
+    if (displayPlaylist.length === 0 && searchTerm) {
+        container.innerHTML = `<div class="text-gray-300 text-center py-4">No songs found for "${searchTerm}"</div>`;
+        return;
+    }
+    
+    console.log('Rendering playlist with', displayPlaylist.length, 'songs' + (searchTerm ? ` (filtered from ${playlist.length})` : ''));
+    
+    container.innerHTML = displayPlaylist.map((song, index) => {
+        // Find original index in full playlist
+        const originalIndex = playlist.findIndex(s => 
+            s.track_name === song.track_name && s.artist_name === song.artist_name
+        );
+        return `
+        <div class="bg-white/5 rounded-lg p-2 cursor-pointer hover:bg-white/10 transition song-item" 
+             data-index="${originalIndex >= 0 ? originalIndex : index}"
+             style="padding: 0.5rem;">
+            <div class="font-semibold text-white" style="font-size: 0.875rem; line-height: 1.2;">${song.track_name || 'Unknown'}</div>
+            <div class="text-sm text-gray-300" style="font-size: 0.75rem; line-height: 1.2; margin-top: 0.25rem;">${song.artist_name || 'Unknown Artist'}</div>
+        </div>
+    `;
+    }).join('');
+    
+    // Add click listeners
+    document.querySelectorAll('.song-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const index = parseInt(item.dataset.index);
+            selectSong(playlist[index]);
+        });
+    });
+    
+    // Show count
+    const existingCount = container.querySelector('.playlist-count');
+    if (existingCount) {
+        existingCount.remove();
+    }
+    
+    const countDiv = document.createElement('div');
+    countDiv.className = 'playlist-count';
+    countDiv.style.cssText = 'color: #9ca3af; text-align: center; padding: 0.5rem; font-size: 0.7rem; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 0.5rem;';
+    if (searchTerm) {
+        countDiv.textContent = `Showing ${displayPlaylist.length} of ${playlist.length} songs`;
+    } else {
+        countDiv.textContent = `Total: ${playlist.length} songs`;
+    }
+    container.appendChild(countDiv);
+}
+
+// Select song
+function selectSong(song) {
+    currentSong = song;
+    
+    // Update selected song display
+    document.getElementById('selected-song').innerHTML = `
+        <div class="font-bold text-white text-lg">${song.track_name || 'Unknown'}</div>
+        <div class="text-gray-300">${song.artist_name || 'Unknown Artist'}</div>
+    `;
+    
+    // Load Spotify player
+    loadSpotifyPlayer(song);
+    
+    // Update sliders and trigger events to ensure all updates happen
+    if (song.danceability !== undefined) {
+        const slider = document.getElementById('danceability');
+        slider.value = song.danceability;
+        document.getElementById('danceability-value').textContent = song.danceability.toFixed(2);
+        slider.dispatchEvent(new Event('input', { bubbles: true }));
+    }
+    if (song.energy !== undefined) {
+        const slider = document.getElementById('energy');
+        slider.value = song.energy;
+        document.getElementById('energy-value').textContent = song.energy.toFixed(2);
+        slider.dispatchEvent(new Event('input', { bubbles: true }));
+    }
+    if (song.valence !== undefined) {
+        const slider = document.getElementById('valence');
+        slider.value = song.valence;
+        document.getElementById('valence-value').textContent = song.valence.toFixed(2);
+        slider.dispatchEvent(new Event('input', { bubbles: true }));
+    }
+    if (song.loudness !== undefined) {
+        const slider = document.getElementById('loudness');
+        slider.value = song.loudness;
+        document.getElementById('loudness-value').textContent = song.loudness.toFixed(1);
+        slider.dispatchEvent(new Event('input', { bubbles: true }));
+    }
+    if (song.tempo !== undefined) {
+        const slider = document.getElementById('tempo');
+        slider.value = song.tempo;
+        document.getElementById('tempo-value').textContent = Math.round(song.tempo);
+        slider.dispatchEvent(new Event('input', { bubbles: true }));
+    }
+    
+    // Update charts immediately
+    updateFeaturesChart();
+    
+    // Load similar songs and predictions with current features
+    // Use setTimeout to ensure sliders are fully updated
+    setTimeout(() => {
+        loadSimilarSongs();
+        predictHit();
+    }, 50);
+}
+
+// Load Spotify player
+async function loadSpotifyPlayer(song) {
+    const container = document.getElementById('spotify-player-container');
+    const embedPlayer = document.getElementById('spotify-embed-player');
+    const directLink = document.getElementById('spotify-direct-link');
+    
+    if (!song || !song.track_name || !song.artist_name) {
+        if (container) container.style.display = 'none';
+        return;
+    }
+    
+    try {
+        const trackName = song.track_name;
+        const artistName = song.artist_name;
+        
+        // Try to get Spotify track ID from backend for embed
+        try {
+            const response = await fetch(`/socialMediaHit/api/track-id/?track=${encodeURIComponent(trackName)}&artist=${encodeURIComponent(artistName)}`);
+            const data = await response.json();
+            
+            if (data.track_id && embedPlayer) {
+                // Load Spotify embed player
+                embedPlayer.src = data.embed_url;
+                embedPlayer.style.display = 'block';
+                if (container) container.style.display = 'block';
+            } else {
+                // Hide embed if track not found
+                if (embedPlayer) embedPlayer.style.display = 'none';
+                if (container) container.style.display = 'block';
+            }
+        } catch (apiError) {
+            console.warn('Spotify API error, showing links only:', apiError);
+            // Hide embed on error
+            if (embedPlayer) embedPlayer.style.display = 'none';
+            if (container) container.style.display = 'block';
+        }
+        
+        // Always show minimal platform links
+        const searchQuery = `${trackName} ${artistName}`;
+        const spotifySearchQuery = encodeURIComponent(searchQuery);
+        const youtubeSearchQuery = encodeURIComponent(searchQuery);
+        
+        if (directLink) {
+            directLink.innerHTML = `
+                <a href="https://open.spotify.com/search/${spotifySearchQuery}" 
+                   target="_blank" 
+                   style="color: #1ed760; text-decoration: none; opacity: 0.8; transition: opacity 0.2s; font-size: 0.7rem;"
+                   onmouseover="this.style.opacity='1'"
+                   onmouseout="this.style.opacity='0.8'">
+                    Spotify
+                </a>
+                <span style="color: rgba(255,255,255,0.3); margin: 0 0.5rem;">•</span>
+                <a href="https://www.youtube.com/results?search_query=${youtubeSearchQuery}" 
+                   target="_blank" 
+                   style="color: #ff0000; text-decoration: none; opacity: 0.8; transition: opacity 0.2s; font-size: 0.7rem;"
+                   onmouseover="this.style.opacity='1'"
+                   onmouseout="this.style.opacity='0.8'">
+                    YouTube
+                </a>
+            `;
+        }
+        
+    } catch (error) {
+        console.error('Error loading Spotify player:', error);
+        if (container) container.style.display = 'none';
+    }
+}
+
+// Load similar songs
+async function loadSimilarSongs() {
+    if (!currentSong) return;
+    
+    try {
+        const features = getCurrentFeatures();
+        const response = await fetch('/socialMediaHit/api/similar-songs/', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(features)
+        });
+        const data = await response.json();
+        renderSimilarSongs(data.songs || []);
+    } catch (error) {
+        console.error('Error loading similar songs:', error);
+    }
+}
+
+// Render similar songs
+function renderSimilarSongs(songs) {
+    const container = document.getElementById('similar-songs-container');
+    if (songs.length === 0) {
+        container.innerHTML = '<div class="text-gray-300 text-center py-4">No similar songs found</div>';
+        return;
+    }
+    
+    container.innerHTML = songs.map(song => `
+        <div class="bg-white/5 rounded-lg p-3 cursor-pointer hover:bg-white/10 transition" 
+             onclick="selectSong(${JSON.stringify(song).replace(/"/g, '&quot;')})">
+            <div class="font-semibold text-white">${song.track_name || 'Unknown'}</div>
+            <div class="text-sm text-gray-300">${song.artist_name || 'Unknown Artist'}</div>
+        </div>
+    `).join('');
+}
+
+// Get current features
+function getCurrentFeatures() {
+    return {
+        danceability: parseFloat(document.getElementById('danceability').value),
+        energy: parseFloat(document.getElementById('energy').value),
+        valence: parseFloat(document.getElementById('valence').value),
+        loudness: parseFloat(document.getElementById('loudness').value),
+        tempo: parseFloat(document.getElementById('tempo').value)
+    };
+}
+
+// Get selected markets
+function getSelectedMarkets() {
+    return Array.from(document.querySelectorAll('.market-checkbox:checked')).map(cb => cb.value);
+}
+
+// Predict hit
+async function predictHit() {
+    const features = getCurrentFeatures();
+    const markets = getSelectedMarkets();
+    
+    try {
+        const response = await fetch('/socialMediaHit/api/predict/spotify/', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({...features, markets})
+        });
+        const data = await response.json();
+        displayPredictions(data);
+    } catch (error) {
+        console.error('Error predicting hit:', error);
+    }
+}
+
+// Display predictions
+function displayPredictions(data) {
+    const container = document.getElementById('prediction-results');
+    const popularityContainer = document.getElementById('popularity-prediction');
+    
+    if (data.error) {
+        container.innerHTML = `<div class="text-red-300">${data.error}</div>`;
+        if (popularityContainer) {
+            popularityContainer.innerHTML = `<div class="text-red-300">${data.error}</div>`;
+        }
+        return;
+    }
+    
+    const overallScore = data.overall_score || 0;
+    const popularityScore = data.popularity_score !== undefined ? data.popularity_score : 0;
+    const marketPredictions = data.market_predictions || {};
+    
+    // Debug: Log popularity score
+    console.log('Popularity score from API:', popularityScore, 'Full data:', data);
+    
+    // Display popularity prediction
+    if (popularityContainer) {
+        popularityContainer.innerHTML = `
+            <div style="text-align: center;">
+                <div style="font-size: 1.75rem; font-weight: bold; color: white; line-height: 1; margin-bottom: 0.25rem;">${popularityScore.toFixed(1)}</div>
+                <div style="color: #d1d5db; font-size: 0.75rem; margin-bottom: 0.4rem;">Popularity Score</div>
+                <div style="background: rgba(255, 255, 255, 0.1); border-radius: 0.25rem; height: 0.25rem; margin-bottom: 0.25rem;">
+                    <div style="height: 0.25rem; border-radius: 0.25rem; background: linear-gradient(to right, #3b82f6, #60a5fa); width: ${Math.min(100, popularityScore)}%"></div>
+                </div>
+                <div style="color: #9ca3af; font-size: 0.65rem;">Range: 0-100</div>
+            </div>
+        `;
+    }
+    
+    // Display hit predictions
+    container.innerHTML = `
+        <div class="text-center" style="margin-bottom: 0.35rem;">
+            <div style="font-size: 1.5rem; font-weight: bold; color: white; line-height: 1; margin-bottom: 0.15rem;">${overallScore.toFixed(1)}</div>
+            <div style="color: #d1d5db; font-size: 0.7rem;">Overall Hit Score</div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+            ${Object.entries(marketPredictions).map(([market, pred]) => `
+                <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.4rem; padding: 0.3rem 0.4rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.15rem;">
+                        <span style="color: white; font-weight: 600; font-size: 0.75rem;">${market}</span>
+                        <span style="color: #1ed760; font-weight: bold; font-size: 0.75rem;">${pred.probability.toFixed(1)}</span>
+                    </div>
+                    <div style="background: rgba(255, 255, 255, 0.1); border-radius: 0.2rem; height: 0.2rem;">
+                        <div style="height: 0.2rem; border-radius: 0.2rem; background: linear-gradient(to right, #1DB954, #1ed760); width: ${Math.min(100, pred.probability)}%"></div>
+                    </div>
+                </div>
+            `).join('')}
+        </div>
+    `;
+    
+    updateMarketChart(marketPredictions);
+}
+
+// Initialize charts
+function initializeCharts() {
+    // Features chart - normalize initial values
+    const featuresCtx = document.getElementById('features-chart');
+    if (!featuresCtx) return;
+    
+    const ctx = featuresCtx.getContext('2d');
+    featuresChart = new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: ['Danceability', 'Energy', 'Valence', 'Loudness', 'Tempo'],
+            datasets: [{
+                label: 'Audio Features',
+                data: [0.5, 0.5, 0.5, 0.833, 0.429], // Normalized: [0.5, 0.5, 0.5, (-10+60)/60, (120-60)/140]
+                backgroundColor: 'rgba(139, 92, 246, 0.2)',
+                borderColor: 'rgba(139, 92, 246, 1)',
+                pointBackgroundColor: 'rgba(139, 92, 246, 1)',
+                borderWidth: 2,
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            aspectRatio: 1,
+            scales: {
+                r: {
+                    beginAtZero: true,
+                    max: 1,
+                    min: 0,
+                    ticks: {
+                        stepSize: 0.2,
+                        color: 'rgba(255, 255, 255, 0.7)',
+                        backdropColor: 'transparent',
+                        font: {
+                            size: 10
+                        }
+                    },
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.1)'
+                    },
+                    pointLabels: {
+                        color: 'rgba(255, 255, 255, 0.9)',
+                        font: {
+                            size: 11
+                        }
+                    },
+                    angleLines: {
+                        color: 'rgba(255, 255, 255, 0.1)'
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'top',
+                    labels: { 
+                        color: 'white',
+                        font: {
+                            size: 11
+                        }
+                    }
+                }
+            }
+        }
+    });
+    
+    // Market chart
+    const marketCanvas = document.getElementById('market-chart');
+    if (!marketCanvas) return;
+    
+    const marketCtx = marketCanvas.getContext('2d');
+    marketChart = new Chart(marketCtx, {
+        type: 'bar',
+        data: {
+            labels: [],
+            datasets: [{
+                label: 'Hit Probability (%)',
+                data: [],
+                backgroundColor: 'rgba(59, 130, 246, 0.6)',
+                borderColor: 'rgba(59, 130, 246, 1)',
+                borderWidth: 1,
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'top',
+                    labels: { 
+                        color: 'white',
+                        font: {
+                            size: 11
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 100,
+                    ticks: { 
+                        color: 'rgba(255, 255, 255, 0.7)',
+                        font: {
+                            size: 10
+                        }
+                    },
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.1)'
+                    }
+                },
+                x: {
+                    ticks: { 
+                        color: 'rgba(255, 255, 255, 0.7)',
+                        font: {
+                            size: 10
+                        }
+                    },
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.1)'
+                    }
+                }
+            }
+        }
+    });
+}
+
+// Update features chart
+function updateFeaturesChart() {
+    if (!featuresChart) return;
+    
+    const features = getCurrentFeatures();
+    // Normalize values for radar chart (all values 0-1 range)
+    featuresChart.data.datasets[0].data = [
+        features.danceability,                    // 0-1
+        features.energy,                          // 0-1
+        features.valence,                         // 0-1
+        Math.max(0, Math.min(1, (features.loudness + 60) / 60)), // Normalize loudness (-60 to 0) -> (0 to 1)
+        Math.max(0, Math.min(1, (features.tempo - 60) / 140))     // Normalize tempo (60-200) -> (0 to 1)
+    ];
+    featuresChart.update('none'); // 'none' mode for smoother updates
+}
+
+// Update market chart
+function updateMarketChart(marketPredictions) {
+    const markets = Object.keys(marketPredictions);
+    const probabilities = Object.values(marketPredictions).map(p => p.probability);
+    
+    marketChart.data.labels = markets;
+    marketChart.data.datasets[0].data = probabilities;
+    marketChart.update();
+}
+
+// Setup event listeners
+function setupEventListeners() {
+    // Feature sliders
+    ['danceability', 'energy', 'valence', 'loudness', 'tempo'].forEach(feature => {
+        const slider = document.getElementById(feature);
+        const valueSpan = document.getElementById(`${feature}-value`);
+        
+        slider.addEventListener('input', (e) => {
+            const value = parseFloat(e.target.value);
+            if (feature === 'loudness') {
+                valueSpan.textContent = value.toFixed(1);
+            } else if (feature === 'tempo') {
+                valueSpan.textContent = Math.round(value);
+            } else {
+                valueSpan.textContent = value.toFixed(2);
+            }
+            updateFeaturesChart();
+            predictHit();
+            loadSimilarSongs();
+        });
+    });
+    
+    // Market checkboxes
+    document.querySelectorAll('.market-checkbox').forEach(checkbox => {
+        checkbox.addEventListener('change', predictHit);
+    });
+}
+</script>
+
+<style>
+nav a:hover {
+    color: #00ff88 !important;
+}
+nav a:hover span {
+    width: 100% !important;
+}
+</style>
+</body>
+</html>

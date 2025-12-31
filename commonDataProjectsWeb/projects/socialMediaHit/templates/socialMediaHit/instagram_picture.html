@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100vh; overflow: hidden;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Picture Prediction - Social Media Hit</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+</head>
+<body style="margin: 0; padding: 0; background: linear-gradient(to bottom right, #831843, #881337, #7c2d12); height: 100vh; overflow: hidden;">
+<div style="background: linear-gradient(to bottom right, #831843, #881337, #7c2d12); height: 100vh; display: flex; flex-direction: column; overflow: hidden;">
+    <!-- Navigation -->
+    <nav style="position: relative; z-index: 10; padding: 1rem 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.3); backdrop-filter: blur(10px);">
+        <div style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <div style="width: 8px; height: 8px; background: #00ff88; border-radius: 50%; box-shadow: 0 0 10px #00ff88;"></div>
+                <a href="/socialMediaHit/" style="font-size: 1.25rem; font-weight: 600; color: #ffffff; letter-spacing: -0.5px; text-decoration: none;">SOCIAL MEDIA HIT</a>
+            </div>
+            <div style="display: flex; gap: 2rem;">
+                <a href="/socialMediaHit/spotify/" style="color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; position: relative;">
+                    SPOTIFY
+                    <span style="position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: #00ff88; transition: width 0.3s;"></span>
+                </a>
+                <a href="/socialMediaHit/instagram-picture/" style="color: #00ff88; text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; position: relative;">
+                    INSTAGRAM
+                    <span style="position: absolute; bottom: -4px; left: 0; width: 100%; height: 1px; background: #00ff88;"></span>
+                </a>
+                <a href="/socialMediaHit/final/" style="color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; position: relative;">
+                    FINAL
+                    <span style="position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: #00ff88; transition: width 0.3s;"></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div style="width: 100%; max-width: 100%; margin: 0 auto; padding: 1.25rem 1.5rem; flex: 1; overflow: hidden; display: flex; flex-direction: column;">
+        <!-- Header -->
+        <div style="flex-shrink: 0; margin-bottom: 0.75rem;">
+            <h1 style="font-size: 1.75rem; font-weight: bold; color: white; margin-bottom: 0.375rem;">Instagram Picture Hit Prediction</h1>
+            <p style="color: #d1d5db; font-size: 0.9rem; margin-bottom: 0.5rem;">Upload or select an image to predict its Instagram Reels performance</p>
+            <div style="background: rgba(234, 179, 8, 0.2); border: 1px solid rgba(234, 179, 8, 0.5); border-radius: 0.5rem; padding: 0.75rem; margin-bottom: 0.75rem;">
+                <div style="display: flex; align-items: start; gap: 0.5rem;">
+                    <span style="color: #fbbf24; font-size: 1rem;">!</span>
+                    <div>
+                        <div style="color: #fef3c7; font-weight: 600; font-size: 0.875rem; margin-bottom: 0.25rem;">Demo Version</div>
+                        <div style="color: #fde68a; font-size: 0.75rem; line-height: 1.4;">This is a demonstration version. The prediction model is currently under development. Results shown are for illustrative purposes only.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; flex: 1; overflow: hidden; width: 100%; min-height: 0;">
+            <!-- Left Column: Image Upload & Selection -->
+            <div style="display: flex; flex-direction: column; gap: 0.75rem; overflow: hidden; max-width: 100%;">
+                <!-- Upload Image -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex-shrink: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Upload Image</h2>
+                    <div style="border: 2px dashed rgba(255, 255, 255, 0.3); border-radius: 0.5rem; padding: 1.5rem; text-align: center; transition: border-color 0.2s; cursor: pointer;" 
+                         onmouseover="this.style.borderColor='rgba(236, 72, 153, 0.5)'" 
+                         onmouseout="this.style.borderColor='rgba(255, 255, 255, 0.3)'"
+                         onclick="document.getElementById('image-upload').click()">
+                        <input type="file" id="image-upload" accept="image/*" style="display: none;">
+                        <div style="color: white; font-weight: 600; font-size: 0.875rem; margin-bottom: 0.25rem;">Click to upload</div>
+                        <div style="color: #d1d5db; font-size: 0.75rem;">PNG, JPG, GIF up to 10MB</div>
+                    </div>
+                    <div id="image-preview" style="margin-top: 0.75rem; display: none;">
+                        <div style="position: relative;">
+                            <img id="preview-img" src="" alt="Preview" style="width: 100%; border-radius: 0.5rem; max-height: 16rem; object-fit: contain; background: rgba(255, 255, 255, 0.05); padding: 0.5rem;">
+                            <button id="remove-image" style="position: absolute; top: 0.5rem; right: 0.5rem; background: rgba(239, 68, 68, 0.8); color: white; border: none; border-radius: 50%; width: 2rem; height: 2rem; display: flex; align-items: center; justify-content: center; font-size: 1rem; font-weight: bold; cursor: pointer; display: none;" 
+                                    onmouseover="this.style.background='rgba(239, 68, 68, 1)'" 
+                                    onmouseout="this.style.background='rgba(239, 68, 68, 0.8)'">×</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Features -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex: 1; overflow-y: auto; min-height: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Image Features</h2>
+                    <div id="image-features">
+                        <div style="color: #d1d5db; text-align: center; padding: 0.75rem; font-size: 0.75rem;">Upload an image to see features</div>
+                    </div>
+                </div>
+
+                <!-- Sample Images (Demo) -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex-shrink: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Sample Images (Demo)</h2>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <button class="sample-image" data-sample="1" style="width: 100%; background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem; text-align: left; transition: background 0.2s; border: none; cursor: pointer;" onmouseover="this.style.background='rgba(255, 255, 255, 0.1)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.05)'">
+                            <div style="color: white; font-weight: 600; font-size: 0.875rem; margin-bottom: 0.25rem;">Lifestyle Image</div>
+                            <div style="color: #d1d5db; font-size: 0.75rem; line-height: 1.4;">Bright, vibrant lifestyle photo with good composition</div>
+                        </button>
+                        <button class="sample-image" data-sample="2" style="width: 100%; background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem; text-align: left; transition: background 0.2s; border: none; cursor: pointer;" onmouseover="this.style.background='rgba(255, 255, 255, 0.1)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.05)'">
+                            <div style="color: white; font-weight: 600; font-size: 0.875rem; margin-bottom: 0.25rem;">Product Photo</div>
+                            <div style="color: #d1d5db; font-size: 0.75rem; line-height: 1.4;">Professional product image with high contrast</div>
+                        </button>
+                        <button class="sample-image" data-sample="3" style="width: 100%; background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem; text-align: left; transition: background 0.2s; border: none; cursor: pointer;" onmouseover="this.style.background='rgba(255, 255, 255, 0.1)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.05)'">
+                            <div style="color: white; font-weight: 600; font-size: 0.875rem; margin-bottom: 0.25rem;">Nature Scene</div>
+                            <div style="color: #d1d5db; font-size: 0.75rem; line-height: 1.4;">Scenic nature image with balanced colors</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Predictions -->
+            <div style="display: flex; flex-direction: column; gap: 0.75rem; overflow: hidden; max-width: 100%;">
+                <!-- Hit Prediction -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex-shrink: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Hit Prediction</h2>
+                    <div id="prediction-results" style="text-align: center; padding: 1rem;">
+                        <div style="color: #d1d5db; font-size: 0.75rem;">Upload an image to see predictions</div>
+                    </div>
+                </div>
+
+                <!-- Prediction Insights -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex: 1; overflow-y: auto; min-height: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Prediction Insights</h2>
+                    <div id="insights-results" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <div style="color: #d1d5db; text-align: center; padding: 0.75rem; font-size: 0.75rem;">Waiting for image analysis...</div>
+                    </div>
+                </div>
+
+                <!-- Recommendations -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex-shrink: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Recommendations</h2>
+                    <div id="recommendations" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <div style="color: #d1d5db; text-align: center; padding: 0.75rem; font-size: 0.75rem;">Waiting for input...</div>
+                    </div>
+                </div>
+
+                <!-- Detailed Analysis -->
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 0.75rem; padding: 0.75rem; flex-shrink: 0;">
+                    <h2 style="font-size: 1rem; font-weight: bold; color: white; margin-bottom: 0.5rem;">Detailed Analysis</h2>
+                    <div id="analysis-results" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <div style="color: #d1d5db; text-align: center; padding: 0.75rem; font-size: 0.75rem;">Waiting for image upload...</div>
+                    </div>
+                </div>
+
+                <!-- Next Step -->
+                <div style="background: linear-gradient(to right, #db2777, #ea580c); border-radius: 0.75rem; padding: 0.75rem; text-align: center; flex-shrink: 0;">
+                    <a href="/socialMediaHit/instagram-caption/" 
+                       style="color: white; font-weight: bold; font-size: 0.875rem; text-decoration: none; display: block;">
+                        Continue to Caption/Hashtag →
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Demo Notice Footer -->
+        <div style="margin-top: 0.75rem; flex-shrink: 0;">
+            <div style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(234, 179, 8, 0.3); border-radius: 0.5rem; padding: 0.75rem; text-align: center;">
+                <div style="color: #fbbf24; font-size: 0.75rem;">
+                    <strong>Demo Version:</strong> This Instagram Picture Prediction feature is currently in development. 
+                    Predictions shown are for demonstration purposes only and do not represent actual model performance.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.getElementById('image-upload').addEventListener('change', function(e) {
+    const file = e.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            document.getElementById('preview-img').src = e.target.result;
+            document.getElementById('image-preview').style.display = 'block';
+            document.getElementById('remove-image').style.display = 'block';
+            analyzeImage(file);
+        };
+        reader.readAsDataURL(file);
+    }
+});
+
+// Remove image button
+document.addEventListener('DOMContentLoaded', function() {
+    const removeBtn = document.getElementById('remove-image');
+    if (removeBtn) {
+        removeBtn.addEventListener('click', function() {
+            document.getElementById('image-upload').value = '';
+            document.getElementById('image-preview').style.display = 'none';
+            document.getElementById('remove-image').style.display = 'none';
+            document.getElementById('prediction-results').innerHTML = '<div style="color: #d1d5db; font-size: 0.75rem;">Upload an image to see predictions</div>';
+            document.getElementById('image-features').innerHTML = '<div style="color: #d1d5db; text-align: center; padding: 0.75rem; font-size: 0.75rem;">Upload an image to see features</div>';
+            document.getElementById('insights-results').innerHTML = '<div style="color: #d1d5db; text-align: center; padding: 0.75rem; font-size: 0.75rem;">Waiting for image analysis...</div>';
+            document.getElementById('recommendations').innerHTML = '<div style="color: #d1d5db; text-align: center; padding: 0.75rem; font-size: 0.75rem;">Waiting for input...</div>';
+            document.getElementById('analysis-results').innerHTML = '<div style="color: #d1d5db; text-align: center; padding: 0.75rem; font-size: 0.75rem;">Waiting for image upload...</div>';
+        });
+    }
+    
+    // Sample image click handlers
+    document.querySelectorAll('.sample-image').forEach(img => {
+        img.addEventListener('click', function() {
+            const sampleNum = this.dataset.sample;
+            // Simulate image analysis for demo
+            const mockData = {
+                hit_probability: 50 + Math.random() * 30,
+                features: {
+                    brightness: 0.5 + Math.random() * 0.3,
+                    contrast: 0.5 + Math.random() * 0.3,
+                    saturation: 0.5 + Math.random() * 0.3,
+                    complexity: 0.5 + Math.random() * 0.3
+                },
+                note: 'This is a demo prediction. Model training in progress.'
+            };
+            displayPrediction(mockData);
+        });
+    });
+});
+
+async function analyzeImage(file) {
+    // Show loading
+    document.getElementById('prediction-results').innerHTML = 
+        '<div style="color: #d1d5db; font-size: 0.75rem;">Analyzing image...</div>';
+    
+    // Create FormData
+    const formData = new FormData();
+    formData.append('image', file);
+    
+    try {
+        const response = await fetch('/socialMediaHit/api/predict/instagram-picture/', {
+            method: 'POST',
+            body: formData
+        });
+        const data = await response.json();
+        displayPrediction(data);
+    } catch (error) {
+        console.error('Error analyzing image:', error);
+        document.getElementById('prediction-results').innerHTML = 
+            '<div style="color: #fca5a5; font-size: 0.75rem;">Error analyzing image</div>';
+    }
+}
+
+function displayPrediction(data) {
+    const container = document.getElementById('prediction-results');
+    const probability = data.hit_probability || 0;
+    
+    container.innerHTML = `
+        <div style="text-align: center;">
+            <div style="font-size: 2.5rem; font-weight: bold; color: white; line-height: 1; margin-bottom: 0.5rem;">${probability.toFixed(1)}</div>
+            <div style="color: #d1d5db; font-size: 0.875rem; margin-bottom: 0.75rem;">Hit Score</div>
+            <div style="background: rgba(255, 255, 255, 0.1); border-radius: 0.5rem; height: 0.5rem; margin-bottom: 0.75rem;">
+                <div style="height: 0.5rem; border-radius: 0.5rem; background: linear-gradient(to right, #ec4899, #f97316); width: ${Math.min(100, probability)}%"></div>
+            </div>
+            ${data.note ? `<div style="color: #fbbf24; font-size: 0.75rem; margin-bottom: 0.5rem;">${data.note}</div>` : ''}
+            <div style="color: #9ca3af; font-size: 0.7rem;">Range: 0-100</div>
+        </div>
+    `;
+    
+    // Display features
+    const featuresContainer = document.getElementById('image-features');
+    const features = data.features || {};
+    featuresContainer.innerHTML = `
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.5rem;">
+            <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem;">
+                <div style="color: #d1d5db; font-size: 0.7rem; margin-bottom: 0.25rem;">Brightness</div>
+                <div style="color: white; font-weight: bold; font-size: 1rem;">${features.brightness !== undefined ? features.brightness.toFixed(2) : 'N/A'}</div>
+            </div>
+            <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem;">
+                <div style="color: #d1d5db; font-size: 0.7rem; margin-bottom: 0.25rem;">Contrast</div>
+                <div style="color: white; font-weight: bold; font-size: 1rem;">${features.contrast !== undefined ? features.contrast.toFixed(2) : 'N/A'}</div>
+            </div>
+            <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem;">
+                <div style="color: #d1d5db; font-size: 0.7rem; margin-bottom: 0.25rem;">Saturation</div>
+                <div style="color: white; font-weight: bold; font-size: 1rem;">${features.saturation !== undefined ? features.saturation.toFixed(2) : 'N/A'}</div>
+            </div>
+            <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem;">
+                <div style="color: #d1d5db; font-size: 0.7rem; margin-bottom: 0.25rem;">Complexity</div>
+                <div style="color: white; font-weight: bold; font-size: 1rem;">${features.complexity !== undefined ? features.complexity.toFixed(2) : 'N/A'}</div>
+            </div>
+        </div>
+    `;
+    
+    // Display insights
+    const insightsContainer = document.getElementById('insights-results');
+    const insights = generateInsights(probability, features);
+    insightsContainer.innerHTML = insights.map(insight => `
+        <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem;">
+            <div style="display: flex; align-items: start; gap: 0.5rem;">
+                <div>
+                    <div style="color: white; font-weight: 600; font-size: 0.875rem; margin-bottom: 0.25rem;">${insight.title}</div>
+                    <div style="color: #d1d5db; font-size: 0.75rem; line-height: 1.4;">${insight.description}</div>
+                </div>
+            </div>
+        </div>
+    `).join('');
+    
+    // Display recommendations
+    const recommendationsContainer = document.getElementById('recommendations');
+    const recommendations = generateRecommendations(features);
+    recommendationsContainer.innerHTML = recommendations.map(rec => `
+        <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem;">
+            <div style="display: flex; align-items: start; gap: 0.5rem;">
+                <div>
+                    <div style="color: white; font-weight: 600; font-size: 0.875rem; margin-bottom: 0.25rem;">${rec.title}</div>
+                    <div style="color: #d1d5db; font-size: 0.75rem; line-height: 1.4;">${rec.description}</div>
+                </div>
+            </div>
+        </div>
+    `).join('');
+    
+    // Display analysis
+    const analysisContainer = document.getElementById('analysis-results');
+    analysisContainer.innerHTML = `
+        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem;">
+                <div style="color: #d1d5db; font-size: 0.7rem; margin-bottom: 0.5rem;">Image Quality Score</div>
+                <div style="background: rgba(255, 255, 255, 0.1); border-radius: 0.25rem; height: 0.25rem; margin-bottom: 0.5rem;">
+                    <div style="height: 0.25rem; border-radius: 0.25rem; background: linear-gradient(to right, #ec4899, #f97316); width: ${Math.min(100, calculateQualityScore(features))}%"></div>
+                </div>
+                <div style="color: white; font-size: 0.875rem; font-weight: bold;">${calculateQualityScore(features).toFixed(0)}/100</div>
+            </div>
+            <div style="background: rgba(255, 255, 255, 0.05); border-radius: 0.5rem; padding: 0.75rem;">
+                <div style="color: #d1d5db; font-size: 0.7rem; margin-bottom: 0.5rem;">Visual Appeal</div>
+                <div style="background: rgba(255, 255, 255, 0.1); border-radius: 0.25rem; height: 0.25rem; margin-bottom: 0.5rem;">
+                    <div style="height: 0.25rem; border-radius: 0.25rem; background: linear-gradient(to right, #ec4899, #f97316); width: ${Math.min(100, calculateAppealScore(features))}%"></div>
+                </div>
+                <div style="color: white; font-size: 0.875rem; font-weight: bold;">${calculateAppealScore(features).toFixed(0)}/100</div>
+            </div>
+        </div>
+    `;
+}
+
+function generateInsights(probability, features) {
+    const insights = [];
+    
+    if (probability >= 70) {
+        insights.push({
+            title: 'High Hit Potential',
+            description: 'This image has strong potential for viral performance on Instagram Reels.'
+        });
+    } else if (probability >= 50) {
+        insights.push({
+            title: 'Good Potential',
+            description: 'This image shows promise but could benefit from optimization.'
+        });
+    } else {
+        insights.push({
+            title: 'Improvement Needed',
+            description: 'Consider adjusting brightness, contrast, or composition for better results.'
+        });
+    }
+    
+    if (features.brightness !== undefined) {
+        if (features.brightness > 0.7) {
+            insights.push({
+                title: 'Bright Image',
+                description: 'High brightness can improve visibility and engagement.'
+            });
+        } else if (features.brightness < 0.3) {
+            insights.push({
+                title: 'Dark Image',
+                description: 'Consider increasing brightness for better Instagram performance.'
+            });
+        }
+    }
+    
+    if (features.saturation !== undefined && features.saturation > 0.6) {
+        insights.push({
+            title: 'Vibrant Colors',
+            description: 'High saturation can make your content stand out in the feed.'
+        });
+    }
+    
+    if (features.contrast !== undefined && features.contrast > 0.6) {
+        insights.push({
+            title: 'Good Contrast',
+            description: 'High contrast improves image clarity and visual impact.'
+        });
+    }
+    
+    return insights;
+}
+
+function generateRecommendations(features) {
+    const recommendations = [];
+    
+    if (features.brightness !== undefined) {
+        if (features.brightness < 0.4) {
+            recommendations.push({
+                title: 'Increase Brightness',
+                description: 'Bright images (0.5-0.7) tend to perform better on Instagram. Consider adjusting exposure.'
+            });
+        } else if (features.brightness > 0.8) {
+            recommendations.push({
+                title: 'Reduce Brightness',
+                description: 'Very bright images may appear overexposed. Slightly reduce brightness for better results.'
+            });
+        }
+    }
+    
+    if (features.contrast !== undefined && features.contrast < 0.4) {
+        recommendations.push({
+            title: 'Enhance Contrast',
+            description: 'Higher contrast (0.5-0.7) makes images more visually striking and engaging.'
+        });
+    }
+    
+    if (features.saturation !== undefined) {
+        if (features.saturation < 0.4) {
+            recommendations.push({
+                title: 'Boost Saturation',
+                description: 'Vibrant colors (0.5-0.7) attract more attention in the Instagram feed.'
+            });
+        } else if (features.saturation > 0.8) {
+            recommendations.push({
+                title: 'Moderate Saturation',
+                description: 'Very high saturation can look unnatural. Aim for 0.5-0.7 for best results.'
+            });
+        }
+    }
+    
+    if (features.complexity !== undefined && features.complexity > 0.8) {
+        recommendations.push({
+            title: 'Simplify Composition',
+            description: 'Less complex images (0.4-0.6) are easier to process and often perform better.'
+        });
+    }
+    
+    return recommendations;
+}
+
+function calculateQualityScore(features) {
+    let score = 50;
+    
+    if (features.brightness !== undefined) {
+        if (features.brightness >= 0.5 && features.brightness <= 0.7) score += 20;
+        else if (features.brightness >= 0.4 && features.brightness < 0.5) score += 10;
+        else if (features.brightness > 0.7 && features.brightness <= 0.8) score += 5;
+        else if (features.brightness < 0.4 || features.brightness > 0.8) score -= 10;
+    }
+    
+    if (features.contrast !== undefined) {
+        if (features.contrast >= 0.5 && features.contrast <= 0.7) score += 15;
+        else if (features.contrast >= 0.4 && features.contrast < 0.5) score += 5;
+        else if (features.contrast < 0.4) score -= 10;
+    }
+    
+    if (features.saturation !== undefined) {
+        if (features.saturation >= 0.5 && features.saturation <= 0.7) score += 15;
+        else if (features.saturation >= 0.4 && features.saturation < 0.5) score += 5;
+        else if (features.saturation < 0.4) score -= 5;
+    }
+    
+    return Math.min(100, Math.max(0, score));
+}
+
+function calculateAppealScore(features) {
+    let score = 40;
+    
+    if (features.saturation !== undefined && features.saturation >= 0.5) score += 25;
+    else if (features.saturation !== undefined && features.saturation >= 0.4) score += 10;
+    
+    if (features.brightness !== undefined && features.brightness >= 0.5 && features.brightness <= 0.7) score += 20;
+    else if (features.brightness !== undefined && features.brightness >= 0.4 && features.brightness < 0.5) score += 10;
+    
+    if (features.contrast !== undefined && features.contrast >= 0.5) score += 15;
+    
+    return Math.min(100, Math.max(0, score));
+}
+</script>
+<style>
+nav a:hover {
+    color: #00ff88 !important;
+}
+nav a:hover span {
+    width: 100% !important;
+}
+</style>
+</body>
+</html>
